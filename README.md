@@ -6,6 +6,6 @@
 - [Mean (likelihood) encodings: a comprehensive study](https://www.kaggle.com/vprokopev/mean-likelihood-encodings-a-comprehensive-study)
 - [如何在 Kaggle 首战中进入前 10%](http://dnc1994.com/2016/04/rank-10-percent-in-first-kaggle-competition/)
 - [kaggle竞赛总结](http://matafight.github.io/2017/08/05/kaggle%E7%AB%9E%E8%B5%9B%E6%80%BB%E7%BB%93/)
-
 - [安全研究者的自我修养](https://mp.weixin.qq.com/s/WrSZpqgq6gvZwEIqghqggg)
 - [安全研究者的自我修养（续）](https://mp.weixin.qq.com/s/o7IMaLMuPYuXgr5hatK5Mw)
+- [[计算机考研408全网最全!!!!!]王道计算机操作系统](https://www.bilibili.com/video/av33644426)
