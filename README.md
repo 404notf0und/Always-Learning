@@ -1,4 +1,4 @@
-# 日常学习记录
+# 日常学习记录(暂时不归档，仅按时间序列排序)
 - [平均数编码：针对高基数定性特征（类别特征）的数据预处理/特征工程](https://zhuanlan.zhihu.com/p/26308272)
 - [Mean Encoding](https://necromuralist.github.io/kaggle-competitions/posts/mean-encoding/)
 - [kaggle编码categorical feature总结](https://zhuanlan.zhihu.com/p/40231966)
@@ -9,3 +9,4 @@
 - [安全研究者的自我修养](https://mp.weixin.qq.com/s/WrSZpqgq6gvZwEIqghqggg)
 - [安全研究者的自我修养（续）](https://mp.weixin.qq.com/s/o7IMaLMuPYuXgr5hatK5Mw)
 - [[计算机考研408全网最全!!!!!]王道计算机操作系统](https://www.bilibili.com/video/av33644426)
+- [分享一波关于做Kaggle比赛，Jdata，天池的经验，看完我这篇就够了](https://segmentfault.com/a/1190000012084849)
