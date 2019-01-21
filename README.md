@@ -12,3 +12,5 @@
 - [分享一波关于做Kaggle比赛，Jdata，天池的经验，看完我这篇就够了](https://segmentfault.com/a/1190000012084849)
 - [中断与异常](https://www.bilibili.com/video/av33644426/?p=5)
 - [Java代码审计-层层推进](https://paper.tuisec.win/detail/6c0d0d6d669ee6d)
+- [最新统计2005-2017年国内科研单位在国际安全顶级会议中发表文章量统计](https://mp.weixin.qq.com/s/kd4S6hCE_GPpPGbp1aD5Jw)
+- [安全人员发展方向杂谈](https://zhuanlan.zhihu.com/p/54936058)
