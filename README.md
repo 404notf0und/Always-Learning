@@ -20,3 +20,5 @@
 - [Github:Deep Exploit](https://github.com/13o-bbr-bbq/machine_learning_security/tree/master/DeepExploit)
 - [Github:GyoiThon](https://github.com/gyoisamurai/GyoiThon)
 - [安全扫描自动化检测平台建设(Web黑盒 中)](https://www.secpulse.com/archives/52464.html)
+- [关于风控预警体系的搭建方案](https://mp.weixin.qq.com/s/2r61XB_Po4s3ihkLy46xbA)<br>
+核心思想：快速发现异常和准确定义风险。通过核心指标的变化发现异常片段及实体、通过聚类手段发现异常簇下全部实体；异常实体抽样--->无感知人工审核--->有针对性制定风险阈值
