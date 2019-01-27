@@ -13,7 +13,8 @@
 - [中断与异常](https://www.bilibili.com/video/av33644426/?p=5)
 - [Java代码审计-层层推进](https://paper.tuisec.win/detail/6c0d0d6d669ee6d)
 - [最新统计2005-2017年国内科研单位在国际安全顶级会议中发表文章量统计](https://mp.weixin.qq.com/s/kd4S6hCE_GPpPGbp1aD5Jw)
-- [安全人员发展方向杂谈](https://zhuanlan.zhihu.com/p/54936058)
+- [安全人员发展方向杂谈](https://zhuanlan.zhihu.com/p/54936058)<br>
+核心思想：甲方安全发展路线：硬核技术型--->大厂实验室和安全研究岗 非硬核技术型--->互联网企业安全建设之红蓝、技术运营、安全管理
 - [我的面经，渗透测试](https://xz.aliyun.com/t/2091)
 - [一套实用的渗透测试岗位面试题，你会吗？](http://www.shungg.cn/?post=70)
 - [Deep Exploit: Fully automatic penetration test tool using Machine Learning](https://securityonline.info/deep-exploit/)
