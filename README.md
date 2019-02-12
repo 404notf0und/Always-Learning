@@ -29,7 +29,8 @@
 - [企业安全建设之HIDS](https://www.freebuf.com/articles/es/194510.html)
 - [保障IDC安全：分布式HIDS集群架构设计](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651750220&idx=2&sn=26e1ae8056e4fd7db5e953e946a00b78&chksm=bd12a6018a652f17643ccf86264ea226a5d881c4dd2911772893e0c5d848f95f1f8de74b786d&mpshare=1&scene=1&srcid=0117j91c1pFiorQDDMN0XQka#rd)
 - [点融开源AgentSmith HIDS--- 一套轻量级的HIDS系统](https://mp.weixin.qq.com/s?__biz=MzI5MjE4MDc4OQ==&mid=2247483961&idx=1&sn=2736aad509f08c20d82cfc08b62da27a&chksm=ec040463db738d754cce84506c098caca891b58740e1b38b3621f752f805eb1c02ebf0e2ac73&mpshare=1&scene=1&srcid=1226ZgmHAUTfeYMuLFPWyuHS#rd)
-- [企业安全建设—基于Agent的HIDS系统设计的一点思路](https://xz.aliyun.com/t/1732)
+- [企业安全建设—基于Agent的HIDS系统设计的一点思路](https://xz.aliyun.com/t/1732)<br>
+**企业安全-入侵检测-主机入侵检测**：美团的系统性实践非常值得学习。从需求描述，产品经理提出需求->分析需求，总结产品架构要符合的特性->技术难点，分析遇到的技术挑战->架构设计与技术选型->分布式HIDS集群架构图->编程语言选择->产品实现。
 - [初探机器学习检测 PHP Webshell](https://paper.seebug.org/526/)
 - [基于机器学习的 Webshell 发现技术探索](https://mp.weixin.qq.com/s/1V0xcjH-6V5qJoJILP0pJQ)
 - [带你读神器之KunPeng源代码分析](https://mp.weixin.qq.com/s/JLMaygM_MioszehGYpY2rw)
