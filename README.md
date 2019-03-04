@@ -111,5 +111,11 @@
 **算法-树系列算法**：单模型，gradient boosting machine和deep learning是首选。gbm不需要复杂的特征工程，不需要太多时间去调参数，dl则需要比较多的时间去调网络结构。**从overfit角度理解**，两者都有overfit甚至perfect fit的能力，overfit能力越强，可塑性越强，然后我们要解决的问题就是如果把模型训练的“恰好”，比如gbm里有early_stopping功能。线性回归模型就缺乏overfit能力，如果实际数据符合线性模型的关系，那可以得到很好的结果，如果不符合的话，就需要做特征工程，可特征工程又是一个比较主观的过程。树的优势，非参数模型，gbm的overfit能力强。而random forest的perfact fit能力很差，这是因为rf的树是独立训练的，没有相互协作，虽然是非参数型模型，但是浪费了这个先天优势。
 - [Data-Knowledge-Action: 企业安全数据分析入门](https://www.cdxy.me/?p=803)（优秀，学到了）<br>
 **企业安全建设-数据分析**：**1、让模型理解业务，基于业务历史行为建立异常基线，在异常的基础上检测威胁；将运营结果反馈到模型，将误报视作正常行为回流。2、安全运营可运营，降低事件调查成本，自动化信息收集与聚合。3、随着数据的积累，安全数据分析将向基于图结构的高级知识表达方式发展。（这点深表赞同）4、对场景、攻击模式、数据的认识深度，远比选择工具重要。**
+- [从传统安全转行风控领域的心路历程，兼谈黑产和风控行业趋势](https://mp.weixin.qq.com/s/GWOjp1E2B4J0efUjFBnp8Q)<br>
+**业务安全-风控**：风控领域斗争日趋激烈，黑产已经从高度专业化、分工明确的团伙进化为产业化运作的公司，现在风控需要有基础安全技术支撑（传统安全），随着司法机关对黑灰产的高压打击，未来大企业会关注风控供应商的产品能力和合规合法性。
+- [企业安全建设技能树v1.0发布](https://mp.weixin.qq.com/s/JFWxsdnEPI5NEU1PlR-FjA)<br>
+企业安全建设-安全管理：包括六大部分：说明、安全观、安全治理、通用技能、专业技能、优质资源
+- [分类模型的性能评估——以 SAS Logistic 回归为例 (3): Lift 和 Gain](https://cosx.org/2009/02/measure-classification-model-performance-lift-gain/)
+- [时间序列数据的聚类有什么好方法？](https://www.zhihu.com/question/50656303/answer/584063648?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136)
 		
 
