@@ -118,9 +118,12 @@
 - [分类模型的性能评估——以 SAS Logistic 回归为例 (3): Lift 和 Gain](https://cosx.org/2009/02/measure-classification-model-performance-lift-gain/)
 - [时间序列数据的聚类有什么好方法？](https://www.zhihu.com/question/50656303/answer/584063648?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136)<br>
 **机器学习-聚类-时间序列**：传统的机器学习数据分析领域：提取特征，使用聚类算法聚集；在自然语言处理领域：为了寻找相似的新闻或是把相似的文本信息聚集到一起，可以使用word2vec把自然语言处理成向量特征，然后使用KMeans等机器学习算法来作聚类；另一种做法是使用Jaccard相似度来计算两个文本内容之间的相似性，然后使用层次聚类的方法来作聚类。常见的聚类算法：基于距离的机器学习聚类算法（KMeans）、基于相似性的机器学习聚类算法（层次聚类）。对时间序列数据进行聚类的方法：时间序列的特征构造、时间序列的相似度方法。如果使用深度学习的话，要么就提供大量的标签数据；要么就只能使用一些无监督的编码器的方法。
-- [Categories of algorithms non exhaustive ](https://static.coggle.it/diagram/WHeBqDIrJRk-kDDY)(学到了搭建自己的算法体系)
-- [[校招经验] BAT机器学习算法实习面试记录](http://rs.xidian.edu.cn/forum.php?mod=viewthread&tid=929712&extra=page%3D1)
+- [Categories of algorithms non exhaustive ](https://static.coggle.it/diagram/WHeBqDIrJRk-kDDY)(学到了)<br>
+**算法-算法体系**：学到了搭建自己的算法体系。
+- [[校招经验] BAT机器学习算法实习面试记录](http://rs.xidian.edu.cn/forum.php?mod=viewthread&tid=929712&extra=page%3D1)(学到了)<br>
+**算法-机器学习-面试**：根据面试常遇到的问题再深入理解机器学习，储备自己的算法知识库。
 - [浅析白盒审计中的字符编码及SQL注入](https://www.leavesongs.com/PENETRATION/mutibyte-sql-inject.html#1452)(优秀，学到了)<br>
 **安全技术-基于字符编码的注入攻击**：一个gbk编码的汉字，占2个字节，一个utf-8编码的汉字，占用3个字节。宽字节注入是利用mysql的特性，mysql在使用gbk编码的时候，会认为两个字符是一个汉字（gbk下，前一个ascii码要大于128，才到汉字的范围；gb2312的编码取值范围：高位`0xA1-0xF7`，低位`0xA1-0xFE`，而`\`是`0x5c`，不在低位范围中，所以`0x5c`不是gb2312中的编码，所以不会被吃掉。把这个思路拓宽到所有的多字节编码，只要低位的范围中含有`0x5c`的编码，就可以进行宽字节注入）。防御方案一：`mysql_set_charset+mysql_real_escape_string`,考虑到连接的当前字符集。防御方案二：将`character_set_client`设置为`binary`（二进制），`SET character_set_connection=gbk, character_set_results=gbk,character_set_client=binary`。当我们的mysql接受到客户端的数据后，会认为他的编码是`character_set_client`，然后会将之将换成`character_set_connection`的编码，然后进入具体表和字段后，再转换成字段对应的编码。然后，当查询结果产生后，会从表和字段的编码，转换成`character_set_results`编码，返回给客户端。所以，我们将`character_set_client`设置成`binary`，就不存在宽字节或多字节的问题了，所有数据以二进制的形式传递，就能有效避免宽字符注入。防御过后调用iconv时也可能出现问题。使用iconv对utf-8转gbk时，利用方式是`錦'`，原因是它的utf-8编码是`0xe98ca6`，它的gbk编码是`0xe55c`，最后变成`%e5%5c%5c%27`，两个`%5c`就是`\`，正好把反斜杠转义了。使用iconv对gbk转utf-8时，利用方式直接用宽字节注入。一个gbk汉字2字节，utf-8汉字3字节，如果我们把gbk转换成utf-8，则php会每两个字节一转换。所以，如果`\'`前面的字符是奇数的话，势必会吞掉`\`，`'`逃出限制。为什么不能用`錦'`这种方式呢，根据utf-8编码规则，`\（0x0000005c）`不会出现在utf-8编码中，所以会报错。
-		
+- [风控模型师面试准备--技术篇](https://zhuanlan.zhihu.com/p/56175215)
+- [风控模型实战--"魔镜杯"风控算法大赛](https://zhuanlan.zhihu.com/p/56864235)
 
