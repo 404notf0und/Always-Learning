@@ -131,4 +131,10 @@
 - [SSRF漏洞利用与getshell实战（精选）](https://mp.weixin.qq.com/s/1hzfFhh4HBlilNmHxSfa8g)
 - [快速弄懂机器学习里的集成算法：原理、框架与实战](https://mp.weixin.qq.com/s/Q6OotQYIsSm7HW2T4ClLjg)
 - [2018春招安全岗实习面试总结](https://www.jianshu.com/p/41c72f2c932d)
+- [腾讯2016实习招聘-安全岗笔试题答案详细解释](https://blog.csdn.net/qq_29277155/article/details/51628939)<br>
+**安全发展-实习笔试**：设计一个安全的web身份验证方案：前端：验证码+csrf_token+基于时间戳加密生成随机数；把身份信息传输到服务器后台，并且设置同源策略（同源网站：域名、端口、协议）；服务器端验证客户端身份后，通过随机数加密session和cookie返回客户端；客户端与服务器端建立连接。
+- [SSRF漏洞中绕过过滤（IP限制）的几种方法总结](https://www.freebuf.com/articles/web/135342.html)<br>
+**安全技术-SSRF**：利用302跳转（xip.io、短地址、自写服务）；DNS 重绑定（绕过IP限制）；更改IP地址写法；利用解析URL所出现的问题：`http://www.baidu.com@192.168.0.1/`；通过各种非HTTP协议
+- [SSRF绕过方法总结](http://byd.dropsec.xyz/2017/11/21/SSRF%E7%BB%95%E8%BF%87%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/)<br>
+**安全技术-SSRF**：利用@；利用短地址；利用特殊域名xip.io；利用DNS解析（在域名上设置A记录）；利用进制转换；利用句号
 
