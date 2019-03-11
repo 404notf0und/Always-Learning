@@ -145,3 +145,9 @@
 **机器学习-职业发展**：**机器学习工程师分为三种：应用型（能力：保持算法全栈，即数据、建模、业务、运维、后端，重点在建模能力，流程是遇到一个指定的业务场景应该迅速知道用什么数据做特征，用什么模型，这个模型在工程上的时效性和鲁棒性，最终会不会产生业务风险等一整套链路。预期目标：锻炼得到很强的业务敏感性，快速验证提出的需求）、造轮子型（多读顶会跟上时代节奏，且拥有超强的功能能力，打造ML框架，提供给应用型机器学习工程师使用）、研究型（AI Lab，读论文+试验性复现）。个人发展：锻炼业务能力和工程能力，未来几年成长规划还是算法全栈路线，技术上独挡一面，业务上带来kpi，以后快速晋升+带队。同时保持阅读习惯，多学习新知识。**
 - [做机器学习算法工程师是什么样的工作体验？](https://www.zhihu.com/question/31284094/answer/618616259)<br>
 **机器学习-工作体验**：业务理解、数据清洗和特征工程、持续学习（增强解决方案的判断力）、编程能力、常用工具（XGB、TensorFlow、ScikitLearn、Pandas（表格类数据或时间序列数据）、Spark、SQL、FbProphet（时间序列））
+- [常见面试题整理--计算机网络篇（每位开发者必备）](https://zhuanlan.zhihu.com/p/24001696)<br>
+**计算机基础-计算机网络**：TCP和UDP的区别，TCP三次握手和四次挥手，浏览器输入URL之后的流程，HTTP协议的请求类型，GET和POST的区别，ARP地址解析协议
+- [万字长文深度解析Python装饰器](https://zhuanlan.zhihu.com/p/53837833?utm_source=wechat_session&utm_medium=social&s_s_i=fnTFc5tcnJAFiGn2nobqDexCtTjMulfSsMtJHUvT7%2B4%3D&s_r=1#showWechatShareTip)
+- [Python3 迭代器与生成器](http://www.runoob.com/python3/python3-iterator-generator.html)<br>
+**编程技术-Python**：迭代器有两个基本的方法：iter()和next()，字符串、元组、列表等可迭代对象都可用于创建迭代器（这是因为这些类内部都实现了`__iter__()`函数，调用iter()之后，变成了一个`list_iterator`的对象，会发现增加了`__next__()`方法，所有实现了`__iter__`和`__next__`两个方法的对象，都是迭代器），迭代器是带状态的对象，它会记录当前迭代所处的位置，以方便下次迭代的时候获取正确的元素，`__iter__`返回迭代器自身，`__next__`返回容器的下一个值。生成器：使用了yield的函数被称为生成器，调用了一个生成器函数，返回的是一个迭代器对象，生成器可以看成是迭代器。
+- [python 黑科技之迭代器、生成器、装饰器](https://www.jianshu.com/p/efaa19594cf4)
