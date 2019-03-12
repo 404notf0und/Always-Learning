@@ -151,3 +151,4 @@
 - [Python3 迭代器与生成器](http://www.runoob.com/python3/python3-iterator-generator.html)<br>
 **编程技术-Python**：迭代器有两个基本的方法：iter()和next()，字符串、元组、列表等可迭代对象都可用于创建迭代器（这是因为这些类内部都实现了`__iter__()`函数，调用iter()之后，变成了一个`list_iterator`的对象，会发现增加了`__next__()`方法，所有实现了`__iter__`和`__next__`两个方法的对象，都是迭代器），迭代器是带状态的对象，它会记录当前迭代所处的位置，以方便下次迭代的时候获取正确的元素，`__iter__`返回迭代器自身，`__next__`返回容器的下一个值。生成器：使用了yield的函数被称为生成器，调用了一个生成器函数，返回的是一个迭代器对象，生成器可以看成是迭代器。
 - [python 黑科技之迭代器、生成器、装饰器](https://www.jianshu.com/p/efaa19594cf4)
+- [怎样通俗的理解操作系统中内存管理分页和分段？](https://www.zhihu.com/question/50796850)
