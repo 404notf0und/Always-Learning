@@ -1,4 +1,4 @@
-# 日常学习记录(暂不归档，仅按时间序列排序)
+# 日常学习记录，多读多想多做(暂不归档，仅按时间序列排序)
 - [平均数编码：针对高基数定性特征（类别特征）的数据预处理/特征工程](https://zhuanlan.zhihu.com/p/26308272)
 - [Mean Encoding](https://necromuralist.github.io/kaggle-competitions/posts/mean-encoding/)
 - [kaggle编码categorical feature总结](https://zhuanlan.zhihu.com/p/40231966)
@@ -151,4 +151,12 @@
 - [Python3 迭代器与生成器](http://www.runoob.com/python3/python3-iterator-generator.html)<br>
 **编程技术-Python**：迭代器有两个基本的方法：iter()和next()，字符串、元组、列表等可迭代对象都可用于创建迭代器（这是因为这些类内部都实现了`__iter__()`函数，调用iter()之后，变成了一个`list_iterator`的对象，会发现增加了`__next__()`方法，所有实现了`__iter__`和`__next__`两个方法的对象，都是迭代器），迭代器是带状态的对象，它会记录当前迭代所处的位置，以方便下次迭代的时候获取正确的元素，`__iter__`返回迭代器自身，`__next__`返回容器的下一个值。生成器：使用了yield的函数被称为生成器，调用了一个生成器函数，返回的是一个迭代器对象，生成器可以看成是迭代器。
 - [python 黑科技之迭代器、生成器、装饰器](https://www.jianshu.com/p/efaa19594cf4)
-- [怎样通俗的理解操作系统中内存管理分页和分段？](https://www.zhihu.com/question/50796850)
+- [怎样通俗的理解操作系统中内存管理分页和分段？](https://www.zhihu.com/question/50796850)<br>
+**计算机基础-操作系统：粒度**、信息的逻辑单位和信息的物理单位、长度不确定和长度确定、二维地址和一维地址、完整信息和内存离散分配
+- [大型公司安全技术岗位面试杂谈](https://zhuanlan.zhihu.com/p/58942101?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136)<br>
+**安全规划-面试：**安全技术基础--->项目细节（知识深度，在擅长的领域碾压面试官，让面试官问不出有深度的问题）--->挑战性问题的处理思路（知识面和行业认知能力，一般也不会脱离擅长领域，需要日常多读多想）--->行业深度认知能力和职业规划
+- [Web安全检测中机器学习的经验之谈](https://iami.xyz/ML-IN-Webshell-Detection-Advantages-And-Disadvantages/)<br>
+**Web安全-机器学习：从文本分类的角度解决Web安全检测的问题**。数据样本的多样性，短文本分类，词向量，句向量，文本向量。文本分类+多维度特征。**与传统方法做对比得出更好的检测方式：传统方法+机器学习：传统waf/正则规则给数据打标；传统方法先进行过滤**。
+- [ThinkPHP 5.0.0~5.0.23 RCE 漏洞分析](https://chybeta.github.io/2019/01/13/ThinkPHP-5-0-0-5-0-23-RCE-%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/)
+- [操作系统之内核态和用户态小结](https://zhuanlan.zhihu.com/p/21374250)
+- [常见面试题整理--操作系统篇（每位开发者必备）](https://zhuanlan.zhihu.com/p/23755202)
