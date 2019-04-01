@@ -260,6 +260,8 @@
 - [Beyond Blacklists: Learning to Detect Malicious Web Sites from Suspicious URLs](http://www.cs.ucsd.edu/~jtma/papers/beyondbl-kdd2009.pdf)
 - [Identifying Suspicious URLs: An Application of Large-Scale Online Learning](http://www.cs.ucsd.edu/~jtma/papers/url-icml2009.pdf)
 - [Exploiting Feature Covariance in High-Dimensional Online Learning](http://www.cs.ucsd.edu/~jtma/papers/covariance-aistats2010.pdf)
+- [使用生成对抗网络(GAN)生成DGA](http://webber.tech/posts/%E4%BD%BF%E7%94%A8%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%28GAN%29%E7%94%9F%E6%88%90DGA/)
+- [GAN_for_DGA](https://github.com/bts-webber/GAN_for_DGA/blob/master/G.py)
 ## 待看
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
 - [Efficient and Flexible Discovery of PHP Application Vulnerabilities原文](https://swag.cispa.saarland/papers/skoruppa2017php.pdf)
