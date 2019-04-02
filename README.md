@@ -262,6 +262,10 @@
 - [Exploiting Feature Covariance in High-Dimensional Online Learning](http://www.cs.ucsd.edu/~jtma/papers/covariance-aistats2010.pdf)
 - [使用生成对抗网络(GAN)生成DGA](http://webber.tech/posts/%E4%BD%BF%E7%94%A8%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%28GAN%29%E7%94%9F%E6%88%90DGA/)
 - [GAN_for_DGA](https://github.com/bts-webber/GAN_for_DGA/blob/master/G.py)
+- [安全团队在企业中的几个身份](https://mp.weixin.qq.com/s/YWLnrnWRFSzLC859YoN-nQ)
+**安全发展-团队发展**：安全团队应该以服务者和协作者的身份，用专业的安全能力给出一类安全问题的解决思路和方案并解决，防止安全问题发生多次。
+- [安全从业者存在的意义](https://mp.weixin.qq.com/s/lJiBiGI6uoJRG11T-fx7Dw)
+**安全发展-个人发展**：目标是帮助先进生产力解决好安全问题。这其中安全问题是信任的问题（信任支撑，原点支撑），是一个研究对抗的科学（人与人的对抗），是一个概率问题（安全架构）。安全是一门应用科学，随着每个时代的不同，可以有很多不同的技术手段和工具来完成各自的安全目标，因此安全从业者应该对新技术和先进生产力保持敏感和接受度，这会带来很多新的视角和能力，包括机器智能和区块链技术等。
 ## 待看
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
 - [Efficient and Flexible Discovery of PHP Application Vulnerabilities原文](https://swag.cispa.saarland/papers/skoruppa2017php.pdf)
