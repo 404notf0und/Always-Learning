@@ -46,6 +46,7 @@
   - [安全管理](#安全管理)
   - [业务安全](#业务安全)
 	  - [风控](#风控)
+  - [安全建设](#安全建设)
 - [安全研究](#安全研究)
   - [APT检测](#APT检测)
   - [恶意样本](#恶意样本)
@@ -272,7 +273,8 @@
 **安全发展-个人发展**：目标是帮助先进生产力解决好安全问题。这其中安全问题是信任的问题（信任支撑，原点支撑），是一个研究对抗的科学（人与人的对抗），是一个概率问题（安全架构）。安全是一门应用科学，随着每个时代的不同，可以有很多不同的技术手段和工具来完成各自的安全目标，因此安全从业者应该对新技术和先进生产力保持敏感和接受度，这会带来很多新的视角和能力，包括机器智能和区块链技术等。
 - [【总结】树类算法认知总结](https://www.jianshu.com/p/432764633f6f)<br>
 **机器学习-树类算法**：分类树和回归树的区别；避免决策树过拟合的方法；随机森林怎么应用到分类和回归问题上；kaggle上为啥GBDT比RF更优；RF、GBDT、XGBoost的认知（原理、优缺点、区别、特性）。
-- [赵彦的CISO闪电战｜两年甲方安全修炼之路](https://www.freebuf.com/articles/es/200024.html?from=timeline&isappinstalled=0)（学到了）
+- [赵彦的CISO闪电战｜两年甲方安全修炼之路](https://www.freebuf.com/articles/es/200024.html?from=timeline&isappinstalled=0)（学到了）<br>
+**企业安全-安全建设**：范围对象（公司业务、挑战及安全需求（纵深防御、自身供应链安全、赋能第三方安全））--->目标设定（当下需求设定和未来发展）--->挑战（团队全栈（知识结构和技能对口主营业务）、工程能力、管理能力）--->分解安全体系（通用领域安全建设沙盘图：研发安全、IT安全、基础设施安全、数据安全、终端安全、业务安全、隐私与安全合规）--->实现和应对（安全治理框架、业界对标（真正落地能力，demo不算有此能力）、安全研究）。**总的来说，就是全栈技术视野（努力从技能层面上升到技术视野层面）+安全管理能力。**
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
 - [Efficient and Flexible Discovery of PHP Application Vulnerabilities原文](https://swag.cispa.saarland/papers/skoruppa2017php.pdf)
