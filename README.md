@@ -50,6 +50,7 @@
 - [安全研究](#安全研究)
   - [APT检测](#APT检测)
   - [恶意样本](#恶意样本)
+  - [Red Team](#RedTeam)
 - [安全发展](#安全发展)
   - [安全面经](#安全面经)
 	  - [实习面试](#实习面试)
@@ -277,6 +278,14 @@
 **企业安全-安全建设**：范围对象（公司业务、挑战及安全需求（纵深防御、自身供应链安全、赋能第三方安全））--->目标设定（当下需求设定和未来发展）--->挑战（团队全栈（知识结构和技能对口主营业务）、工程能力、管理能力）--->分解安全体系（通用领域安全建设沙盘图：研发安全、IT安全、基础设施安全、数据安全、终端安全、业务安全、隐私与安全合规）--->实现和应对（安全治理框架、业界对标（真正落地能力，demo不算有此能力）、安全研究）。**总的来说，就是全栈技术视野（努力从技能层面上升到技术视野层面）+安全管理能力。**
 - [数据分析与可视化：谁是安全圈的吃鸡第一人](https://www.freebuf.com/articles/web/199925.html?from=timeline&isappinstalled=0)（学到了）<br>
 **数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像
+- [Python的高级特征你知多少？来对比看看](https://mp.weixin.qq.com/s/VBiQ2X7Y93h51GkIosC_Vw)<br>
+**编程技术-Python**：lamda匿名函数，功能是执行某种简单的表达式或运算，而无需完全定义函数；Map函数是一种内置的python函数，可以将函数应用于各种数据结构中的元素；Filter内置函数与Map函数类似，但是只返回应用函数返回True的元素；Itertools模块是处理迭代器的工具集合，迭代器是一种可以在for循环语句中使用的数据类型；Generator函数是一个类似迭代器的函数。
+- [Red Team从0到1的实践与思考](https://mp.weixin.qq.com/s/cyxC4Of4Ic9c_vujQayTLg)（学到了）<br>
+**安全研究-Red Team**：Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的TTPs来攻击、评估现有防御能力的有效性以及识别防御体系的弱点并提出具体的应对方案、利用真实有效的模拟攻击来评估因为安全问题造成的潜在的业务影响）--->谁需要Red Team--->Red Team如何工作（基本构成：知识储备、基础架构、技术研究能力；工作流程：全阶段攻击模拟、分阶段攻击模拟；协作配合）--->Red Team的量化和考核（已知TTPs的覆盖率、检测率/检测时间/检测阶段、阻断率/阻断时间/阻断阶段）--->Red Team的成长与提高（仿真环境训练、漏洞分析与技术研究、外部交流与分享）
+- [ATT&CK APT组织TTPs总结](https://attack.mitre.org/groups/)
+- [ATT&CK全平台攻击技术总结](https://attack.mitre.org/matrices/enterprise/)
+- [真实APT组织分析报告汇总](https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections)
+- [一文洞悉DAST、SAST、IAST ——Web应用安全测试技术对比浅谈](https://mp.weixin.qq.com/s/EWn9ktce3KB4P6zi4slnTA)（学到了）
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
 - [Efficient and Flexible Discovery of PHP Application Vulnerabilities原文](https://swag.cispa.saarland/papers/skoruppa2017php.pdf)
