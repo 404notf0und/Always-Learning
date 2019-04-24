@@ -3,12 +3,13 @@
 - [计算机基础](#计算机基础)
   - [计算机网络](#计算机网络)
   - [操作系统](#操作系统)
+  - [基础算法](#基础算法)
 - [前端技术](#前端技术)
   - [浏览器技术](#浏览器技术) 
 - [编程技术](#编程技术)
   - [Python](#Python)
 - [底层研究](#底层研究)
-- [算法](#算法)
+- [人工智能](#人工智能)
   - [算法体系](#算法体系)
   - [机器学习](#机器学习)
 	- [非均衡数据集](#非均衡数据集)
@@ -288,7 +289,8 @@
 - [真实APT组织分析报告汇总](https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections)
 - [一文洞悉DAST、SAST、IAST ——Web应用安全测试技术对比浅谈](https://mp.weixin.qq.com/s/EWn9ktce3KB4P6zi4slnTA)（学到了）
 - [谈谈SAST/IDAST/IAST](http://chengable.net/index.php/archives/391/?from=timeline&isappinstalled=0)
-- [一道腾讯面试题：厉害了我的杯](https://mp.weixin.qq.com/s/MtSr6Id80sxBdNsgHLLxJw)
+- [一道腾讯面试题：厉害了我的杯](https://mp.weixin.qq.com/s/MtSr6Id80sxBdNsgHLLxJw)（学到了）<br>
+**计算机基础-基础算法**：解题方法1：二分法；解题方法2：分段查找区间法；解题方法3：基于数学方程的方法；解题方法4：动态规划法（学到了），用公式来描述就是：`W(n, k) = 1 + min{max(W(n -1, x -1), W(n, k - x))}, x in {2, 3, ……，k}`（n是杯子数，k是楼层数）
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
 - [Efficient and Flexible Discovery of PHP Application Vulnerabilities原文](https://swag.cispa.saarland/papers/skoruppa2017php.pdf)
