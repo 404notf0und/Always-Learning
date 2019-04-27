@@ -52,6 +52,7 @@
   - [APT检测](#APT检测)
   - [恶意样本](#恶意样本)
   - [Red Team](#RedTeam)
+  - [WAF](#WAF)
 - [安全发展](#安全发展)
   - [安全面经](#安全面经)
 	  - [实习面试](#实习面试)
@@ -291,6 +292,11 @@
 - [谈谈SAST/IDAST/IAST](http://chengable.net/index.php/archives/391/?from=timeline&isappinstalled=0)
 - [一道腾讯面试题：厉害了我的杯](https://mp.weixin.qq.com/s/MtSr6Id80sxBdNsgHLLxJw)（学到了）<br>
 **计算机基础-基础算法**：解题方法1：二分法；解题方法2：分段查找区间法；解题方法3：基于数学方程的方法；解题方法4：动态规划法（学到了），用公式来描述就是：`W(n, k) = 1 + min{max(W(n -1, x -1), W(n, k - x))}, x in {2, 3, ……，k}`（n是杯子数，k是楼层数）
+- [技术讨论 | 在HTTP协议层面绕过WAF](https://www.freebuf.com/news/193659.html)
+- [利用分块传输吊打所有WAF](https://www.anquanke.com/post/id/169738)
+- [从http协议层面和数据库层面绕过waf](https://zhengbao.wang/%E4%BB%8Ehttp%E5%8D%8F%E8%AE%AE%E5%B1%82%E9%9D%A2%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B1%82%E9%9D%A2%E7%BB%95%E8%BF%87waf/)
+- [WAF攻防研究之四个层次Bypass WAF](https://www.weibo.com/ttarticle/p/show?id=2309404007261092631700&infeed=1)
+- [对过WAF的一些认知](https://mp.weixin.qq.com/s/cYy3BecwoxR7d3Jj-IpnIQ)
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
 - [Efficient and Flexible Discovery of PHP Application Vulnerabilities原文](https://swag.cispa.saarland/papers/skoruppa2017php.pdf)
