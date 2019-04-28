@@ -4,6 +4,7 @@
   - [计算机网络](#计算机网络)
   - [操作系统](#操作系统)
   - [基础算法](#基础算法)
+  - [数据库](#数据库)
 - [前端技术](#前端技术)
   - [浏览器技术](#浏览器技术) 
 - [编程技术](#编程技术)
@@ -292,6 +293,9 @@
 - [谈谈SAST/IDAST/IAST](http://chengable.net/index.php/archives/391/?from=timeline&isappinstalled=0)
 - [一道腾讯面试题：厉害了我的杯](https://mp.weixin.qq.com/s/MtSr6Id80sxBdNsgHLLxJw)（学到了）<br>
 **计算机基础-基础算法**：解题方法1：二分法；解题方法2：分段查找区间法；解题方法3：基于数学方程的方法；解题方法4：动态规划法（学到了），用公式来描述就是：`W(n, k) = 1 + min{max(W(n -1, x -1), W(n, k - x))}, x in {2, 3, ……，k}`（n是杯子数，k是楼层数）
+- [腾讯面试：一条SQL语句执行得很慢的原因有哪些？](https://zhuanlan.zhihu.com/p/62941196)<br>
+**计算机基础-数据库**：补充学习：数据库引擎（InnoDB支持事物处理和外键，但是慢一点、ISAM和MyISAM空间和内存使用低，插入数据快）、数据库编码（`character_set_client、character_set_connection、character_set_database、character_set_results、character_set_server、character_set_system`）、数据库索引(主键索引、聚集索引和非聚集索引)等基础知识点。<br>
+一条SQL语句执行很慢的原因分为两类：1）大多数情况下正常，偶尔很慢：（1）数据库在刷新脏页，例如redo log写满了需要同步到磁盘；（2）执行的时候遇到锁，如表锁，行锁；2）一直都很慢：（1）没有用上索引：例如该字段没有索引；由于对字段进行运算、函数操作导致无法用索引；（2）数据库选错了索引，比较聚集索引到主键索引和直接全表搜索的扫描行数，有可能因为采样问题判断有误，走了全表扫描而不走索引。
 - [技术讨论 | 在HTTP协议层面绕过WAF](https://www.freebuf.com/news/193659.html)
 - [利用分块传输吊打所有WAF](https://www.anquanke.com/post/id/169738)
 - [从http协议层面和数据库层面绕过waf](https://zhengbao.wang/%E4%BB%8Ehttp%E5%8D%8F%E8%AE%AE%E5%B1%82%E9%9D%A2%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B1%82%E9%9D%A2%E7%BB%95%E8%BF%87waf/)
