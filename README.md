@@ -307,6 +307,7 @@
 - [如何有效的写算法题](https://mp.weixin.qq.com/s/ZGWL5O2rOuW-Rf6FQxnrLA)<br>
 **计算机基础-基础算法**：LeetCode上的题大致分为三种类型：考察数据结构：比如链表、栈、队列、哈希表、图、Trie、二叉树等；考察基础算法：比如深度优先、广度优先、二分查找、递归等；考察基础算法思想：递归、分治、回溯搜索、贪心、动态规划。
 - [浅谈什么是分治算法](https://mp.weixin.qq.com/s/paOrlfpdMwvCUDywda0EvQ)（学到了）<br>
+**计算机基础-基础算法**：分治思想下的全排列问题、归并排序问题、快速排序问题、汉诺塔问题。
 - [如何解决思维混乱、讲话没条理的情况？](https://www.zhihu.com/question/30173526?utm_source=wechat_session&utm_medium=social&utm_oi=832366521421537280)（学到了）<br>
 **个人综合素质-逻辑思维**：结构化思维->讲话有条理。
 - [技术讨论 | 在HTTP协议层面绕过WAF](https://www.freebuf.com/news/193659.html)
