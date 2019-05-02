@@ -310,6 +310,7 @@
 **计算机基础-基础算法**：分治思想下的全排列问题、归并排序问题、快速排序问题、汉诺塔问题。
 - [如何解决思维混乱、讲话没条理的情况？](https://www.zhihu.com/question/30173526?utm_source=wechat_session&utm_medium=social&utm_oi=832366521421537280)（学到了）<br>
 **个人综合素质-逻辑思维**：结构化思维->讲话有条理。
+- [书剑恩仇录之我与阿里巴巴](http://michael282694.com/post/shu-jian-en-chou-lu-zhi-wo-yu-a-li-ba-ba)（太强了）
 - [技术讨论 | 在HTTP协议层面绕过WAF](https://www.freebuf.com/news/193659.html)
 - [利用分块传输吊打所有WAF](https://www.anquanke.com/post/id/169738)
 - [从http协议层面和数据库层面绕过waf](https://zhengbao.wang/%E4%BB%8Ehttp%E5%8D%8F%E8%AE%AE%E5%B1%82%E9%9D%A2%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B1%82%E9%9D%A2%E7%BB%95%E8%BF%87waf/)
@@ -323,4 +324,9 @@
 
 ## 优质外文网站
 - [https://resources.distilnetworks.com](https://resources.distilnetworks.com "focus on bot mitigation")
+
+## 优质技术博客
+- [http://michael282694.com](http://michael282694.com)<br>
+**技术栈**：数据分析挖掘产品开发、爬虫、Java、Python
+
 
