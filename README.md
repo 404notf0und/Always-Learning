@@ -311,6 +311,7 @@
 - [如何解决思维混乱、讲话没条理的情况？](https://www.zhihu.com/question/30173526?utm_source=wechat_session&utm_medium=social&utm_oi=832366521421537280)（学到了）<br>
 **个人综合素质-逻辑思维**：结构化思维->讲话有条理。
 - [书剑恩仇录之我与阿里巴巴](http://michael282694.com/post/shu-jian-en-chou-lu-zhi-wo-yu-a-li-ba-ba)（太强了）
+- [2018.08求职面经](http://michael282694.com/post/2018.08qiu-zhi-mian-jing)（学到了）
 - [技术讨论 | 在HTTP协议层面绕过WAF](https://www.freebuf.com/news/193659.html)
 - [利用分块传输吊打所有WAF](https://www.anquanke.com/post/id/169738)
 - [从http协议层面和数据库层面绕过waf](https://zhengbao.wang/%E4%BB%8Ehttp%E5%8D%8F%E8%AE%AE%E5%B1%82%E9%9D%A2%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B1%82%E9%9D%A2%E7%BB%95%E8%BF%87waf/)
