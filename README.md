@@ -73,6 +73,7 @@
 - [个人综合素质](#综合素质)
   - [逻辑思维](#逻辑思维)
   - [语言表达](#语言表达)
+- [管理者综合素质](#管理者综合素质)
 ## 正文：
 - [平均数编码：针对高基数定性特征（类别特征）的数据预处理/特征工程](https://zhuanlan.zhihu.com/p/26308272)
 - [Mean Encoding](https://necromuralist.github.io/kaggle-competitions/posts/mean-encoding/)
@@ -314,7 +315,10 @@
 **个人综合素质-逻辑思维**：结构化思维->讲话有条理。
 - [书剑恩仇录之我与阿里巴巴](http://michael282694.com/post/shu-jian-en-chou-lu-zhi-wo-yu-a-li-ba-ba)（太强了）
 - [2018.08求职面经](http://michael282694.com/post/2018.08qiu-zhi-mian-jing)
-- [词嵌入来龙去脉](https://blog.csdn.net/scotfield_msn/article/details/69075227)（学到了）
+- [词嵌入来龙去脉](https://blog.csdn.net/scotfield_msn/article/details/69075227)（学到了）<br>
+**人工智能-应用领域-NLP**：DeepNLP的核心关键：语言表示--->NLP词的表示方法类型：词的独热表示和词的分布式表示（这类方法都基于分布假说：词的语义由上下文决定，方法核心是上下文的表示以及上下文与目标词之间的关系的建模）--->NLP语言模型：统计语言模型--->词的分布式表示：基于矩阵的分布表示、基于聚类的分布表示、基于神经网络的分布表示，词嵌入--->词嵌入（word embedding是神经网络训练语言模型的副产品）--->神经网络语言模型与word2vec。
+- [“我是技术总监，你干嘛总问我技术细节？”](https://mp.weixin.qq.com/s/_tV71Ly2uU-op__sf1DlPQ)<br>
+**管理者综合素质**：（快速发展期、平稳期、衰退期等业务发展时期作为时间轴）（中高层管理者）（需要掌握）（应用场景、技术基础、技术栈中的技术细节）。技术基础要扎实，技术栈了解程度深（对技术原理和细节清楚），应用场景不能浮于表面。总的来说就是一句话：**技术细节与技术深度**。
 - [DNS Tunnel隧道隐蔽通信实验 && 尝试复现特征向量化思维方式检测](https://www.cnblogs.com/LittleHann/p/8656621.html)
 - [技术讨论 | 在HTTP协议层面绕过WAF](https://www.freebuf.com/news/193659.html)
 - [利用分块传输吊打所有WAF](https://www.anquanke.com/post/id/169738)
