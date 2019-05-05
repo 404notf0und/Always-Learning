@@ -347,8 +347,12 @@
 
 ## 优质技术博客
 - [http://michael282694.com](http://michael282694.com)<br>
-**技术栈**：数据分析挖掘产品开发、爬虫、Java、Python
+**技术栈**：michael282694，数据分析挖掘产品开发、爬虫、Java、Python
 - [https://www.cnblogs.com/LittleHann](https://www.cnblogs.com/LittleHann)<br>
-**技术栈**：我也不知道该怎么描述，Han师傅会的太多了，C++、Java、Python、PHP、Web安全、系统安全，不过目前好像做算法多一些。
+**技术栈**：LittleHann，我也不知道该怎么描述，Han师傅会的太多了，C++、Java、Python、PHP、Web安全、系统安全，不过目前好像做算法多一些。
+- [https://feei.cn](https://feei.cn)<br>
+**技术栈**：FeeiCN，专注自动化漏洞发现和入侵检测防御。
+- [http://www.yqxiaojunjie.com](http://www.yqxiaojunjie.com)<br>
+**技术栈**：xiaojunjie，专注于代码审计、CTF。
 
 
