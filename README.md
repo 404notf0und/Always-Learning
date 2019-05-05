@@ -319,7 +319,8 @@
 - [如何解决思维混乱、讲话没条理的情况？](https://www.zhihu.com/question/30173526?utm_source=wechat_session&utm_medium=social&utm_oi=832366521421537280)（学到了）<br>
 **个人综合素质-逻辑思维**：结构化思维->讲话有条理。
 - [书剑恩仇录之我与阿里巴巴](http://michael282694.com/post/shu-jian-en-chou-lu-zhi-wo-yu-a-li-ba-ba)（太强了）
-- [2018.08求职面经](http://michael282694.com/post/2018.08qiu-zhi-mian-jing)
+- [2018.08求职面经](http://michael282694.com/post/2018.08qiu-zhi-mian-jing)<br>
+**计算机基础-基础算法**：乱序数组中第k大的数，乱序数组中的中位数：快排指针，O(N)。
 - [词嵌入来龙去脉](https://blog.csdn.net/scotfield_msn/article/details/69075227)（学到了）<br>
 **人工智能-应用领域-NLP**：DeepNLP的核心关键：语言表示--->NLP词的表示方法类型：词的独热表示和词的分布式表示（这类方法都基于分布假说：词的语义由上下文决定，方法核心是上下文的表示以及上下文与目标词之间的关系的建模）--->NLP语言模型：统计语言模型--->词的分布式表示：基于矩阵的分布表示、基于聚类的分布表示、基于神经网络的分布表示，词嵌入--->词嵌入（word embedding是神经网络训练语言模型的副产品）--->神经网络语言模型与word2vec。
 - [深入浅出讲解语言模型](https://zhuanlan.zhihu.com/p/28080127)<br>
