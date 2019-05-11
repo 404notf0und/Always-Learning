@@ -1,15 +1,22 @@
 # 404 Not Found的知识库
-最近更新日期：2019/05/07
+最近更新日期：2019/05/11
 ## 硬实力
-- [计算机基础](#计算机基础)
+- [计算机理论基础](#计算机理论基础)
   - [计算机网络](#计算机网络)
   - [操作系统](#操作系统)
   - [基础算法](#基础算法)
   - [数据库](#数据库)
-- [前端技术](#前端技术)
-  - [浏览器技术](#浏览器技术) 
-- [编程技术](#编程技术)
-  - [Python](#Python)
+- [计算机技术基础](#计算机技术)
+  - [语言](#语言)
+  	- [Python](#Python)
+	- [Go](#Go)
+  - [工具](#工具)
+  	- [MAC](#MAC)
+  - [技术](#技术)
+  	- [浏览器技术](#浏览器技术) 
+	- [docker技术](#docker技术)
+  - [框架](#框架)
+  	- [gin](#gin)
 - [底层研究](#底层研究)
 - [安全技术](#安全技术)
   - [Web安全](#Web安全)
@@ -154,8 +161,8 @@
 **人工智能-机器学习-无监督学习-层次聚类-相似性计算**：曼哈顿距离、欧式距离、切比雪夫距离、余弦相似度、皮尔逊相关系数、Jaccard系数
 - [一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)<br>
 **安全技术-Web安全-XXE漏洞**：XXE的原理：调用外部实体，XXE的利用：利用通用实体、参数实体、外部实体、内部实体进行文件读取，内网主机和端口探测、内网RCE（php下需要expect扩展的支持）
-- [浏览器解码与xss](https://blog.csdn.net/he_and/article/details/80588409)(**原文中有一处错误“html实体编码后“应该是`&#x5c;&#x75;&#x37;&#x32;` 产生的原因就是浏览器的html自解码**)<br>
-**前端技术-浏览器技术-解码顺序**：浏览器解码主要涉及到两个部分：渲染引擎和js解析器。解码顺序：在什么环境下就进行什么解码，解码顺序为：最外层的环境对应的编码最先解码。举个例子:在`<a href=javascript:alert(1)>click</a>`中alert(1)处在html->url->js环境中。
+- [解码与xss](https://blog.csdn.net/he_and/article/details/80588409)(**原文中有一处错误“html实体编码后“应该是`&#x5c;&#x75;&#x37;&#x32;` 产生的原因就是浏览器的html自解码**)<br>
+**计算机技术基础-技术-浏览器技术-解码顺序**：浏览器解码主要涉及到两个部分：渲染引擎和js解析器。解码顺序：在什么环境下就进行什么解码，解码顺序为：最外层的环境对应的编码最先解码。举个例子:在`<a href=javascript:alert(1)>click</a>`中alert(1)处在html->url->js环境中。
     `1、<a href=javascript:al\u65rt(1)>click</a> 采用unicode编码e，html和url环境下都不能解码，只有在js环境下才能解码为字符e，所以不会弹窗`
     `2、<a href=javascript:al%65rt(1)>click</a> 采用url编码，在执行js前，url解码%65，所以到了js引擎启动时，看到了完整的alert(1)`
     `3、<a href=javascript:alert(1)>click</a> html实体解码先执行了`
@@ -229,13 +236,13 @@
 - [做机器学习算法工程师是什么样的工作体验？](https://www.zhihu.com/question/31284094/answer/618616259)<br>
 **人工智能-综合素质-工作体验**：业务理解、数据清洗和特征工程、持续学习（增强解决方案的判断力）、编程能力、常用工具（XGB、TensorFlow、ScikitLearn、Pandas（表格类数据或时间序列数据）、Spark、SQL、FbProphet（时间序列））
 - [常见面试题整理--计算机网络篇（每位开发者必备）](https://zhuanlan.zhihu.com/p/24001696)<br>
-**计算机基础-计算机网络**：TCP和UDP的区别，TCP三次握手和四次挥手，浏览器输入URL之后的流程，HTTP协议的请求类型，GET和POST的区别，ARP地址解析协议
+**计算机理论基础-计算机网络**：TCP和UDP的区别，TCP三次握手和四次挥手，浏览器输入URL之后的流程，HTTP协议的请求类型，GET和POST的区别，ARP地址解析协议
 - [万字长文深度解析Python装饰器](https://zhuanlan.zhihu.com/p/53837833?utm_source=wechat_session&utm_medium=social&s_s_i=fnTFc5tcnJAFiGn2nobqDexCtTjMulfSsMtJHUvT7%2B4%3D&s_r=1#showWechatShareTip)
 - [Python3 迭代器与生成器](http://www.runoob.com/python3/python3-iterator-generator.html)<br>
-**编程技术-Python**：迭代器有两个基本的方法：iter()和next()，字符串、元组、列表等可迭代对象都可用于创建迭代器（这是因为这些类内部都实现了`__iter__()`函数，调用iter()之后，变成了一个`list_iterator`的对象，会发现增加了`__next__()`方法，所有实现了`__iter__`和`__next__`两个方法的对象，都是迭代器），迭代器是带状态的对象，它会记录当前迭代所处的位置，以方便下次迭代的时候获取正确的元素，`__iter__`返回迭代器自身，`__next__`返回容器的下一个值。生成器：使用了yield的函数被称为生成器，调用了一个生成器函数，返回的是一个迭代器对象，生成器可以看成是迭代器。
+**计算机技术基础-语言-Python**：迭代器有两个基本的方法：iter()和next()，字符串、元组、列表等可迭代对象都可用于创建迭代器（这是因为这些类内部都实现了`__iter__()`函数，调用iter()之后，变成了一个`list_iterator`的对象，会发现增加了`__next__()`方法，所有实现了`__iter__`和`__next__`两个方法的对象，都是迭代器），迭代器是带状态的对象，它会记录当前迭代所处的位置，以方便下次迭代的时候获取正确的元素，`__iter__`返回迭代器自身，`__next__`返回容器的下一个值。生成器：使用了yield的函数被称为生成器，调用了一个生成器函数，返回的是一个迭代器对象，生成器可以看成是迭代器。
 - [python 黑科技之迭代器、生成器、装饰器](https://www.jianshu.com/p/efaa19594cf4)
 - [怎样通俗的理解操作系统中内存管理分页和分段？](https://www.zhihu.com/question/50796850)<br>
-**计算机基础-操作系统：粒度**、信息的逻辑单位和信息的物理单位、长度不确定和长度确定、二维地址和一维地址、完整信息和内存离散分配
+**计算机理论基础-操作系统：粒度**、信息的逻辑单位和信息的物理单位、长度不确定和长度确定、二维地址和一维地址、完整信息和内存离散分配
 - [大型公司安全技术岗位面试杂谈](https://zhuanlan.zhihu.com/p/58942101?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136)<br>
 **安全发展-安全面经-面试**：安全技术基础--->项目细节（知识深度，在擅长的领域碾压面试官，让面试官问不出有深度的问题）--->挑战性问题的处理思路（知识面和行业认知能力，一般也不会脱离擅长领域，需要日常多读多想）--->行业深度认知能力和职业规划
 - [Web安全检测中机器学习的经验之谈](https://iami.xyz/ML-IN-Webshell-Detection-Advantages-And-Disadvantages/)<br>
@@ -248,14 +255,14 @@
 - [360实习总结](http://zzm.cat/index.php/archives/19/)
 - [2018秋招面试总结](http://zzm.cat/index.php/archives/27/)（学到了）
 - [一次完整的浏览器请求流程](https://www.jianshu.com/p/fbe0e9fa45a6)<br>
-**计算机基础-计算机网络**：页面（浏览器、HTTP）请求到响应经过的流程包括了TCP三次握手等系列流程，比如域名解析、发起TCP三次握手、发起HTTP请求、服务器响应HTTP请求，浏览器得到HTML代码、浏览器解析HTML代码，并请求HTML代码中的资源、浏览器对页面进行渲染呈现给用户。
+**计算机理论基础-计算机网络**：页面（浏览器、HTTP）请求到响应经过的流程包括了TCP三次握手等系列流程，比如域名解析、发起TCP三次握手、发起HTTP请求、服务器响应HTTP请求，浏览器得到HTML代码、浏览器解析HTML代码，并请求HTML代码中的资源、浏览器对页面进行渲染呈现给用户。
 - [SVM和logistic回归分别在什么情况下使用？](https://www.zhihu.com/question/21704547)<br>
 **人工智能-基础知识-算法使用场景-SVM和逻辑回归使用场景**：需要根据特征数量和训练样本数量来确定。如果特征数相对于训练样本数已经够大了，使用线性模型就能取得不错的效果，不需要过于复杂的模型，则使用LR或线性核函数的SVM。如果训练样本足够大而特征数较小的情况下，可以通过复杂核函数的SVM来获得更好的预测性能，如果样本没有达到百万级，使用复杂核函数的SVM也不会导致运算过慢。如果训练样本特别大，使用复杂核函数的SVM已经会导致运算过慢了，因此应该考虑引入更多特征，然后使用线性SVM或者LR来构造模型。
 - [2019 届阿里实习生内推实况是怎样的？ - 左左薇拉vera的回答 - 知乎](https://www.zhihu.com/question/267845706/answer/351184602)（学到了）
 - [算法 3：最常用的排序——快速排序](http://wiki.jikexueyuan.com/project/easy-learn-algorithm/fast-sort.html)<br>
-**计算机基础-数据结构**：sort and quick sort，快排的思想是挖坑填数+分治。
+**计算机理论基础-数据结构**：sort and quick sort，快排的思想是挖坑填数+分治。
 - [tcp 的可靠性到底指的是什么？ - CYS的回答 - 知乎](https://www.zhihu.com/question/49596182/answer/116843028)<br>
-**计算机基础-计算机网络**：TCP的可靠性是指基于不可靠的IP层在传输层提供可靠的数据传输服务，主要是指数据不会损坏或丢失，而且所有数据都是按照发送顺序进行传送。实现TCP的可靠性传输有以下机制：校验和（校验数据是否损坏）、定时器（分组丢失则重传）、序号（用于检测丢失的分组和冗余的分组）、确认（接收方告知发送方正确接收分组以及期望的下一个分组）、否定确认（接收方通知发送方未被正确接收的分组）、窗口和流水线（用于增加信道的吞吐量）。
+**计算机理论基础-计算机网络**：TCP的可靠性是指基于不可靠的IP层在传输层提供可靠的数据传输服务，主要是指数据不会损坏或丢失，而且所有数据都是按照发送顺序进行传送。实现TCP的可靠性传输有以下机制：校验和（校验数据是否损坏）、定时器（分组丢失则重传）、序号（用于检测丢失的分组和冗余的分组）、确认（接收方告知发送方正确接收分组以及期望的下一个分组）、否定确认（接收方通知发送方未被正确接收的分组）、窗口和流水线（用于增加信道的吞吐量）。
 - [大三实习面经](https://www.zuozuovera.com/archives/1121/comment-page-1)（学到了）
 - [XGBoost原理和底层实现剖析](https://snaildove.github.io/2018/10/02/get-started-XGBoost/)（学到了）<br>
 **底层研究-XGBoost**：从树的分数（目标函数：损失函数（二阶展开）+正则项），树的结构（分裂决策（预排序））方面理解。
@@ -304,7 +311,7 @@
 - [数据分析与可视化：谁是安全圈的吃鸡第一人](https://www.freebuf.com/articles/web/199925.html?from=timeline&isappinstalled=0)（学到了）<br>
 **数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像
 - [Python的高级特征你知多少？来对比看看](https://mp.weixin.qq.com/s/VBiQ2X7Y93h51GkIosC_Vw)<br>
-**编程技术-Python**：lamda匿名函数，功能是执行某种简单的表达式或运算，而无需完全定义函数；Map函数是一种内置的python函数，可以将函数应用于各种数据结构中的元素；Filter内置函数与Map函数类似，但是只返回应用函数返回True的元素；Itertools模块是处理迭代器的工具集合，迭代器是一种可以在for循环语句中使用的数据类型；Generator函数是一个类似迭代器的函数。
+**计算机技术基础-语言-Python**：lamda匿名函数，功能是执行某种简单的表达式或运算，而无需完全定义函数；Map函数是一种内置的python函数，可以将函数应用于各种数据结构中的元素；Filter内置函数与Map函数类似，但是只返回应用函数返回True的元素；Itertools模块是处理迭代器的工具集合，迭代器是一种可以在for循环语句中使用的数据类型；Generator函数是一个类似迭代器的函数。
 - [Red Team从0到1的实践与思考](https://mp.weixin.qq.com/s/cyxC4Of4Ic9c_vujQayTLg)（学到了）<br>
 **安全研究-Red Team**：Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的TTPs来攻击、评估现有防御能力的有效性以及识别防御体系的弱点并提出具体的应对方案、利用真实有效的模拟攻击来评估因为安全问题造成的潜在的业务影响）--->谁需要Red Team--->Red Team如何工作（基本构成：知识储备、基础架构、技术研究能力；工作流程：全阶段攻击模拟、分阶段攻击模拟；协作配合）--->Red Team的量化和考核（已知TTPs的覆盖率、检测率/检测时间/检测阶段、阻断率/阻断时间/阻断阶段）--->Red Team的成长与提高（仿真环境训练、漏洞分析与技术研究、外部交流与分享）
 - [ATT&CK APT组织TTPs总结](https://attack.mitre.org/groups/)
@@ -313,21 +320,21 @@
 - [一文洞悉DAST、SAST、IAST ——Web应用安全测试技术对比浅谈](https://mp.weixin.qq.com/s/EWn9ktce3KB4P6zi4slnTA)（学到了）
 - [谈谈SAST/IDAST/IAST](http://chengable.net/index.php/archives/391/?from=timeline&isappinstalled=0)
 - [一道腾讯面试题：厉害了我的杯](https://mp.weixin.qq.com/s/MtSr6Id80sxBdNsgHLLxJw)（学到了）<br>
-**计算机基础-基础算法**：解题方法1：二分法；解题方法2：分段查找区间法；解题方法3：基于数学方程的方法；解题方法4：动态规划法（学到了），用公式来描述就是：`W(n, k) = 1 + min{max(W(n -1, x -1), W(n, k - x))}, x in {2, 3, ……，k}`（n是杯子数，k是楼层数）
+**计算机理论基础-基础算法**：解题方法1：二分法；解题方法2：分段查找区间法；解题方法3：基于数学方程的方法；解题方法4：动态规划法（学到了），用公式来描述就是：`W(n, k) = 1 + min{max(W(n -1, x -1), W(n, k - x))}, x in {2, 3, ……，k}`（n是杯子数，k是楼层数）
 - [腾讯面试：一条SQL语句执行得很慢的原因有哪些？](https://zhuanlan.zhihu.com/p/62941196)<br>
-**计算机基础-数据库**：补充学习：数据库引擎（InnoDB支持事物处理和外键，但是慢一点、ISAM和MyISAM空间和内存使用低，插入数据快）、数据库编码（`character_set_client、character_set_connection、character_set_database、character_set_results、character_set_server、character_set_system`）、数据库索引(主键索引、聚集索引和非聚集索引)等基础知识点。<br>
+**计算机理论基础-数据库**：补充学习：数据库引擎（InnoDB支持事物处理和外键，但是慢一点、ISAM和MyISAM空间和内存使用低，插入数据快）、数据库编码（`character_set_client、character_set_connection、character_set_database、character_set_results、character_set_server、character_set_system`）、数据库索引(主键索引、聚集索引和非聚集索引)等基础知识点。<br>
 一条SQL语句执行很慢的原因分为两类：1）大多数情况下正常，偶尔很慢：（1）数据库在刷新脏页，例如redo log写满了需要同步到磁盘；（2）执行的时候遇到锁，如表锁，行锁；2）一直都很慢：（1）没有用上索引：例如该字段没有索引；由于对字段进行运算、函数操作导致无法用索引；（2）数据库选错了索引，比较聚集索引到主键索引和直接全表搜索的扫描行数，有可能因为采样问题判断有误，走了全表扫描而不走索引。
 - [两年美团算法大佬的个人总结与学习建议](https://mp.weixin.qq.com/s/OKxjACQgf5ahIGDDA1_Xow)<br>
 **人工智能-综合素质-心得体会**：算法的基本认识（知识）、过硬的代码能力（工具）、数据处理和分析能力（业务和逻辑）、模型的积累和迁移能力（业务和逻辑）、产品能力、软实力。
 - [如何有效的写算法题](https://mp.weixin.qq.com/s/ZGWL5O2rOuW-Rf6FQxnrLA)<br>
-**计算机基础-基础算法**：LeetCode上的题大致分为三种类型：考察数据结构：比如链表、栈、队列、哈希表、图、Trie、二叉树等；考察基础算法：比如深度优先、广度优先、二分查找、递归等；考察基础算法思想：递归、分治、回溯搜索、贪心、动态规划。
+**计算机理论基础-基础算法**：LeetCode上的题大致分为三种类型：考察数据结构：比如链表、栈、队列、哈希表、图、Trie、二叉树等；考察基础算法：比如深度优先、广度优先、二分查找、递归等；考察基础算法思想：递归、分治、回溯搜索、贪心、动态规划。
 - [浅谈什么是分治算法](https://mp.weixin.qq.com/s/paOrlfpdMwvCUDywda0EvQ)（学到了）<br>
-**计算机基础-基础算法**：分治思想下的全排列问题、归并排序问题、快速排序问题、汉诺塔问题。
+**计算机理论基础-基础算法**：分治思想下的全排列问题、归并排序问题、快速排序问题、汉诺塔问题。
 - [如何解决思维混乱、讲话没条理的情况？](https://www.zhihu.com/question/30173526?utm_source=wechat_session&utm_medium=social&utm_oi=832366521421537280)（学到了）<br>
 **个人综合素质-逻辑思维**：结构化思维->讲话有条理。
 - [书剑恩仇录之我与阿里巴巴](http://michael282694.com/post/shu-jian-en-chou-lu-zhi-wo-yu-a-li-ba-ba)（太强了）
 - [2018.08求职面经](http://michael282694.com/post/2018.08qiu-zhi-mian-jing)<br>
-**计算机基础-基础算法**：乱序数组中第k大的数，乱序数组中的中位数：快排指针，O(N)。
+**计算机理论基础-基础算法**：乱序数组中第k大的数，乱序数组中的中位数：快排指针，O(N)。
 - [词嵌入来龙去脉](https://blog.csdn.net/scotfield_msn/article/details/69075227)（学到了）<br>
 **人工智能-应用领域-NLP**：DeepNLP的核心关键：语言表示--->NLP词的表示方法类型：词的独热表示和词的分布式表示（这类方法都基于分布假说：词的语义由上下文决定，方法核心是上下文的表示以及上下文与目标词之间的关系的建模）--->NLP语言模型：统计语言模型--->词的分布式表示：基于矩阵的分布表示、基于聚类的分布表示、基于神经网络的分布表示，词嵌入--->词嵌入（word embedding是神经网络训练语言模型的副产品）--->神经网络语言模型与word2vec。
 - [深入浅出讲解语言模型](https://zhuanlan.zhihu.com/p/28080127)<br>
@@ -345,7 +352,7 @@
 - [基于统计分析的ICMP隧道检测方法与实现](https://mp.weixin.qq.com/s/qSHQ2v9s0nDRmFXhnPna3g)<br>
 **企业安全建设-安全系统-ICMP隧道检测系统-统计分析**：
 - [【视频讲解】LeetCode 第 1 号问题：两数之和](https://mp.weixin.qq.com/s/BEefuwFek3dpXl8wE0b9Iw)<br>
-**计算机基础-基础算法**：
+**计算机理论基础-基础算法**：
 - [PHP 连接方式介绍以及如何攻击 PHP-FPM](https://mp.weixin.qq.com/s/z2JVc9kUkmRl9bDaEbkTFg)<br>
 **安全研究-PHP安全研究**：
 - [机器学习算法常用指标总结](#https://mp.weixin.qq.com/s/jEB0CD9j1amGVbt4tAObLQ)<br>
@@ -355,6 +362,19 @@
 - [从http协议层面和数据库层面绕过waf](https://zhengbao.wang/%E4%BB%8Ehttp%E5%8D%8F%E8%AE%AE%E5%B1%82%E9%9D%A2%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B1%82%E9%9D%A2%E7%BB%95%E8%BF%87waf/)
 - [WAF攻防研究之四个层次Bypass WAF](https://www.weibo.com/ttarticle/p/show?id=2309404007261092631700&infeed=1)
 - [对过WAF的一些认知](https://mp.weixin.qq.com/s/cYy3BecwoxR7d3Jj-IpnIQ)
+- [dockerfile 和 docker-compose 的关系](https://segmentfault.com/q/1010000009883848)<br>
+**计算机技术基础-技术-docker技术**：文件和文件夹的关系。
+- [dockerfile 与 docker-compose的区别是什么?](https://segmentfault.com/q/1010000009883848)<br>
+**计算机技术基础-技术-docker技术**：docker-compose是编排容器的。
+- [为什么要使用 Go 语言？Go 语言的优势在哪里？](https://www.zhihu.com/question/21409296)<br>
+**计算机技术基础-语言-Go**：go的优势和go的用处。go的优势主要有：静态语言，多并发，跨平台，可直接编译成机器码，丰富的标准库等。go的用处主要有服务器编程、网络编程、分布式系统、内存数据库、云平台。
+- [Mac快捷键大全](https://jingyan.baidu.com/article/08b6a591aac09614a909224f.html)<br>
+**计算机技术基础-工具-MAC**：基础快捷键：截图、在应用程序中、文本处理、在finder中、在浏览器中；MAC启动和关机时的快捷键。
+- [Gin - 高性能 Golang Web 框架的介绍和使用](https://www.yoytang.com/go-gin-doc.html)<br>
+**计算机技术基础-框架-gin**：Gin是用Go编写的一个Web应用框架。
+- [Gin实践 连载一 Golang介绍与环境安装](https://segmentfault.com/a/1190000013297625)<br>
+**计算机技术基础-语言-Go**：go的环境安装，环境安装后各个文件夹的含义；go的工作区，工作区各个文件夹的含义。
+
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
 - [Efficient and Flexible Discovery of PHP Application Vulnerabilities原文](https://swag.cispa.saarland/papers/skoruppa2017php.pdf)
