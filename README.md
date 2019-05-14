@@ -10,8 +10,12 @@
   - [语言](#语言)
   	- [Python](#Python)
 	- [Go](#Go)
+	- [Ruby](#Ruby)
   - [工具](#工具)
   	- [MAC](#MAC)
+	- [大数据技术工具](#大数据技术工具)
+	  - [Agent类型](#Agent)
+	  - [中间件类型](#中间件)
   - [技术](#技术)
   	- [浏览器技术](#浏览器技术) 
 	- [docker技术](#docker技术)
@@ -383,6 +387,12 @@
 **计算机技术基础-技术-可行性分析**：产品可行性分为：技术可行性、经济可行性、社会可行性，其中我关注的是技术可行性。技术可行性主要从竞争对手功能比较、技术风险及规避方法、易用性及用户使用门槛、产品环境依赖性等方面衡量。
 - [快速搭建一个轻量级OpenSOC架构的数据分析框架（一）](https://xz.aliyun.com/t/2201)(学到了)<br>
 **企业安全建设-安全数据分析-框架**：**行文思路：由粗变细（由框架到举例子（由框架到场景到实际架构））。OpenSOC介绍（框架组成和工作流程）---》构建轻量级OpenSOC（聚焦具体场景和工具及具体架构）---》搭建步骤（每一步的环境搭建及配置）---》效果展示。**
+- [日志采集系统flume和kafka有什么区别及联系，它们分别在什么时候使用，什么时候又可以结合？](https://www.zhihu.com/question/36688175)<br>
+**计算机技术基础-工具-大数据技术工具-中间件类型**：可以把kafka理解成中间件，或是cache系统，或是数据库，主要作用是维稳。可以把flume理解成日志数据的主动收集，与kafka相比，很难推动线上应用修改接口往kafka中写入数据。
+- [logstash 和 flume 之间的优劣，和各自所适合的场景？](https://www.zhihu.com/question/31200212)<br>
+**计算机技术基础-工具-大数据技术工具-Agent类型**：看需求，logstash和flume都是作为agent的存在，logstash有更多的插件，有更好的配套产品elasticsearch等，但是logstash的开发语言是ruby，运行环境是JRuby，而且传输数据可能会丢失；flume内部有机制确保传输一定量级数据不丢失的问题，flume的开发语言是Java，易于二次开发，但是不足是jvm占用内存有点大。
+- [ruby-on-rails – Ruby和JRuby有什么区别](https://codeday.me/bug/20170830/62159.html)<br>
+**计算机技术基础-语言-Ruby**：Ruby是一种编程语言，我们一般说的Ruby解释器是指CRuby，CRuby在本地C语言解释器环境中运行，JRuby是一个采用纯Java实现的Ruby解释器，JRuby在Java虚拟机中运行。
 
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
