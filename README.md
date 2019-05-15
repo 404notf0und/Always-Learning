@@ -1,5 +1,5 @@
 # 404 Not Found的知识库
-最近更新日期：2019/05/14
+最近更新日期：2019/05/15
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
   - [计算机网络](#计算机网络)
@@ -11,18 +11,22 @@
   	- [Python](#Python)
 	- [Go](#Go)
 	- [Ruby](#Ruby)
+  - [框架](#框架)
+  	- [gin](#gin)
+	- [Spring](#Spring)
   - [工具](#工具)
   	- [MAC](#MAC)
 	- [大数据技术工具](#大数据技术工具)
 	  - [Agent类型](#Agent)
 	  - [中间件类型](#中间件)
   - [技术](#技术)
-  	- [浏览器技术](#浏览器技术) 
-	- [docker技术](#docker技术)
-	- [堡垒机技术](#堡垒机技术)
-	- [可行性分析](#可行性分析)
-  - [框架](#框架)
-  	- [gin](#gin)
+	- [浏览器技术](#浏览器技术) 
+  	- [docker技术](#docker技术)
+  	- [堡垒机技术](#堡垒机技术)
+  	- [可行性分析](#可行性分析)
+  	- [应用服务器](#应用服务器)
+  	  - [Nginx](Nginx)
+  	  - [Gunicorn](Gunicorn)
 - [底层研究](#底层研究)
 - [安全技术](#安全技术)
   - [Web安全](#Web安全)
@@ -393,6 +397,10 @@
 **计算机技术基础-工具-大数据技术工具-Agent类型**：看需求，logstash和flume都是作为agent的存在，logstash有更多的插件，有更好的配套产品elasticsearch等，但是logstash的开发语言是ruby，运行环境是JRuby，而且传输数据可能会丢失；flume内部有机制确保传输一定量级数据不丢失的问题，flume的开发语言是Java，易于二次开发，但是不足是jvm占用内存有点大。
 - [ruby-on-rails – Ruby和JRuby有什么区别](https://codeday.me/bug/20170830/62159.html)<br>
 **计算机技术基础-语言-Ruby**：Ruby是一种编程语言，我们一般说的Ruby解释器是指CRuby，CRuby在本地C语言解释器环境中运行，JRuby是一个采用纯Java实现的Ruby解释器，JRuby在Java虚拟机中运行。
+- [spring boot与spring mvc的区别是什么？](https://www.zhihu.com/question/64671972)<br>
+**计算机技术基础-框架-Spring**：Spring—》Spring MVC—》Spring Boot。
+- [Nginx、Gunicorn在服务器中分别起什么作用？](https://www.zhihu.com/question/38528616)<br>
+**计算机技术基础-技术-应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
 
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
@@ -405,6 +413,8 @@
 **站点概况**：专注于机器流量对抗与缓解。
 - [http://www.covert.io](http://www.covert.io)<br>
 **技术栈**：Jason Trost，专注于安全研究、大数据、云计算、机器学习，即安全数据科学。
+- [http://cyberdatascientist.com](http://cyberdatascientist.com)<br>
+**站点概括**：专注于安全数据科学，提供网络安全、统计学和AI等学习资料，并提供14个安全数据集，包括：垃圾邮件、恶意网站、恶意软件、Botnet等。**没有secrepo.com提供的资料全面**。
 
 ## 国内优质技术博客
 - [http://michael282694.com](http://michael282694.com)<br>
