@@ -402,7 +402,7 @@
 **计算机技术基础-框架-Spring**：Spring—》Spring MVC—》Spring Boot。
 - [Nginx、Gunicorn在服务器中分别起什么作用？](https://www.zhihu.com/question/38528616)<br>
 **计算机技术基础-技术-应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
-- [维基百科：Kerberos](#https://zh.wikipedia.org/wiki/Kerberos)<br>
+- [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)<br>
 **计算机技术基础-技术-Kerberos**：Kerberos的基本描述、协议内容和具体流程。
 
 ## 挖坑
