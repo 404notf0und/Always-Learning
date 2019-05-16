@@ -419,7 +419,7 @@
 - [http://cyberdatascientist.com](http://cyberdatascientist.com)<br>
 **站点概括**：专注于安全数据科学，提供网络安全、统计学和AI等学习资料，并提供14个安全数据集，包括：垃圾邮件、恶意网站、恶意软件、Botnet等。**没有secrepo.com提供的资料全面**。
 
-## 国内优质技术博客
+## 国内优秀技术人
 - [http://michael282694.com](http://michael282694.com)<br>
 **技术栈**：michael282694，数据分析挖掘产品开发、爬虫、Java、Python
 - [https://www.cnblogs.com/LittleHann](https://www.cnblogs.com/LittleHann)<br>
@@ -428,5 +428,7 @@
 **技术栈**：FeeiCN，专注自动化漏洞发现和入侵检测防御。
 - [http://www.yqxiaojunjie.com](http://www.yqxiaojunjie.com)<br>
 **技术栈**：xiaojunjie，专注于代码审计、CTF。
+- [云雷](https://yq.aliyun.com/users/xorxhltb3una2?spm=a2c4e.11153940.blogrightarea90906.2.bc412a21Jh3MYf)
+**技术栈**：云雷，阿里云存储技术专家，专注于日志分析与业务，日志计算驱动业务增长。
 
 
