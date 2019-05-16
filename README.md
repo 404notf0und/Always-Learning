@@ -428,7 +428,9 @@
 **技术栈**：FeeiCN，专注自动化漏洞发现和入侵检测防御。
 - [http://www.yqxiaojunjie.com](http://www.yqxiaojunjie.com)<br>
 **技术栈**：xiaojunjie，专注于代码审计、CTF。
-- [云雷](https://yq.aliyun.com/users/xorxhltb3una2?spm=a2c4e.11153940.blogrightarea90906.2.bc412a21Jh3MYf)
+- [云雷](https://yq.aliyun.com/users/xorxhltb3una2?spm=a2c4e.11153940.blogrightarea90906.2.bc412a21Jh3MYf)<br>
 **技术栈**：云雷，阿里云存储技术专家，专注于日志分析与业务，日志计算驱动业务增长。
+- [https://iami.xyz](https://iami.xyz/)<br>
+**技术栈**：iami，主要研究Web安全、机器学习，喜欢Python和Go。一直偷学师傅的博客。
 
 
