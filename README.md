@@ -1,5 +1,5 @@
 # 404 Not Found的知识库
-最近更新日期：2019/05/16
+最近更新日期：2019/05/17
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
   - [计算机网络](#计算机网络)
@@ -45,6 +45,7 @@
   - [恶意URL检测](#恶意URL检测)
   - [对抗机器流量](#对抗机器流量)
   - [PHP安全研究](#PHP安全研究)
+  - [异常检测](#异常检测)
 - [人工智能](#人工智能)
   - [算法体系](#算法体系)
   - [基础知识](#基础知识)
@@ -288,7 +289,7 @@
 - [面试官如何判断面试者的机器学习水平？ - 微调的回答 - 知乎](https://www.zhihu.com/question/62482926/answer/210531386)<br>
 **人工智能-综合素质-心得体会**：考虑方法优点和局限性，培养独立思考的能力；正确判断机器学习对业务的影响力；学会分情况讨论（比如深度学习相对于机器学习而言）；学习机器学习不能停留在“知道”的层次，要从原理级学习，甚至可以从源码级学习，知其然知其所以然，要做安全圈机器学习最6的。
 - [异常检测的N种方法](https://mp.weixin.qq.com/s/kv-ZrOF4nnxXoQwFOodzjA)（学到了）<br>
-**人工智能-应用领域-异常检测**：异常检测的一大难点就是缺少ground truth，常见的方法是先用无监督方法挖掘异常样本，再用有监督模型融合多个特征挖掘更多异常。分别从时间序列（移动平均、同比和环比、STL+GESD）、统计（马氏距离、箱线图）、距离角度（KNN）、线性方法（矩阵分解和PCA降维）、分布（相对熵KL散度、卡方检验）、树、图、行为序列、有监督模型（可以自动组合较多特征，比如GBDT）等角度检测异常。
+**安全研究-异常检测**：异常检测的一大难点就是缺少ground truth，常见的方法是先用无监督方法挖掘异常样本，再用有监督模型融合多个特征挖掘更多异常。分别从时间序列（移动平均、同比和环比、STL+GESD）、统计（马氏距离、箱线图）、距离角度（KNN）、线性方法（矩阵分解和PCA降维）、分布（相对熵KL散度、卡方检验）、树、图、行为序列、有监督模型（可以自动组合较多特征，比如GBDT）等角度检测异常。
 - [客户端session导致的安全问题](https://www.leavesongs.com/PENETRATION/client-session-security.html)
 - [spark与storm的对比](https://blog.csdn.net/bigtree_3721/article/details/78552536)<br>
 **大数据技术-工具**：从实时计算模型、实时计算延迟度、吞吐量、事物机制、健壮性/容错性、动态调整并行度等方面来比较。spark streaming是准实时模型，对一个时间段内的数据收集起来，作为一个RDD，再处理，实时计算延迟度为秒级，吞吐量大，支持事物机制但不够完善，健壮性一般，不支持动态调整并行度；而storm是纯实时模型，来一条数据，处理一条数据，实时计算延迟度为毫秒级，吞吐量小，支持完善的事物机制，健壮性强，支持动态调整并行度。**应用场景**：对于storm，可以在纯实时不能忍受1秒以上延时的场景下使用；对于实时计算的功能中，要求可靠的事物机制和可靠性机制，即数据处理完全就精确，也可以考虑storm；如果还需要针对高峰低峰时间段，动态调整实时计算程序的并行度，以最大限度利用资源，也可以考虑storm；如果项目中就是纯粹的实时计算，不需要在中间执行SQL交互式查询等其他操作，用storm是较好的选择。反之如果不要求纯实时，不要求可靠的事物机制，不要求动态调整并行度，可以考虑spark streaming，spark streaming最大的优势在于处于spark生态技术栈中，从项目的宏观角度考虑，如果不仅要求实时计算，还要离线批处理、交互式查询，而且在实时计算中，也会牵扯到高延迟批处理、交互式查询等功能，那么可以用spark core开发离线批处理，spark sql开发交互式查询，用spark streaming开发实时计算，无缝整合，给系统提供高扩展性，这个特点大大增强了spark streaming的优势。两个框架擅长的细分场景不同。
@@ -404,6 +405,13 @@
 **计算机技术基础-技术-应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
 - [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)<br>
 **计算机技术基础-技术-Kerberos**：Kerberos的基本描述、协议内容和具体流程。
+- [机器学习-异常检测算法（一）：Isolation Forest](https://zhuanlan.zhihu.com/p/27777266)
+- [机器学习-异常检测算法（二）：Local Outlier Factor](https://zhuanlan.zhihu.com/p/28178476)
+- [机器学习-异常检测算法（三）：Principal Component Analysis](https://zhuanlan.zhihu.com/p/29091645)
+- [什么是一类支持向量机（one class SVM），是指分两类的支持向量机吗？](https://www.zhihu.com/question/22365729)
+- [异常检测算法之IsolationForest](https://github.com/mylamour/blog/issues/27)
+- [异常挖掘，Isolation Forest](https://www.jianshu.com/p/1b020e2605e2)
+- [异常检测初尝试](https://iami.xyz/Inlier-Outlier-Detection/)
 
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
