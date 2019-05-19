@@ -142,8 +142,8 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 **计算机理论基础-数据库**：补充学习：数据库引擎（InnoDB支持事物处理和外键，但是慢一点、ISAM和MyISAM空间和内存使用低，插入数据快）、数据库编码（`character_set_client、character_set_connection、character_set_database、character_set_results、character_set_server、character_set_system`）、数据库索引(主键索引、聚集索引和非聚集索引)等基础知识点。<br>
 一条SQL语句执行很慢的原因分为两类：1）大多数情况下正常，偶尔很慢：（1）数据库在刷新脏页，例如redo log写满了需要同步到磁盘；（2）执行的时候遇到锁，如表锁，行锁；2）一直都很慢：（1）没有用上索引：例如该字段没有索引；由于对字段进行运算、函数操作导致无法用索引；（2）数据库选错了索引，比较聚集索引到主键索引和直接全表搜索的扫描行数，有可能因为采样问题判断有误，走了全表扫描而不走索引。
 
-## 计算机技术基础
-### 语言
+# 计算机技术基础
+## 语言
 - [万字长文深度解析Python装饰器](https://zhuanlan.zhihu.com/p/53837833?utm_source=wechat_session&utm_medium=social&s_s_i=fnTFc5tcnJAFiGn2nobqDexCtTjMulfSsMtJHUvT7%2B4%3D&s_r=1#showWechatShareTip)
 - [Python3 迭代器与生成器](http://www.runoob.com/python3/python3-iterator-generator.html)<br>
 迭代器有两个基本的方法：iter()和next()，字符串、元组、列表等可迭代对象都可用于创建迭代器（这是因为这些类内部都实现了`__iter__()`函数，调用iter()之后，变成了一个`list_iterator`的对象，会发现增加了`__next__()`方法，所有实现了`__iter__`和`__next__`两个方法的对象，都是迭代器），迭代器是带状态的对象，它会记录当前迭代所处的位置，以方便下次迭代的时候获取正确的元素，`__iter__`返回迭代器自身，`__next__`返回容器的下一个值。生成器：使用了yield的函数被称为生成器，调用了一个生成器函数，返回的是一个迭代器对象，生成器可以看成是迭代器。
@@ -156,12 +156,12 @@ go的优势和go的用处。go的优势主要有：静态语言，多并发，�
 go的环境安装，环境安装后各个文件夹的含义；go的工作区，工作区各个文件夹的含义。
 - [ruby-on-rails – Ruby和JRuby有什么区别](https://codeday.me/bug/20170830/62159.html)<br>
 Ruby是一种编程语言，我们一般说的Ruby解释器是指CRuby，CRuby在本地C语言解释器环境中运行，JRuby是一个采用纯Java实现的Ruby解释器，JRuby在Java虚拟机中运行。
-### 框架
+## 框架
 - [Gin - 高性能 Golang Web 框架的介绍和使用](https://www.yoytang.com/go-gin-doc.html)<br>
 Gin是用Go编写的一个Web应用框架。
 - [spring boot与spring mvc的区别是什么？](https://www.zhihu.com/question/64671972)<br>
 Spring—》Spring MVC—》Spring Boot。
-### 工具
+## 工具
 - [spark与storm的对比](https://blog.csdn.net/bigtree_3721/article/details/78552536)<br>
 从实时计算模型、实时计算延迟度、吞吐量、事物机制、健壮性/容错性、动态调整并行度等方面来比较。spark streaming是准实时模型，对一个时间段内的数据收集起来，作为一个RDD，再处理，实时计算延迟度为秒级，吞吐量大，支持事物机制但不够完善，健壮性一般，不支持动态调整并行度；而storm是纯实时模型，来一条数据，处理一条数据，实时计算延迟度为毫秒级，吞吐量小，支持完善的事物机制，健壮性强，支持动态调整并行度。**应用场景**：对于storm，可以在纯实时不能忍受1秒以上延时的场景下使用；对于实时计算的功能中，要求可靠的事物机制和可靠性机制，即数据处理完全就精确，也可以考虑storm；如果还需要针对高峰低峰时间段，动态调整实时计算程序的并行度，以最大限度利用资源，也可以考虑storm；如果项目中就是纯粹的实时计算，不需要在中间执行SQL交互式查询等其他操作，用storm是较好的选择。反之如果不要求纯实时，不要求可靠的事物机制，不要求动态调整并行度，可以考虑spark streaming，spark streaming最大的优势在于处于spark生态技术栈中，从项目的宏观角度考虑，如果不仅要求实时计算，还要离线批处理、交互式查询，而且在实时计算中，也会牵扯到高延迟批处理、交互式查询等功能，那么可以用spark core开发离线批处理，spark sql开发交互式查询，用spark streaming开发实时计算，无缝整合，给系统提供高扩展性，这个特点大大增强了spark streaming的优势。两个框架擅长的细分场景不同。
 - [子雨大数据之Spark入门教程(Python版)](http://dblab.xmu.edu.cn/blog/1709-2/)（比较重要）
@@ -173,7 +173,7 @@ Spring—》Spring MVC—》Spring Boot。
 **大数据技术工具-Agent类型**：看需求，logstash和flume都是作为agent的存在，logstash有更多的插件，有更好的配套产品elasticsearch等，但是logstash的开发语言是ruby，运行环境是JRuby，而且传输数据可能会丢失；flume内部有机制确保传输一定量级数据不丢失的问题，flume的开发语言是Java，易于二次开发，但是不足是jvm占用内存有点大。
 - [常用 Git 命令单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)<br>
 **Git**：远程仓库-》本地仓库-〉暂存区-》工作区，git add .、git commit -m message、git push。
-### 技术
+## 技术
 - [解码与xss](https://blog.csdn.net/he_and/article/details/80588409)(**原文中有一处错误“html实体编码后“应该是`&#x5c;&#x75;&#x37;&#x32;` 产生的原因就是浏览器的html自解码**)<br>
 **浏览器技术-解码顺序**：浏览器解码主要涉及到两个部分：渲染引擎和js解析器。解码顺序：在什么环境下就进行什么解码，解码顺序为：最外层的环境对应的编码最先解码。举个例子:在`<a href=javascript:alert(1)>click</a>`中alert(1)处在html->url->js环境中。
     `1、<a href=javascript:al\u65rt(1)>click</a> 采用unicode编码e，html和url环境下都不能解码，只有在js环境下才能解码为字符e，所以不会弹窗`
@@ -197,7 +197,7 @@ Spring—》Spring MVC—》Spring Boot。
 - [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)<br>
 **Kerberos**：Kerberos的基本描述、协议内容和具体流程。
 
-## 底层研究
+# 底层研究
 - [python requests库流程简析](https://www.jianshu.com/p/a5e98489dcb8)<br>
 **计算机网络-python requests库实现**：socket->httplib->urllib->urllib3->requests。requests.get的内部调用流程：requests.get->requests()->Session.request->Session.send->adapter.send->HTTPConnectionPool(urllib3)->HTTPConnection(httplib)。
 	1、socket：是TCP/IP最直接的实现，实现端到端的网络传输
@@ -210,14 +210,14 @@ Spring—》Spring MVC—》Spring Boot。
 - [Lightgbm 直方图优化算法深入理解](https://blog.csdn.net/anshuai_aw1/article/details/83040541)<br>
 **Lightgbm**：相较于预排序而言，lgb采用了直方图来处理节点分裂，寻找最优分割点。算法思想：在训练前预先把特征值转化为bin value，也就是对每个特征的取值做分段函数，将所有样本在该特征上的取值划分到某一段（bin）中，最终把特征取值从连续值转化为离散值。直方图也可以用来做差加速，计算直方图的复杂度是基于桶的个数的。
 
-## 安全技术
+# 安全技术
 - [Java代码审计-层层推进](https://paper.tuisec.win/detail/6c0d0d6d669ee6d)
 - [我的面经，渗透测试](https://xz.aliyun.com/t/2091)
 - [一套实用的渗透测试岗位面试题，你会吗？](http://www.shungg.cn/?post=70)
 - [安全扫描自动化检测平台建设(Web黑盒 中)](https://www.secpulse.com/archives/52464.html)
 - [带你读神器之KunPeng源代码分析](https://mp.weixin.qq.com/s/JLMaygM_MioszehGYpY2rw)
 - [安全资料：企业实验室、安全社区、安全团队、安全工具等](http://blkstone.github.io/friend/)
-### Web安全
+## Web安全
 - [一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)<br>
 **XXE漏洞**：XXE的原理：调用外部实体，XXE的利用：利用通用实体、参数实体、外部实体、内部实体进行文件读取，内网主机和端口探测、内网RCE（php下需要expect扩展的支持）
 - [mysql无逗号的注入技巧](http://wonderkun.cc/index.html/?p=442)<br>
@@ -234,49 +234,49 @@ Spring—》Spring MVC—》Spring Boot。
 - [一文洞悉DAST、SAST、IAST ——Web应用安全测试技术对比浅谈](https://mp.weixin.qq.com/s/EWn9ktce3KB4P6zi4slnTA)（学到了）
 - [谈谈SAST/IDAST/IAST](http://chengable.net/index.php/archives/391/?from=timeline&isappinstalled=0)
 - [PHP 连接方式介绍以及如何攻击 PHP-FPM](https://mp.weixin.qq.com/s/z2JVc9kUkmRl9bDaEbkTFg)<br>
-### 数据安全
+## 数据安全
 - [NO.27 闲扯 关于数据安全](https://zhuanlan.zhihu.com/p/58146084?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136)<br>
 大数据技术、时代，**数据是很多公司最核心的资产**；传统的安全边界模糊，我们需要假设我们边界已经被渗透的同时，拥有纵深防御能力，保护信息的安全。所以在加强传统安全手段的同时，我们更应该直接把安全的重点放在数据本身上，这就是数据安全所做的工作。在做之前，有一个前提：我们要知道安全依然是为业务服务的（大部分企业安全情况下，业务>安全），所以要权衡安全性和可用性。目前企业常用的措施主要有：数据分级、数据生命周期管理、数据脱敏&数据加密、数据防泄漏。
-### 渗透测试
+## 渗透测试
 - [一套实用的渗透测试岗位面试题](https://mp.weixin.qq.com/s/KZn6p5sk1Ae9i3m4e-XCpg)<br>
 代码执行函数：`eval、preg_replace+/e、assert、call_user_func、call_user_func_array、create_function`；命令执行函数：`system、exec、shell_exec、passthru、pcntl_exec、popen、proc_open`；img标签除了onerror属性外，还有其他获取管理员路径的方式吗？src指定一个远程的脚本文件，获取referer。
-### 云安全
+## 云安全
 - [云安全，到底是什么一回事？](https://www.zhihu.com/question/19567976/answer/604675005?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136)<br>
 云安全三大研究方向：云计算安全、安全基础设施的云化、云安全服务。在云安全未来发展趋势中也提到了数据安全协作，说明无论哪种场景，数据都是安全的重点关注对象。云安全服务可以看成厨师做饭（来自cdxy的ppt），云计算（能源）、算法（工具）、数据（原料）、工程师（厨师）、能做成什么样的饭（能提供的安全服务）
 
-## 安全研究
+# 安全研究
 - [Deep Exploit: Fully automatic penetration test tool using Machine Learning](https://securityonline.info/deep-exploit/)
 - [Github:Deep Exploit](https://github.com/13o-bbr-bbq/machine_learning_security/tree/master/DeepExploit)
 - [Github:GyoiThon](https://github.com/gyoisamurai/GyoiThon)
-### APT检测
+## APT检测
 - [APT detection based on machine learning](https://mp.weixin.qq.com/s?__biz=MzU5MTM5MTQ2MA==&mid=2247484139&idx=1&sn=0da63a49f341eccc0bb48c954d8ebbb4&chksm=fe2efd60c95974767521fe6a6b7257a1d05e5482fc7ddeda281bdf0f0deb20add82d1a82d8ec&mpshare=1&scene=1&srcid=&pass_ticket=bjnNiDKomd79pQvRonW%2BXsTe6JrO%2FFs6oII12dZaLBPuQOtNK6Rzh9WSJ%2B%2F89ZUA#rd)<br>
 **APT检测模型**：本篇论文提出一种APT检测模型，通过在APT生命周期的多个环节进行检测，并将各个环节告警事件进行关联，并使用机器学习训练检测模型。和我的想法略有相似，之前想过可以用图模型或者规则关联算法进行关联以此重构攻击链，但是本篇文章好像是把关联的事件集作为输入数据输入到一个预测模型中去训练。这么做的目的是要完整地描述一个APT场景下的安全事件集，降低误报率，提高准确率，避免传统APT单环节检测造成的漏报、误报的问题。但是本文也存在一些问题，比如缺少APT数据源问题，缺少安全数据一直是个难题，导致本文提出的模型未能在真实的环境中论证。
-### 恶意样本
+## 恶意样本
 - [利用机器学习检测HTTP恶意外连流量](https://www.anquanke.com/post/id/107124)（优秀）<br>
 **恶意HTTP外连流量检测**：**总体思路**：**1、数据收集**，沙箱运行恶意样本，收集恶意流量，人工区分恶意流量和白流量，再根据威胁情报对恶意流量划分家族。**2、数据分析**（特征工程）：同一家族恶意外连流量的相似性，可以考虑使用聚类算法将同一家族的流量聚为一类，提取它们的共性，形成模板，再用模板检测未知流量。**3、算法：训练阶段**：提取HTTP外连流量--->提取请求头字段--->泛化--->相似度计算（**请求头中字段特异性加权再计算相似性**）--->层次聚类--->生成恶意外连流量模板（聚类中该字段并集作为该字段在模板中的值）。**检测阶段**：未知HTTP外连流量--->提取请求头字段--->泛化--->与恶意模板匹配--->判断相似度是否超过阈值（阈值确定）
-### 对抗机器流量
+## 对抗机器流量
 - [2018 Bad Bot Report](https://content.cdntwrk.com/files/aT05NTg0OTcmdj01Jmlzc3VlTmFtZT0yMDE4LWJhZC1ib3QtcmVwb3J0JmNtZD1kJnNpZz1mMzk1YTBhNWU2YTRhMmFkNGRiZDBhZWJjOTFlMjhmZQ%253D%253D)<br>
 **对抗机器流量**：安全对抗促使攻击手段进化，进入了自动化对抗的阶段，参差不齐的爬虫、撞库、模拟器产生了大量的机器流量，这其中搜索引擎类的爬虫、自动更新的RSS订阅服务器产生了正常的机器流量，而恶意爬虫等模仿正常用户的请求产生了恶意的机器流量，模仿的程度也不同，简单点的恶意机器流量直接通过脚本产生，高级点的通过浏览器产生，比如headless browser，更高级的可以模拟鼠标移动和点击。可以根据网络环境(Amazon ISP、data centers、global hosting providers)、使用工具（机器流量的browser喜欢伪装成Chrome、Firefox、Internet explorer、Safari）、是否模仿人类交互，比如鼠标轨迹和点击来区分机器流量和正常用户流量。一旦它们发现我们尝试阻止它们，高级恶意机器流量APBs就会展现出persistent和adaptive，进行多模式转换。**防御：理解我方业务和敌方目标。抑制过时的UA/Browser；抑制知名的主机服务商；保护敏感API；根据源流量观察高低峰段（波形？）；调查该恶意机器流量的sign，即显著性标志；监控失败的登录尝试；监控未能正确验证礼品卡的失败次数；注意公开的数据泄露，以防撞库；**。
-### 恶意URL检测
+## 恶意URL检测
 - [Detecting Malicious URLs](http://www.sysnet.ucsd.edu/projects/url/#code)<br>
 国内的安全算法和安全数据分析资料翻阅到了尽头，开始将矛头转向国外,追踪国外的机器学习在网络安全领域的应用的发展过程。以URL检测为例，可以衍生出很多适用场景，恶意网页检测，恶意通信活动，恶意web软件。
 - [Beyond Blacklists: Learning to Detect Malicious Web Sites from Suspicious URLs](http://www.cs.ucsd.edu/~jtma/papers/beyondbl-kdd2009.pdf)<br>
 把恶意URL检测作为一种恶意网页检测的补充手段。数据：开源黑白URL样本，没什么特色；特征：词汇特征和基于主机的特征，特色一般，分析比较每子类特征，特色一般；模型：L1逻辑回归、SVM、Naive Bayes，没什么特色，分析比较每个模型，没什么特色；值得学习的是之后的结果再分析，分析了False Positive和False Negative等错误产生原因，Mismatched Data Sources，模型表现和特征表现。毕竟是十年前的论文。
 - [Identifying Suspicious URLs: An Application of Large-Scale Online Learning](http://www.cs.ucsd.edu/~jtma/papers/url-icml2009.pdf)
 - [Exploiting Feature Covariance in High-Dimensional Online Learning](http://www.cs.ucsd.edu/~jtma/papers/covariance-aistats2010.pdf)
-### Red Tean
+## Red Tean
 - [Red Team从0到1的实践与思考](https://mp.weixin.qq.com/s/cyxC4Of4Ic9c_vujQayTLg)（学到了）<br>
 Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的TTPs来攻击、评估现有防御能力的有效性以及识别防御体系的弱点并提出具体的应对方案、利用真实有效的模拟攻击来评估因为安全问题造成的潜在的业务影响）--->谁需要Red Team--->Red Team如何工作（基本构成：知识储备、基础架构、技术研究能力；工作流程：全阶段攻击模拟、分阶段攻击模拟；协作配合）--->Red Team的量化和考核（已知TTPs的覆盖率、检测率/检测时间/检测阶段、阻断率/阻断时间/阻断阶段）--->Red Team的成长与提高（仿真环境训练、漏洞分析与技术研究、外部交流与分享）
 - [ATT&CK APT组织TTPs总结](https://attack.mitre.org/groups/)
 - [ATT&CK全平台攻击技术总结](https://attack.mitre.org/matrices/enterprise/)
 - [真实APT组织分析报告汇总](https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections)
-### WAF
+## WAF
 - [技术讨论 | 在HTTP协议层面绕过WAF](https://www.freebuf.com/news/193659.html)
 - [利用分块传输吊打所有WAF](https://www.anquanke.com/post/id/169738)
 - [从http协议层面和数据库层面绕过waf](https://zhengbao.wang/%E4%BB%8Ehttp%E5%8D%8F%E8%AE%AE%E5%B1%82%E9%9D%A2%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B1%82%E9%9D%A2%E7%BB%95%E8%BF%87waf/)
 - [WAF攻防研究之四个层次Bypass WAF](https://www.weibo.com/ttarticle/p/show?id=2309404007261092631700&infeed=1)
 - [对过WAF的一些认知](https://mp.weixin.qq.com/s/cYy3BecwoxR7d3Jj-IpnIQ)
-### 异常检测
+## 异常检测
 - [异常检测的N种方法](https://mp.weixin.qq.com/s/kv-ZrOF4nnxXoQwFOodzjA)（学到了）<br>
 异常检测的一大难点就是缺少ground truth，常见的方法是先用无监督方法挖掘异常样本，再用有监督模型融合多个特征挖掘更多异常。分别从时间序列（移动平均、同比和环比、STL+GESD）、统计（马氏距离、箱线图）、距离角度（KNN）、线性方法（矩阵分解和PCA降维）、分布（相对熵KL散度、卡方检验）、树、图、行为序列、有监督模型（可以自动组合较多特征，比如GBDT）等角度检测异常。
 - [机器学习-异常检测算法（一）：Isolation Forest](https://zhuanlan.zhihu.com/p/27777266)
@@ -286,19 +286,19 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [异常检测算法之IsolationForest](https://github.com/mylamour/blog/issues/27)
 - [异常挖掘，Isolation Forest](https://www.jianshu.com/p/1b020e2605e2)
 - [异常检测初尝试](https://iami.xyz/Inlier-Outlier-Detection/)
-### 图与安全
+## 图与安全
 - [图/Louvain/DGA乱谈](https://www.cdxy.me/?p=805)<br>
 图承载者拓扑信息，而拓扑信息可以看作一种特征维度，有些攻防场景有明显的拓扑特征。Louvain算法的关键点是图的边的权重，在具体的攻防场景下需要专门研究，例如在DGA场景下，域名A与B的相关性(weight)=同时访问过A和B域名的IP数量。cdxy师傅用SQL实现了这种逻辑。
 - [社区发现算法 - Fast Unfolding（Louvian）算法初探](https://www.cnblogs.com/LittleHann/p/9078909.html)
 - [A DGA Odyssey PDNS Driven DGA Analysis](https://pc.nanog.org/static/published/meetings/NANOG71/1444/20171004_Gong_A_Dga_Odyssey__v1.pdf)
-## 人工智能
-### 算法体系
+# 人工智能
+## 算法体系
 - [机器学习算法集锦：从贝叶斯到深度学习及各自优缺点](https://mp.weixin.qq.com/s/idxuzwUKG_Q1yUtpipG4Xw)<br>
 **人工智能-算法体系**：主要从算法的定义、过程、代表性算法、优缺点解释回归、正则化算法、人工神经网络、深度学习||决策树算法、集成算法||支持向量机||降维算法、聚类算法||基于实例的算法||贝叶斯算法||关联规则学习算法||图模型。<br>
 **个人理解**：回归系列主要基于线性回归和逻辑回归衍生，包括回归、正则化算法、人工神经网络、深度学习；树系列主要基于决策树衍生，包括决策树和基于树的集成学习算法；支持向量机属于老牌算法；降维算法和聚类算法主要基于数据的内在结构描述数据；基于实例的算法实际上并没有训练的过程，代表性算法是KNN，基于记忆的学习；贝叶斯算法利用贝叶斯定理计算输出概率；关联规则学习算法能够提取数据中变量之间的关系的最佳解释；图模型是一种概率模型，可以表示随机变量之间的条件依赖结构。
 - [Categories of algorithms non exhaustive ](https://static.coggle.it/diagram/WHeBqDIrJRk-kDDY)(学到了)<br>
 **人工智能-算法体系**：学到了搭建自己的算法体系。
-### 基础知识
+## 基础知识
 - [分类模型评估之ROC-AUC曲线和PRC曲线](https://blog.csdn.net/pipisorry/article/details/51788927)<br>
 - [SVM和logistic回归分别在什么情况下使用？](https://www.zhihu.com/question/21704547)<br>
 **算法使用场景-SVM和逻辑回归使用场景**：需要根据特征数量和训练样本数量来确定。如果特征数相对于训练样本数已经够大了，使用线性模型就能取得不错的效果，不需要过于复杂的模型，则使用LR或线性核函数的SVM。如果训练样本足够大而特征数较小的情况下，可以通过复杂核函数的SVM来获得更好的预测性能，如果样本没有达到百万级，使用复杂核函数的SVM也不会导致运算过慢。如果训练样本特别大，使用复杂核函数的SVM已经会导致运算过慢了，因此应该考虑引入更多特征，然后使用线性SVM或者LR来构造模型。
@@ -313,7 +313,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [gbdt的残差为什么用负梯度代替？](https://www.zhihu.com/question/63560633)
 - [机器学习算法常用指标总结](#https://mp.weixin.qq.com/s/jEB0CD9j1amGVbt4tAObLQ)<br>
 **模型评估**：
-### 机器学习
+## 机器学习
 - [平均数编码：针对高基数定性特征（类别特征）的数据预处理/特征工程](https://zhuanlan.zhihu.com/p/26308272)
 - [Mean Encoding](https://necromuralist.github.io/kaggle-competitions/posts/mean-encoding/)
 - [kaggle编码categorical feature总结](https://zhuanlan.zhihu.com/p/40231966)
@@ -343,7 +343,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [Wasserstein GAN in Keras](https://myurasov.github.io/2017/09/24/wasserstein-gan-keras.html?r)
 - [WassersteinGAN](https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/WassersteinGAN)
 - [keras-acgan](https://github.com/lukedeo/keras-acgan)
-### 应用领域
+## 应用领域
 - [全球最全？的安全数据网站](http://www.secrepo.com/)（有时间得好好整理一下）
 - [网络安全即将迎来机器对抗时代？](https://zhuanlan.zhihu.com/p/26093848)<br>
 **智能安全-智能攻击**：国外已经在研究利用机器学习打造更智能的攻击工具，比如深度强化学习，就是深度学习和强化学习的结合，可以感知环境，做出最优决策，可能被应用到漏洞扫描器里，使扫描器能够自动化地入侵目标。<br>
@@ -364,7 +364,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **NLP**：单词表达：one hot representation、distributed representation。Word embedding：以神经网络分析one hot representation和distributed representation作为例子，证明用distributed representation表达一个单词是比较好的。word embedding就是神经网络分析distributed representation所显示的效果，降低训练所需的数据量，就是要从数据中自动学习出输入空间到distributed representation空间的映射f（相当于加入了先验知识，相同的东西不需要分别用不同的数据进行学习）。训练方法：如何自动寻找到映射f，将one hot representation转变成distributed representation呢？思想：单词意思需要放在特定的上下文中去理解，例子：`这个可爱的 泰迪 舔了我的脸`和`这个可爱的 京巴 舔了我的脸`，用输入单词 x 作为中心单词去预测其他单词 z 出现在其周边的可能性（**至此我才明白为什么说词嵌入是神经网络训练语言模型的副产品这句话**）。用输入单词作为中心单词去预测周边单词的方式叫skip-gram，用输入单词作为周边单词去预测中心单词的方式叫CBOW。
 - [风险大脑支付风险识别初赛经验分享【谋杀电冰箱-凤凰还未涅槃】](https://openclub.alipay.com/club/history/read/8869)<br>
 **智能安全-业务安全-风控**：个人理解见：https://github.com/404notf0und/Risk-Operation-Detection/blob/master/atec.ipynb。
-### 综合素质
+## 综合素质
 - [算法工程师必须要知道的面试技能雷达图](https://zhuanlan.zhihu.com/p/54089811)（学到了）<br>
 **人工智能-综合素质**：算法工程师必备技术素质拆分：知识、工具、逻辑、业务。在满足最小要求的基础上，算法工程师在这四个方面的能力是相对全面的，既包括”算法“，也包括”工程“，而大数据工程师则着重”工具“，研究员则着重”知识“和”逻辑“。<br>
 针对安全业务的算法工程师就是安全算法工程师。为了便于理解，举个例子，如果用XGBoost解决某个安全问题，那么可以由浅入深理解，把知识、工具、逻辑、业务四个方面串起来：<br>
@@ -393,15 +393,15 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **综合素质-心得体会**：算法的基本认识（知识）、过硬的代码能力（工具）、数据处理和分析能力（业务和逻辑）、模型的积累和迁移能力（业务和逻辑）、产品能力、软实力。
 - [阿里技术副总裁贾扬清：我对人工智能的一点浅见](https://mp.weixin.qq.com/s/DuwEb1jBhly9RPZqGj4wrQ)<br>
 **AI发展**：神经网络和深度学习的成功与局限，成功原因是大数据和高性能计算，局限原因是结构化的理解和小数据上的有效学习算法。**AI这个方向会怎么走？**传统的深度学习应用，比如图像、语音等，应该如何输出产品和价值？而不仅仅是停留在安防这个层面，要深入到更广阔的领域。除了语音和图像之外，如何解决更多问题？而不仅仅是停留在解决语音图像等几个领域内的问题。
-## 企业安全建设
-### 安全数据分析
+# 企业安全建设
+## 安全数据分析
 - [Data-Knowledge-Action: 企业安全数据分析入门](https://www.cdxy.me/?p=803)（优秀，学到了）<br>
 **综述**：**1、让模型理解业务，基于业务历史行为建立异常基线，在异常的基础上检测威胁；将运营结果反馈到模型，将误报视作正常行为回流。2、安全运营可运营，降低事件调查成本，自动化信息收集与聚合。3、随着数据的积累，安全数据分析将向基于图结构的高级知识表达方式发展。（这点深表赞同）4、对场景、攻击模式、数据的认识深度，远比选择工具重要。**
 - [Security Data Science Learning Resources](http://www.covert.io/security-data-science-learning-resources/)<br>
 **综述**：作者的研究点也是安全数据科学，整理了一些学习方法和学习资源。学习方法主要分为三个方面：**谷歌学术、Twitter、安全会议**。谷歌学术关注知名研究者以及他们新出的文章，关注引用了你关注的文章的文章，Twitter关注细分安全领域的人群，关注安全会议以及会议议程。学习资源：书籍和课程。
 - [快速搭建一个轻量级OpenSOC架构的数据分析框架（一）](https://xz.aliyun.com/t/2201)(学到了)<br>
 **框架**：**行文思路：由粗变细（由框架到举例子（由框架到场景到实际架构））。OpenSOC介绍（框架组成和工作流程）---》构建轻量级OpenSOC（聚焦具体场景和工具及具体架构）---》搭建步骤（每一步的环境搭建及配置）---》效果展示。**
-### 安全场景
+## 安全场景
 - [关于风控预警体系的搭建方案](https://mp.weixin.qq.com/s/2r61XB_Po4s3ihkLy46xbA)<br>
 **业务安全-风控**：快速发现异常和准确定义风险。通过核心指标的变化发现异常片段及实体、通过聚类手段发现异常簇下全部实体；异常实体抽样--->无感知人工审核--->有针对性制定风险阈值
 - [从传统安全转行风控领域的心路历程，兼谈黑产和风控行业趋势](https://mp.weixin.qq.com/s/GWOjp1E2B4J0efUjFBnp8Q)<br>
@@ -410,7 +410,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [风控模型实战--"魔镜杯"风控算法大赛](https://zhuanlan.zhihu.com/p/56864235)
 - [DNS Tunnel隧道隐蔽通信实验 && 尝试复现特征向量化思维方式检测](https://www.cnblogs.com/LittleHann/p/8656621.html)<br>
 **DNS隧道检测**：
-### 安全系统
+## 安全系统
 - [企业安全建设之HIDS](https://www.freebuf.com/articles/es/194510.html)
 - [保障IDC安全：分布式HIDS集群架构设计](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651750220&idx=2&sn=26e1ae8056e4fd7db5e953e946a00b78&chksm=bd12a6018a652f17643ccf86264ea226a5d881c4dd2911772893e0c5d848f95f1f8de74b786d&mpshare=1&scene=1&srcid=0117j91c1pFiorQDDMN0XQka#rd)
 - [点融开源AgentSmith HIDS--- 一套轻量级的HIDS系统](https://mp.weixin.qq.com/s?__biz=MzI5MjE4MDc4OQ==&mid=2247483961&idx=1&sn=2736aad509f08c20d82cfc08b62da27a&chksm=ec040463db738d754cce84506c098caca891b58740e1b38b3621f752f805eb1c02ebf0e2ac73&mpshare=1&scene=1&srcid=1226ZgmHAUTfeYMuLFPWyuHS#rd)
@@ -418,19 +418,19 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **入侵检测系统-主机入侵检测系统**：美团的系统性实践非常值得学习。从需求描述，产品经理提出需求->分析需求，总结产品架构要符合的特性->技术难点，分析遇到的技术挑战->架构设计与技术选型->分布式HIDS集群架构图->编程语言选择->产品实现。
 - [基于统计分析的ICMP隧道检测方法与实现](https://mp.weixin.qq.com/s/qSHQ2v9s0nDRmFXhnPna3g)<br>
 **ICMP隧道检测系统-统计分析**：
-### 安全思考
+## 安全思考
 - [谈谈互联网企业安全的发展方向](白帽子讲Web安全附录)<br>
 **安全思考-发展方向**：由浅入深分为四个目标：1、消灭漏洞驱使，第一个目标是让工程师写出的每一行代码都是安全的，由此诞生SDL，SDL又衍生技术研究和技术产品，比如代码安全扫描工具的研究和fuzzing。2、有了SDL还无法100%安全，所以第二个目标是让所有已知、未知的攻击，都能在第一时间发现，并迅速报警和追踪。挑战：海量数据和复杂需求 方案：超强计算能力和立体化模型。3、第三个目标是让安全成为公司的核心竞争力，深入到每个产品的特性中，能够更好地引导用户使用互联网的习惯。4、最后一个目标是能够观测到整个互联网安全趋势的变化，对未来一段时间内的风险做出预警。
 在互联网公司做安全一定要有想象力，同时紧密关注其他技术领域的发展，这样就不会止步于几种漏洞的研究，而会发现有很多有趣的事情正等着去做，这是一个非常宏伟的蓝图。
 - [以攻促防：企业蓝军建设思考](https://mp.weixin.qq.com/s/8iJs2ON66NY1Jdbt7c-BTA)
 - [赵彦的CISO闪电战｜两年甲方安全修炼之路](https://www.freebuf.com/articles/es/200024.html?from=timeline&isappinstalled=0)（学到了）<br>
 范围对象（公司业务、挑战及安全需求（纵深防御、自身供应链安全、赋能第三方安全））--->目标设定（当下需求设定和未来发展）--->挑战（团队全栈（知识结构和技能对口主营业务）、工程能力、管理能力）--->分解安全体系（通用领域安全建设沙盘图：研发安全、IT安全、基础设施安全、数据安全、终端安全、业务安全、隐私与安全合规）--->实现和应对（安全治理框架、业界对标（真正落地能力，demo不算有此能力）、安全研究）。**总的来说，就是全栈技术视野（努力从技能层面上升到技术视野层面）+安全管理能力。**
-### 安全管理
+## 安全管理
 - [企业安全建设技能树v1.0发布](https://mp.weixin.qq.com/s/JFWxsdnEPI5NEU1PlR-FjA)<br>
 包括六大部分：说明、安全观、安全治理、通用技能、专业技能、优质资源
 
-## 安全发展
-### 安全面经
+# 安全发展
+## 安全面经
 - [有关安全的面经, 实习, etc](https://github.com/SecYouth/sec-jobs/tree/master/interview-experience)<br>
 **实习面经**：滴滴、百度（2）、360（2）、阿里（6）、腾讯（3）、b站、华为、同花顺、蘑菇街。总的来看，大佬们好强，选择大多是甲方安全部。我的理解：看了大佬们的面经和被问到的问题，真的是五花八门，有bin方向的，有数据安全方向的，也有安全运营方向的等等，有一些参考价值，但是因为方向不同，不能生硬照搬，还是得发挥自己的专长，先做自己小领域的领域专家。
 - [2018春招安全岗实习面试总结](https://www.jianshu.com/p/41c72f2c932d)
@@ -442,14 +442,14 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [十面阿里，七面头条，你猜我进阿里没？](https://mp.weixin.qq.com/s/CUYbxx2qm9OXb8SUHdjbXA)<br>
 **面试**：Java版优秀面经，java必备。
 - [书剑恩仇录之我与阿里巴巴](http://michael282694.com/post/shu-jian-en-chou-lu-zhi-wo-yu-a-li-ba-ba)（太强了）
-### 安全格局
+## 安全格局
 - [最新统计2005-2017年国内科研单位在国际安全顶级会议中发表文章量统计](https://mp.weixin.qq.com/s/kd4S6hCE_GPpPGbp1aD5Jw)
 - [从内容产出看安全领域变化](https://mp.weixin.qq.com/s/MZp_BOPPrX4hTgP5s5hUPw)<br>
 **技术格局**：企鹅等互联网巨头开始进行流量封锁，对安全从业人员影响很大，爬不到数据，api又有限，只能上升到app hook了；技术上安全分析、数据挖掘、威胁情报的比重越来越重，**AI已经不仅仅是噱头了，智能安全势不可挡**；安全的职业发展方面，越来越多大佬们开始转型业务安全、数据安全。
 - [网络安全行业竞争格局浅析](https://mp.weixin.qq.com/s/4odKGqDzyFI1CzWwVvmXEw)<br>
 **市场格局**：基础安全防护（传统安全防护能力），中级安全防护（海量数据建模与分析能力），高级安全防护（云端威胁情报与分析能力），中高级安全防护市场广阔。此外，全文在多处凸显了人工智能技术，智能安全开始迈入开悟之坡了吗？！半数以上的人看好智能安全，也有人不看好智能安全，未来会怎么样，让我们拭目以待！
 - [ZoomEye 网络空间测绘——委内瑞拉停电事件对其网络关键基础设施和重要信息系统影响](https://mp.weixin.qq.com/s/rGMggOde1XQjrYClphsi4A)
-### 职业发展
+## 职业发展
 - [安全研究者的自我修养](https://mp.weixin.qq.com/s/WrSZpqgq6gvZwEIqghqggg)
 - [安全研究者的自我修养（续）](https://mp.weixin.qq.com/s/o7IMaLMuPYuXgr5hatK5Mw)
 - [安全人员发展方向杂谈](https://zhuanlan.zhihu.com/p/54936058)<br>
@@ -458,25 +458,25 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **团队发展**：安全团队应该以服务者和协作者的身份，用专业的安全能力给出一类安全问题的解决思路和方案并解决，防止安全问题发生多次。
 - [安全从业者存在的意义](https://mp.weixin.qq.com/s/lJiBiGI6uoJRG11T-fx7Dw)<br>
 **个人发展**：目标是帮助先进生产力解决好安全问题。这其中安全问题是信任的问题（信任支撑，原点支撑），是一个研究对抗的科学（人与人的对抗），是一个概率问题（安全架构）。安全是一门应用科学，随着每个时代的不同，可以有很多不同的技术手段和工具来完成各自的安全目标，因此安全从业者应该对新技术和先进生产力保持敏感和接受度，这会带来很多新的视角和能力，包括机器智能和区块链技术等。
-### 安全产品
+## 安全产品
 - [C端安全产品的未来之路](https://mp.weixin.qq.com/s/Sp15EkyNKBZvOZHrJ7zJ2w)<br>
 **C端安全产品**：移动端安全产品是否会像前几天PC端安全产品一样迎来春天？PC时代windows是一家独大的完全开放的平台，这让第三方安全公司能够在平台和用户之间产生价值的空间足够的大，但在移动端，安卓开始封闭，就不好说了。传统安全软件围绕病毒和欺诈，而围绕**个人信息安全的C端安全产品**有一线生机。
 
-## 个人综合素质
-### 逻辑思维与语言表达
+# 个人综合素质
+## 逻辑思维与语言表达
 - [如何解决思维混乱、讲话没条理的情况？](https://www.zhihu.com/question/30173526?utm_source=wechat_session&utm_medium=social&utm_oi=832366521421537280)（学到了）<br>
 结构化思维->讲话有条理。
-### 管理者
+## 管理者
 - [“我是技术总监，你干嘛总问我技术细节？”](https://mp.weixin.qq.com/s/_tV71Ly2uU-op__sf1DlPQ)<br>
 （快速发展期、平稳期、衰退期等业务发展时期作为时间轴）（中高层管理者）（需要掌握）（应用场景、技术基础、技术栈中的技术细节）。技术基础要扎实，技术栈了解程度深（对技术原理和细节清楚），应用场景不能浮于表面。总的来说就是一句话：**技术细节与技术深度**。
-### 国外优质技术站点
+## 国外优质技术站点
 - [https://resources.distilnetworks.com](https://resources.distilnetworks.com)<br>
 **站点概况**：专注于机器流量对抗与缓解。
 - [http://www.covert.io](http://www.covert.io)<br>
 **技术栈**：Jason Trost，专注于安全研究、大数据、云计算、机器学习，即安全数据科学。
 - [http://cyberdatascientist.com](http://cyberdatascientist.com)<br>
 **站点概括**：专注于安全数据科学，提供网络安全、统计学和AI等学习资料，并提供14个安全数据集，包括：垃圾邮件、恶意网站、恶意软件、Botnet等。**没有secrepo.com提供的资料全面**。
-### 国内优秀技术人
+## 国内优秀技术人
 - [http://michael282694.com](http://michael282694.com)<br>
 **技术栈**：michael282694，数据分析挖掘产品开发、爬虫、Java、Python
 - [https://www.cnblogs.com/LittleHann](https://www.cnblogs.com/LittleHann)<br>
