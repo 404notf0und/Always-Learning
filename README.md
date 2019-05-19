@@ -19,6 +19,7 @@
 	- [大数据技术工具](#大数据技术工具)
 	  - [Agent类型](#Agent)
 	  - [中间件类型](#中间件)
+	- [Git](#Git)
   - [技术](#技术)
 	- [浏览器技术](#浏览器技术) 
   	- [docker技术](#docker技术)
@@ -412,6 +413,10 @@
 - [异常检测算法之IsolationForest](https://github.com/mylamour/blog/issues/27)
 - [异常挖掘，Isolation Forest](https://www.jianshu.com/p/1b020e2605e2)
 - [异常检测初尝试](https://iami.xyz/Inlier-Outlier-Detection/)
+- [常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)<br>
+**计算机技术基础-工具-Git**：远程仓库-》本地仓库-〉暂存区-》工作区，git add .、git commit -m message、git push。
+- [风险大脑支付风险识别初赛经验分享【谋杀电冰箱-凤凰还未涅槃】](https://openclub.alipay.com/club/history/read/8869)<br>
+**人工智能-应用领域-智能安全-业务安全-风控**：个人理解见：https://github.com/404notf0und/Risk-Operation-Detection/blob/master/atec.ipynb
 
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
