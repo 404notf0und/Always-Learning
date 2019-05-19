@@ -47,6 +47,7 @@
   - [对抗机器流量](#对抗机器流量)
   - [PHP安全研究](#PHP安全研究)
   - [异常检测](#异常检测)
+  - [图与安全](#图与安全)
 - [人工智能](#人工智能)
   - [算法体系](#算法体系)
   - [基础知识](#基础知识)
@@ -406,6 +407,7 @@
 **计算机技术基础-技术-应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
 - [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)<br>
 **计算机技术基础-技术-Kerberos**：Kerberos的基本描述、协议内容和具体流程。
+## 异常检测
 - [机器学习-异常检测算法（一）：Isolation Forest](https://zhuanlan.zhihu.com/p/27777266)
 - [机器学习-异常检测算法（二）：Local Outlier Factor](https://zhuanlan.zhihu.com/p/28178476)
 - [机器学习-异常检测算法（三）：Principal Component Analysis](https://zhuanlan.zhihu.com/p/29091645)
@@ -416,7 +418,12 @@
 - [常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)<br>
 **计算机技术基础-工具-Git**：远程仓库-》本地仓库-〉暂存区-》工作区，git add .、git commit -m message、git push。
 - [风险大脑支付风险识别初赛经验分享【谋杀电冰箱-凤凰还未涅槃】](https://openclub.alipay.com/club/history/read/8869)<br>
-**人工智能-应用领域-智能安全-业务安全-风控**：个人理解见：https://github.com/404notf0und/Risk-Operation-Detection/blob/master/atec.ipynb
+**人工智能-应用领域-智能安全-业务安全-风控**：个人理解见：https://github.com/404notf0und/Risk-Operation-Detection/blob/master/atec.ipynb。
+## 图与安全
+- [图/Louvain/DGA乱谈](https://www.cdxy.me/?p=805)<br>
+**安全研究-图与安全**：图承载者拓扑信息，而拓扑信息可以看作一种特征维度，有些攻防场景有明显的拓扑特征。Louvain算法的关键点是图的边的权重，在具体的攻防场景下需要专门研究，例如在DGA场景下，域名A与B的相关性(weight)=同时访问过A和B域名的IP数量。cdxy师傅用SQL实现了这种逻辑。
+- [社区发现算法 - Fast Unfolding（Louvian）算法初探](https://www.cnblogs.com/LittleHann/p/9078909.html)
+- [A DGA Odyssey PDNS Driven DGA Analysis](https://pc.nanog.org/static/published/meetings/NANOG71/1444/20171004_Gong_A_Dga_Odyssey__v1.pdf)
 
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
@@ -445,5 +452,6 @@
 **技术栈**：云雷，阿里云存储技术专家，专注于日志分析与业务，日志计算驱动业务增长。
 - [https://iami.xyz](https://iami.xyz/)<br>
 **技术栈**：iami，主要研究Web安全、机器学习，喜欢Python和Go。一直偷学师傅的博客。
-
+- [https://www.cdxy.me](https://www.cdxy.me)<br>
+**技术栈**：cdxy，早先主要做Web安全，CTF，代码审计，现在主要做安全研究与数据分析，初步估算技术领先我1～2年，师傅别学了。
 
