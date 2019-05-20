@@ -1,5 +1,12 @@
 # 404 Not Found的知识库
 最近更新日期：2019/05/20
+近日在学：
+- [先知talk：从数据视角探索安全威胁](https://www.cdxy.me/?p=791)
+- [年会抢红包策略](https://www.cdxy.me/?p=802)
+- [一个GET请求拿到flag——XCTF 2018 Final PUBG(WEB 2) Writeup](https://www.cdxy.me/?p=799)
+- [大数据威胁建模方法论](https://www.cdxy.me/?p=797)（学到了很多）
+- [安全日志维度随想](https://www.cdxy.me/?p=793)
+
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
   - [计算机网络](#计算机网络)
