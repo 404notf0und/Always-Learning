@@ -1,11 +1,11 @@
 # 404 Not Found的知识库
-最近更新日期：2019/05/20
+最近更新日期：2019/05/21
+
 近日在学：
-- [先知talk：从数据视角探索安全威胁](https://www.cdxy.me/?p=791)
-- [年会抢红包策略](https://www.cdxy.me/?p=802)
-- [一个GET请求拿到flag——XCTF 2018 Final PUBG(WEB 2) Writeup](https://www.cdxy.me/?p=799)
 - [大数据威胁建模方法论](https://www.cdxy.me/?p=797)（学到了很多）
 - [安全日志维度随想](https://www.cdxy.me/?p=793)
+- [机器学习加持下的时序类数据异常智能监控](http://m.koo4.cn/ppt_全/AICon%20全球人工智能与机器学习技术大会深度培训/腾讯%20刘彪《机器学习加持下的时序类数据异常智能监控》.pdf)
+- [海量运维日志异常挖掘](http://m.koo4.cn/ppt_全/Gdevops全球敏捷运维峰会成都站（Gdevops%202017）/知道创宇%20%20邓金城%20-%20海量运维日志异常挖掘.pdf)
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -143,7 +143,7 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 - [2018.08求职面经](http://michael282694.com/post/2018.08qiu-zhi-mian-jing)<br>
 乱序数组中第k大的数，乱序数组中的中位数：快排指针，O(N)。
 - [【视频讲解】LeetCode 第 1 号问题：两数之和](https://mp.weixin.qq.com/s/BEefuwFek3dpXl8wE0b9Iw)<br>
-
+- [年会抢红包策略](https://www.cdxy.me/?p=802)
 ### 数据库
 - [腾讯面试：一条SQL语句执行得很慢的原因有哪些？](https://zhuanlan.zhihu.com/p/62941196)<br>
 **计算机理论基础-数据库**：补充学习：数据库引擎（InnoDB支持事物处理和外键，但是慢一点、ISAM和MyISAM空间和内存使用低，插入数据快）、数据库编码（`character_set_client、character_set_connection、character_set_database、character_set_results、character_set_server、character_set_system`）、数据库索引(主键索引、聚集索引和非聚集索引)等基础知识点。<br>
@@ -240,7 +240,8 @@ Spring—》Spring MVC—》Spring Boot。
 - [客户端session导致的安全问题](https://www.leavesongs.com/PENETRATION/client-session-security.html)
 - [一文洞悉DAST、SAST、IAST ——Web应用安全测试技术对比浅谈](https://mp.weixin.qq.com/s/EWn9ktce3KB4P6zi4slnTA)（学到了）
 - [谈谈SAST/IDAST/IAST](http://chengable.net/index.php/archives/391/?from=timeline&isappinstalled=0)
-- [PHP 连接方式介绍以及如何攻击 PHP-FPM](https://mp.weixin.qq.com/s/z2JVc9kUkmRl9bDaEbkTFg)<br>
+- [PHP 连接方式介绍以及如何攻击 PHP-FPM](https://mp.weixin.qq.com/s/z2JVc9kUkmRl9bDaEbkTFg)
+- [一个GET请求拿到flag——XCTF 2018 Final PUBG(WEB 2) Writeup](https://www.cdxy.me/?p=799)
 ### 数据安全
 - [NO.27 闲扯 关于数据安全](https://zhuanlan.zhihu.com/p/58146084?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136)<br>
 大数据技术、时代，**数据是很多公司最核心的资产**；传统的安全边界模糊，我们需要假设我们边界已经被渗透的同时，拥有纵深防御能力，保护信息的安全。所以在加强传统安全手段的同时，我们更应该直接把安全的重点放在数据本身上，这就是数据安全所做的工作。在做之前，有一个前提：我们要知道安全依然是为业务服务的（大部分企业安全情况下，业务>安全），所以要权衡安全性和可用性。目前企业常用的措施主要有：数据分级、数据生命周期管理、数据脱敏&数据加密、数据防泄漏。
@@ -408,6 +409,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **综述**：作者的研究点也是安全数据科学，整理了一些学习方法和学习资源。学习方法主要分为三个方面：**谷歌学术、Twitter、安全会议**。谷歌学术关注知名研究者以及他们新出的文章，关注引用了你关注的文章的文章，Twitter关注细分安全领域的人群，关注安全会议以及会议议程。学习资源：书籍和课程。
 - [快速搭建一个轻量级OpenSOC架构的数据分析框架（一）](https://xz.aliyun.com/t/2201)(学到了)<br>
 **框架**：**行文思路：由粗变细（由框架到举例子（由框架到场景到实际架构））。OpenSOC介绍（框架组成和工作流程）---》构建轻量级OpenSOC（聚焦具体场景和工具及具体架构）---》搭建步骤（每一步的环境搭建及配置）---》效果展示。**
+- [先知talk：从数据视角探索安全威胁](https://www.cdxy.me/?p=791)
 ### 安全场景
 - [关于风控预警体系的搭建方案](https://mp.weixin.qq.com/s/2r61XB_Po4s3ihkLy46xbA)<br>
 **业务安全-风控**：快速发现异常和准确定义风险。通过核心指标的变化发现异常片段及实体、通过聚类手段发现异常簇下全部实体；异常实体抽样--->无感知人工审核--->有针对性制定风险阈值
