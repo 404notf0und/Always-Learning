@@ -6,6 +6,10 @@
 - [安全日志维度随想](https://www.cdxy.me/?p=793)
 - [机器学习加持下的时序类数据异常智能监控](http://m.koo4.cn/ppt_全/AICon%20全球人工智能与机器学习技术大会深度培训/腾讯%20刘彪《机器学习加持下的时序类数据异常智能监控》.pdf)
 - [海量运维日志异常挖掘](http://m.koo4.cn/ppt_全/Gdevops全球敏捷运维峰会成都站（Gdevops%202017）/知道创宇%20%20邓金城%20-%20海量运维日志异常挖掘.pdf)
+- [风控用户识别方法](http://www.shataowei.com/2017/12/09/风控用户识别方法/)
+- [github:sladesha](https://github.com/sladesha/Frcwp)
+- [多算法识别撞库刷券等异常用户](http://www.shataowei.com/2017/12/01/多算法识别撞库刷券等异常用户/)
+- [数据预处理-异常值识别](http://www.shataowei.com/2017/08/09/数据预处理-异常值识别/)
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
