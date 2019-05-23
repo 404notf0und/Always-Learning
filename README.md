@@ -1,15 +1,5 @@
 # 404 Not Found的知识库
-最近更新日期：2019/05/21
-
-近日在学：
-- [大数据威胁建模方法论](https://www.cdxy.me/?p=797)（学到了很多）
-- [安全日志维度随想](https://www.cdxy.me/?p=793)
-- [机器学习加持下的时序类数据异常智能监控](http://m.koo4.cn/ppt_全/AICon%20全球人工智能与机器学习技术大会深度培训/腾讯%20刘彪《机器学习加持下的时序类数据异常智能监控》.pdf)
-- [海量运维日志异常挖掘](http://m.koo4.cn/ppt_全/Gdevops全球敏捷运维峰会成都站（Gdevops%202017）/知道创宇%20%20邓金城%20-%20海量运维日志异常挖掘.pdf)
-- [风控用户识别方法](http://www.shataowei.com/2017/12/09/风控用户识别方法/)
-- [github:sladesha](https://github.com/sladesha/Frcwp)
-- [多算法识别撞库刷券等异常用户](http://www.shataowei.com/2017/12/01/多算法识别撞库刷券等异常用户/)
-- [数据预处理-异常值识别](http://www.shataowei.com/2017/08/09/数据预处理-异常值识别/)
+最近更新日期：2019/05/23
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -298,6 +288,10 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [异常检测算法之IsolationForest](https://github.com/mylamour/blog/issues/27)
 - [异常挖掘，Isolation Forest](https://www.jianshu.com/p/1b020e2605e2)
 - [异常检测初尝试](https://iami.xyz/Inlier-Outlier-Detection/)
+- [机器学习加持下的时序类数据异常智能监控](http://m.koo4.cn/ppt_全/AICon%20全球人工智能与机器学习技术大会深度培训/腾讯%20刘彪《机器学习加持下的时序类数据异常智能监控》.pdf)
+- [海量运维日志异常挖掘](http://m.koo4.cn/ppt_全/Gdevops全球敏捷运维峰会成都站（Gdevops%202017）/知道创宇%20%20邓金城%20-%20海量运维日志异常挖掘.pdf)
+- [数据预处理-异常值识别](http://www.shataowei.com/2017/08/09/数据预处理-异常值识别/)
+- [Abnormal Detection（异常检测）和 Supervised Learning（有监督训练）在异常检测上的应用初探](https://www.cnblogs.com/LittleHann/p/7086851.html#_label3_6_3_0)
 ### 图与安全
 - [图/Louvain/DGA乱谈](https://www.cdxy.me/?p=805)<br>
 图承载者拓扑信息，而拓扑信息可以看作一种特征维度，有些攻防场景有明显的拓扑特征。Louvain算法的关键点是图的边的权重，在具体的攻防场景下需要专门研究，例如在DGA场景下，域名A与B的相关性(weight)=同时访问过A和B域名的IP数量。cdxy师傅用SQL实现了这种逻辑。
@@ -414,6 +408,8 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [快速搭建一个轻量级OpenSOC架构的数据分析框架（一）](https://xz.aliyun.com/t/2201)(学到了)<br>
 **框架**：**行文思路：由粗变细（由框架到举例子（由框架到场景到实际架构））。OpenSOC介绍（框架组成和工作流程）---》构建轻量级OpenSOC（聚焦具体场景和工具及具体架构）---》搭建步骤（每一步的环境搭建及配置）---》效果展示。**
 - [先知talk：从数据视角探索安全威胁](https://www.cdxy.me/?p=791)
+- [大数据威胁建模方法论](https://www.cdxy.me/?p=797)（学到了很多）
+- [安全日志维度随想](https://www.cdxy.me/?p=793)
 ### 安全场景
 - [关于风控预警体系的搭建方案](https://mp.weixin.qq.com/s/2r61XB_Po4s3ihkLy46xbA)<br>
 **业务安全-风控**：快速发现异常和准确定义风险。通过核心指标的变化发现异常片段及实体、通过聚类手段发现异常簇下全部实体；异常实体抽样--->无感知人工审核--->有针对性制定风险阈值
@@ -421,6 +417,9 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **业务安全-风控**：风控领域斗争日趋激烈，黑产已经从高度专业化、分工明确的团伙进化为产业化运作的公司，现在风控需要有基础安全技术支撑（传统安全），随着司法机关对黑灰产的高压打击，未来大企业会关注风控供应商的产品能力和合规合法性。
 - [风控模型师面试准备--技术篇](https://zhuanlan.zhihu.com/p/56175215)
 - [风控模型实战--"魔镜杯"风控算法大赛](https://zhuanlan.zhihu.com/p/56864235)
+- [风控用户识别方法](http://www.shataowei.com/2017/12/09/风控用户识别方法/)
+- [github:sladesha](https://github.com/sladesha/Frcwp)
+- [多算法识别撞库刷券等异常用户](http://www.shataowei.com/2017/12/01/多算法识别撞库刷券等异常用户/)
 - [DNS Tunnel隧道隐蔽通信实验 && 尝试复现特征向量化思维方式检测](https://www.cnblogs.com/LittleHann/p/8656621.html)<br>
 **DNS隧道检测**：
 ### 安全系统
