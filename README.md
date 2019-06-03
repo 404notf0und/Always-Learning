@@ -1,5 +1,5 @@
 # 404 Not Found的知识库
-最近更新日期：2019/05/31
+最近更新日期：2019/06/03
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -295,6 +295,8 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [数据挖掘中常见的「异常检测」算法有哪些？ - 微调的回答 - 知乎](https://www.zhihu.com/question/280696035/answer/417091151)<br>
 1、介绍常见的无监督异常检测算法及实验；2、对比多种算法的检测能力；3、对比多种算法的运算开销；4、总结并归纳如何处理异常检测问题。1.1）统计与概率模型：假设分布与假设检验，一维与多维，特征独立与特征相关，欧式距离与马氏距离；线性模型：低维空间嵌入，特征向量特征空间与协方差矩阵，欧式距离与马氏距离，PCA与Soft PCA与One-Class SVM；基于相似度衡量的模型：密度、距离、夹角、划分超平面、聚类；集成异常检测与模型融合。1.2）从实验结果图的决策边界验证算法之间的联系性。2.1）模型检测效果对比，Isolation Forest和KNN表现稳定；基于距离度量的KNN等模型受数据维度影响较大。3.1）数据量和数据维度对算法开销也有影响。Isolation更适合高维空间。4.1）实验结果带来了异常检测模型选择的思路：中小数据集KNN和MCD比较稳定，中大数据集Isolation Forest稳定；模型效果与模型效率往往是对立的，比如PCA与MCD；异常检测往往是非监督的，因此稳定比忽高忽低的性能更重要；简单的模型效果也可能很好。4.2）对于一个全新的异常检测问题，可以遵循以下步骤分析：A、对数据的了解，数据的分布，异常的分布，可根据假设选择模型；B、解决的问题是否有标签，如果有，一定不能浪费；C、如果可能的话，尝试不同的算法，尤其是对数据的了解有限时；D、根据数据的特点选择算法；E、无监督异常检测模型验证结果并不容易，可采用半自动的方式，对于置信度高的放过，对置信度低的人工审核；F、异常的趋势和特征往往在不断变化，因此模型需要重训练及调整策略；G、不要完全依赖模型，尝试使用半自动化的策略：人工规则+检测模型。人工规则还是很有用的，不要尝试一步到位的使用数据策略代替现有规则。
 - [梳理 | 异常检测](https://www.zuozuovera.com/archives/1395/)
+- [Anomaly Detection Isolation Forest&Visualization ](https://www.kaggle.com/adithya44/anomaly-detection-isolation-forest-visualization)
+- [Anomaly Detection with Time Series Forecasting](https://www.kaggle.com/adithya44/anomaly-detection-with-time-series-forecasting)
 ### 图与安全
 - [图/Louvain/DGA乱谈](https://www.cdxy.me/?p=805)<br>
 图承载者拓扑信息，而拓扑信息可以看作一种特征维度，有些攻防场景有明显的拓扑特征。Louvain算法的关键点是图的边的权重，在具体的攻防场景下需要专门研究，例如在DGA场景下，域名A与B的相关性(weight)=同时访问过A和B域名的IP数量。cdxy师傅用SQL实现了这种逻辑。
@@ -492,6 +494,8 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **技术栈**：Jason Trost，专注于安全研究、大数据、云计算、机器学习，即安全数据科学。
 - [http://cyberdatascientist.com](http://cyberdatascientist.com)<br>
 **站点概括**：专注于安全数据科学，提供网络安全、统计学和AI等学习资料，并提供14个安全数据集，包括：垃圾邮件、恶意网站、恶意软件、Botnet等。**没有secrepo.com提供的资料全面**。
+- [https://towardsdatascience.com](https://towardsdatascience.com)<br>
+**站点概括**：专注于数据科学。
 ### 国内优秀技术人
 - [http://michael282694.com](http://michael282694.com)<br>
 **技术栈**：michael282694，数据分析挖掘产品开发、爬虫、Java、Python
@@ -507,7 +511,8 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **技术栈**：iami，主要研究Web安全、机器学习，喜欢Python和Go。一直偷学师傅的博客。
 - [https://www.cdxy.me](https://www.cdxy.me)<br>
 **技术栈**：cdxy，早先主要做Web安全，CTF，代码审计，现在主要做安全研究与数据分析，初步估算技术领先我1～2年，师傅别学了。
-
+- [http://www.csuldw.com](http://www.csuldw.com)<br>
+**技术栈**：csuldw，专注于机器学习、数据挖掘、人工智能。
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
 - [Efficient and Flexible Discovery of PHP Application Vulnerabilities原文](https://swag.cispa.saarland/papers/skoruppa2017php.pdf)
