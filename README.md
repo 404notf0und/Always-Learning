@@ -18,9 +18,8 @@
   - [工具](#工具)
   	- [MAC](#MAC)
 	- [大数据技术工具](#大数据技术工具)
-	  - [Agent类型](#Agent)
-	  - [中间件类型](#中间件)
 	- [Git](#Git)
+	- [Wireshark](#Wireshark)
   - [技术](#技术)
 	- [浏览器技术](#浏览器技术) 
   	- [docker技术](#docker技术)
@@ -174,6 +173,7 @@ Spring—》Spring MVC—》Spring Boot。
 **大数据技术工具-Agent类型**：看需求，logstash和flume都是作为agent的存在，logstash有更多的插件，有更好的配套产品elasticsearch等，但是logstash的开发语言是ruby，运行环境是JRuby，而且传输数据可能会丢失；flume内部有机制确保传输一定量级数据不丢失的问题，flume的开发语言是Java，易于二次开发，但是不足是jvm占用内存有点大。
 - [常用 Git 命令单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)<br>
 **Git**：远程仓库-》本地仓库-〉暂存区-》工作区，git add .、git commit -m message、git push。
+- [tshark统计分析pcap包](https://www.wireshark.org/docs/man-pages/tshark.html)
 ### 技术
 - [解码与xss](https://blog.csdn.net/he_and/article/details/80588409)(**原文中有一处错误“html实体编码后“应该是`&#x5c;&#x75;&#x37;&#x32;` 产生的原因就是浏览器的html自解码**)<br>
 **浏览器技术-解码顺序**：浏览器解码主要涉及到两个部分：渲染引擎和js解析器。解码顺序：在什么环境下就进行什么解码，解码顺序为：最外层的环境对应的编码最先解码。举个例子:在`<a href=javascript:alert(1)>click</a>`中alert(1)处在html->url->js环境中。
