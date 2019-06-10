@@ -1,5 +1,5 @@
 # 404 Not Found的知识库
-最近更新日期：2019/06/03
+最近更新日期：2019/06/10
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -239,6 +239,7 @@ Spring—》Spring MVC—》Spring Boot。
 ### 数据安全
 - [NO.27 闲扯 关于数据安全](https://zhuanlan.zhihu.com/p/58146084?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136)<br>
 大数据技术、时代，**数据是很多公司最核心的资产**；传统的安全边界模糊，我们需要假设我们边界已经被渗透的同时，拥有纵深防御能力，保护信息的安全。所以在加强传统安全手段的同时，我们更应该直接把安全的重点放在数据本身上，这就是数据安全所做的工作。在做之前，有一个前提：我们要知道安全依然是为业务服务的（大部分企业安全情况下，业务>安全），所以要权衡安全性和可用性。目前企业常用的措施主要有：数据分级、数据生命周期管理、数据脱敏&数据加密、数据防泄漏。
+- [互联网企业数据安全体系建设](https://tech.meituan.com/2018/05/24/data-security-system-construction.html)
 ### 渗透测试
 - [一套实用的渗透测试岗位面试题](https://mp.weixin.qq.com/s/KZn6p5sk1Ae9i3m4e-XCpg)<br>
 代码执行函数：`eval、preg_replace+/e、assert、call_user_func、call_user_func_array、create_function`；命令执行函数：`system、exec、shell_exec、passthru、pcntl_exec、popen、proc_open`；img标签除了onerror属性外，还有其他获取管理员路径的方式吗？src指定一个远程的脚本文件，获取referer。
@@ -416,6 +417,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [先知talk：从数据视角探索安全威胁](https://www.cdxy.me/?p=791)
 - [大数据威胁建模方法论](https://www.cdxy.me/?p=797)（学到了很多）
 - [安全日志维度随想](https://www.cdxy.me/?p=793)
+- [数据安全分析思想探索](https://www.freebuf.com/articles/database/176913.html)
 ### 安全场景
 - [关于风控预警体系的搭建方案](https://mp.weixin.qq.com/s/2r61XB_Po4s3ihkLy46xbA)<br>
 **业务安全-风控**：快速发现异常和准确定义风险。通过核心指标的变化发现异常片段及实体、通过聚类手段发现异常簇下全部实体；异常实体抽样--->无感知人工审核--->有针对性制定风险阈值
