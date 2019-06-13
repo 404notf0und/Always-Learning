@@ -1,5 +1,5 @@
 # 404 Not Found的知识库
-最近更新日期：2019/06/10
+最近更新日期：2019/06/13
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -29,6 +29,7 @@
   	  - [Nginx](Nginx)
   	  - [Gunicorn](Gunicorn)
 	- [Kerberos](#Kerberos)
+	- [微服务架构](#微服务架构)
 - [底层研究](#底层研究)
 - [安全技术](#安全技术)
   - [Web安全](#Web安全)
@@ -197,6 +198,7 @@ Spring—》Spring MVC—》Spring Boot。
 **应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
 - [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)<br>
 **Kerberos**：Kerberos的基本描述、协议内容和具体流程。
+- [什么是微服务架构？](https://www.zhihu.com/question/65502802)
 
 ## 底层研究
 - [python requests库流程简析](https://www.jianshu.com/p/a5e98489dcb8)<br>
