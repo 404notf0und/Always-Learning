@@ -1,5 +1,5 @@
 # 404 Not Found的知识库
-最近更新日期：2019/06/13
+最近更新日期：2019/07/04
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -420,6 +420,10 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [大数据威胁建模方法论](https://www.cdxy.me/?p=797)（学到了很多）
 - [安全日志维度随想](https://www.cdxy.me/?p=793)
 - [数据安全分析思想探索](https://www.freebuf.com/articles/database/176913.html)
+- [DataCon 2019: 1st place solution of malicious DNS traffic & DGA analysis](https://www.cdxy.me/?p=806)（学到了）<br>
+**我的理解**：涉及的知识点有：安全场景：DNS安全；数据处理：tshark工具的使用，MaxCompute和SQL的使用，PAI预分析和可视化；特征工程：DNS_type、src_ip维度的特征；异常检测算法：单特征3sigma检测；人工提取特征规则。<br>
+第一小题DNS恶意流量的异常检测：个人吸收80%，整理流程无障碍，每步流程中的**细节和工具**还未完全掌握，比如DNS安全场景了解不全面、tshark的大量数据解析、统计特征的全面提取、SQL语句做特征化；<br>
+第二小题DGA的多分类：个人吸收50%，流程搞懂了，但是对一些问题的理解还不到位，比如社区算法
 ### 安全场景
 - [关于风控预警体系的搭建方案](https://mp.weixin.qq.com/s/2r61XB_Po4s3ihkLy46xbA)<br>
 **业务安全-风控**：快速发现异常和准确定义风险。通过核心指标的变化发现异常片段及实体、通过聚类手段发现异常簇下全部实体；异常实体抽样--->无感知人工审核--->有针对性制定风险阈值
