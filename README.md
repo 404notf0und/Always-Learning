@@ -521,6 +521,8 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **技术栈**：cdxy，早先主要做Web安全，CTF，代码审计，现在主要做安全研究与数据分析，初步估算技术领先我1～2年，师傅别学了。
 - [http://www.csuldw.com](http://www.csuldw.com)<br>
 **技术栈**：csuldw，专注于机器学习、数据挖掘、人工智能。
+- [https://molunerfinn.com/](https://molunerfinn.com/)
+**技术栈**：molunerfinn，专注于前端，北邮大佬，和404notfound同级
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
 - [Efficient and Flexible Discovery of PHP Application Vulnerabilities原文](https://swag.cispa.saarland/papers/skoruppa2017php.pdf)
