@@ -1,6 +1,8 @@
 # 404 Not Found的知识库
-最近更新日期：2019/07/04
+最近更新日期：2019/07/28
 
+新增：
+- [数据科学家 (Data Scientist) 的核心技能是什么？](https://www.zhihu.com/question/27604790)
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
   - [计算机网络](#计算机网络)
@@ -487,6 +489,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 ### 安全产品
 - [C端安全产品的未来之路](https://mp.weixin.qq.com/s/Sp15EkyNKBZvOZHrJ7zJ2w)<br>
 **C端安全产品**：移动端安全产品是否会像前几天PC端安全产品一样迎来春天？PC时代windows是一家独大的完全开放的平台，这让第三方安全公司能够在平台和用户之间产生价值的空间足够的大，但在移动端，安卓开始封闭，就不好说了。传统安全软件围绕病毒和欺诈，而围绕**个人信息安全的C端安全产品**有一线生机。
+- [数据科学家 (Data Scientist) 的核心技能是什么？](https://www.zhihu.com/question/27604790)
 
 ## 个人综合素质
 ### 逻辑思维与语言表达
@@ -521,7 +524,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **技术栈**：cdxy，早先主要做Web安全，CTF，代码审计，现在主要做安全研究与数据分析，初步估算技术领先我1～2年，师傅别学了。
 - [http://www.csuldw.com](http://www.csuldw.com)<br>
 **技术栈**：csuldw，专注于机器学习、数据挖掘、人工智能。
-- [https://molunerfinn.com/](https://molunerfinn.com/)
+- [https://molunerfinn.com/](https://molunerfinn.com/)<br>
 **技术栈**：molunerfinn，专注于前端，北邮大佬，和404notfound同级
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
