@@ -1,5 +1,5 @@
 # 404 Not Found的知识库
-最近更新日期：2019/07/28
+最近更新日期：2019/08/01
 
 新增：
 - [数据科学家 (Data Scientist) 的核心技能是什么？](https://www.zhihu.com/question/27604790)
@@ -144,6 +144,7 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 - [腾讯面试：一条SQL语句执行得很慢的原因有哪些？](https://zhuanlan.zhihu.com/p/62941196)<br>
 **计算机理论基础-数据库**：补充学习：数据库引擎（InnoDB支持事物处理和外键，但是慢一点、ISAM和MyISAM空间和内存使用低，插入数据快）、数据库编码（`character_set_client、character_set_connection、character_set_database、character_set_results、character_set_server、character_set_system`）、数据库索引(主键索引、聚集索引和非聚集索引)等基础知识点。<br>
 一条SQL语句执行很慢的原因分为两类：1）大多数情况下正常，偶尔很慢：（1）数据库在刷新脏页，例如redo log写满了需要同步到磁盘；（2）执行的时候遇到锁，如表锁，行锁；2）一直都很慢：（1）没有用上索引：例如该字段没有索引；由于对字段进行运算、函数操作导致无法用索引；（2）数据库选错了索引，比较聚集索引到主键索引和直接全表搜索的扫描行数，有可能因为采样问题判断有误，走了全表扫描而不走索引。
+- [这大概是最全的sql优化方案了](https://zhuanlan.zhihu.com/p/48385127)
 
 ## 计算机技术基础
 ### 语言
