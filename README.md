@@ -1,5 +1,5 @@
 # 404 Not Found的知识库
-最近更新日期：2019/09/28
+最近更新日期：2019/10/09
 
 新增：
 - [哪些思维方式是你刻意训练过的？](https://www.zhihu.com/question/23913984/answer/807859986)
@@ -84,12 +84,27 @@
     - [综述](#综述)
     - [框架](#框架)
   - [安全检测](#安全检测)
+  	- [ICMP隧道检测系统](#ICMP隧道检测系统)
 	- [DNS隧道检测](#DNS隧道检测)
-  	- [业务安全](#业务安全)
+  	- [业务安全检测](#业务安全)
 	  - [风控](#风控)
-  - [安全系统](#安全系统)
-    - [ICMP隧道检测系统](#ICMP隧道检测系统)
     - [入侵检测系统](#入侵检测系统)
+  - [优秀开源安全项目/安全产品](#安全产品)
+	  - [资产管理](#资产管理)
+	  - [安全开发](#安全开发)
+	  - [自动化代码审计](#自动化代码审计)
+	  - [安全运维](#安全运维)
+	  - [堡垒机](#堡垒机)
+	  - [HIDS](#HIDS)
+	  - [网络流量分析](#网络流量分析)
+	  - [蜜罐](#蜜罐)
+	  - [WAF](#WAF)
+	  - [企业云盘](#企业云盘)
+	  - [钓鱼网站系统](#钓鱼网站系统)
+	  - [Github监控](#Github监控)
+	  - [风控](#风控)
+	  - [漏洞管理](#漏洞管理)
+	  - [SIEM/SOC](#SIEM)
   - [安全运营](#安全运营)
   - [安全管理](#安全管理)
   - [安全思考](#安全思考)
@@ -441,15 +456,14 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [github:sladesha](https://github.com/sladesha/Frcwp)
 - [多算法识别撞库刷券等异常用户](http://www.shataowei.com/2017/12/01/多算法识别撞库刷券等异常用户/)
 - [DNS Tunnel隧道隐蔽通信实验 && 尝试复现特征向量化思维方式检测](https://www.cnblogs.com/LittleHann/p/8656621.html)<br>
-**DNS隧道检测**：
-### 安全系统
 - [企业安全建设之HIDS](https://www.freebuf.com/articles/es/194510.html)
 - [保障IDC安全：分布式HIDS集群架构设计](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651750220&idx=2&sn=26e1ae8056e4fd7db5e953e946a00b78&chksm=bd12a6018a652f17643ccf86264ea226a5d881c4dd2911772893e0c5d848f95f1f8de74b786d&mpshare=1&scene=1&srcid=0117j91c1pFiorQDDMN0XQka#rd)
 - [点融开源AgentSmith HIDS--- 一套轻量级的HIDS系统](https://mp.weixin.qq.com/s?__biz=MzI5MjE4MDc4OQ==&mid=2247483961&idx=1&sn=2736aad509f08c20d82cfc08b62da27a&chksm=ec040463db738d754cce84506c098caca891b58740e1b38b3621f752f805eb1c02ebf0e2ac73&mpshare=1&scene=1&srcid=1226ZgmHAUTfeYMuLFPWyuHS#rd)
 - [企业安全建设—基于Agent的HIDS系统设计的一点思路](https://xz.aliyun.com/t/1732)<br>
 **入侵检测系统-主机入侵检测系统**：美团的系统性实践非常值得学习。从需求描述，产品经理提出需求->分析需求，总结产品架构要符合的特性->技术难点，分析遇到的技术挑战->架构设计与技术选型->分布式HIDS集群架构图->编程语言选择->产品实现。
 - [基于统计分析的ICMP隧道检测方法与实现](https://mp.weixin.qq.com/s/qSHQ2v9s0nDRmFXhnPna3g)<br>
-**ICMP隧道检测系统-统计分析**：
+### 安全产品
+- [收集一些比较优秀的开源安全项目，以帮助甲方安全从业人员构建企业安全能力](https://github.com/Bypass007/Safety-Project-Collection)**(学到了)**
 ### 安全运营
 - [我理解的安全运营](https://zhuanlan.zhihu.com/p/39467201)<br>
 **公司是为产出付费，而不是为知识付费**。安全运营是以解决问题为导向。安全运营的主要职责和**技能需求**：安全、研发、运维背景；**较好的沟通能力**；一定的**项目管理能力**；具备数据意识。
