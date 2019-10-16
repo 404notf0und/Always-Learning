@@ -1,9 +1,10 @@
 # 404 Not Found的知识库
-最近更新日期：2019/10/11
+最近更新日期：2019/10/17
 
 新增：
 - [哪些思维方式是你刻意训练过的？](https://www.zhihu.com/question/23913984/answer/807859986)
 - [至关重要：如何做好我们的职业规划](https://zhuanlan.zhihu.com/p/83620510)
+— [如何在企业中从0-1建立一个数据/商业分析部门？](https://mp.weixin.qq.com/s/ADblJqYIaiDRTwE2IZWulg?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136&from=singlemessage&isappinstalled=0)
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
   - [计算机网络](#计算机网络)
@@ -547,6 +548,9 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 ### 管理者
 - [“我是技术总监，你干嘛总问我技术细节？”](https://mp.weixin.qq.com/s/_tV71Ly2uU-op__sf1DlPQ)<br>
 （快速发展期、平稳期、衰退期等业务发展时期作为时间轴）（中高层管理者）（需要掌握）（应用场景、技术基础、技术栈中的技术细节）。技术基础要扎实，技术栈了解程度深（对技术原理和细节清楚），应用场景不能浮于表面。总的来说就是一句话：**技术细节与技术深度**。
+— [如何在企业中从0-1建立一个数据/商业分析部门？](https://mp.weixin.qq.com/s/ADblJqYIaiDRTwE2IZWulg?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136&from=singlemessage&isappinstalled=0)(学到了)<br>
+**部门的定位和价值——>里程碑设计——->团队搭建——->构建IT数据——->前期管理。**
+
 ### 国外优质技术站点
 - [https://resources.distilnetworks.com](https://resources.distilnetworks.com)<br>
 **站点概况**：专注于机器流量对抗与缓解。
@@ -578,28 +582,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
 - [Efficient and Flexible Discovery of PHP Application Vulnerabilities原文](https://swag.cispa.saarland/papers/skoruppa2017php.pdf)
-- [T
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- he Code Analysis Platform "Octopus"](https://github.com/octopus-platform)
+- [The Code Analysis Platform "Octopus"](https://github.com/octopus-platform)
 - [A Code Intelligence System：The Octopus Platform](https://octopus-platform.github.io/)
 
 
