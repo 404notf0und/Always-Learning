@@ -1,12 +1,10 @@
 # 404 Not Found的知识库
-最近更新日期：2019/10/18
+最近更新日期：2019/10/21
 
-新增：
-- [哪些思维方式是你刻意训练过的？](https://www.zhihu.com/question/23913984/answer/807859986)
-- [至关重要：如何做好我们的职业规划](https://zhuanlan.zhihu.com/p/83620510)
-- [如何在企业中从0-1建立一个数据/商业分析部门？](https://mp.weixin.qq.com/s/ADblJqYIaiDRTwE2IZWulg?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136&from=singlemessage&isappinstalled=0)
-- [26岁当上数据总监，分享第一次做Leader的心得](https://mp.weixin.qq.com/s/QePhtlNK9RE3ir-7HS7aOg)
-- [什么特质的员工容易成为管理者](https://mp.weixin.qq.com/s/eLqQF-B7y_roz6a4aYZoCQ)
+最近一周新增：
+- [厉害的人是怎么分析问题的？](https://www.zhihu.com/question/304174916/answer/542373452)
+- [深度强化学习的弱点和局限](https://mp.weixin.qq.com/s?__biz=MzI3ODkxODU3Mg==&mid=2247485609&idx=1&sn=6b71f5f8ebd4e920384f07b97ce92a9c&chksm=eb4eec6adc39657c81169f1ae9ce477e4da692941238c35deb26a11ed7ec70073784cfd935a8&scene=21#wechat_redirect)
+- [关于强化学习的局限的一些思考](https://zhuanlan.zhihu.com/p/34916891)
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
   - [计算机网络](#计算机网络)
@@ -70,6 +68,7 @@
 	  - [时间序列问题](#时间序列)
   - [深度学习](#深度学习)
     - [卷积神经网络](#卷积神经网络)
+  - [强化学习](#强化学习)
   - [应用领域](#应用领域)
   	- [NLP](#NLP)
   	- [智能安全](#智能安全)
@@ -133,6 +132,7 @@
   - [管理者](#管理者)
   - [国内优秀技术人](#国内优秀技术人)
   - [国外优秀技术站点](#国外优秀技术站点)
+- [注意事项](#注意事项)
 
 ## 正文：
 ## 计算机理论基础
@@ -384,6 +384,10 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [Wasserstein GAN in Keras](https://myurasov.github.io/2017/09/24/wasserstein-gan-keras.html?r)
 - [WassersteinGAN](https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/WassersteinGAN)
 - [keras-acgan](https://github.com/lukedeo/keras-acgan)
+### 强化学习
+- [深度强化学习的弱点和局限](https://mp.weixin.qq.com/s?__biz=MzI3ODkxODU3Mg==&mid=2247485609&idx=1&sn=6b71f5f8ebd4e920384f07b97ce92a9c&chksm=eb4eec6adc39657c81169f1ae9ce477e4da692941238c35deb26a11ed7ec70073784cfd935a8&scene=21#wechat_redirect)
+- [关于强化学习的局限的一些思考](https://zhuanlan.zhihu.com/p/34916891)<br>
+**强化学习的局限：采样效率很差、很难设计一个合适的奖励函数。**
 ### 应用领域
 - [全球最全？的安全数据网站](http://www.secrepo.com/)（有时间得好好整理一下）
 - [网络安全即将迎来机器对抗时代？](https://zhuanlan.zhihu.com/p/26093848)<br>
@@ -546,7 +550,9 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **金字塔思维：结论先行，以上统下，归类分组，逻辑递进。<br>**
 **金字塔结构：纵向延伸，横向分类。<br>**
 **如何得出金字塔结论：归纳法，演绎推理法。**实际生活中，不是每时每刻都有相关的模型套用和演绎法的，这时候就用归纳法，**自下而上进行梳理，得出结论**，比如**头脑风暴**把闪过的**碎片想法**全部写下来，再**抽象与分类**，最后得出结论。
-
+- [厉害的人是怎么分析问题的？](https://www.zhihu.com/question/304174916/answer/542373452)（学到了）<br>
+**定义问题/描述问题：问题的本质是现实和期望的落差部分**；明确期望值B'，精准定位现状B，，用B--->B'这个落差，精准描述问题。<br>
+**分析问题/解决问题**：不能从现状B出发，找寻一条B--->B'的路径，要透过现象看本质。方法A，现实B，期望B'，变量C。**校准期望B'，重构方法A，消除变量C。**
 ### 管理者
 - [“我是技术总监，你干嘛总问我技术细节？”](https://mp.weixin.qq.com/s/_tV71Ly2uU-op__sf1DlPQ)<br>
 （快速发展期、平稳期、衰退期等业务发展时期作为时间轴）（中高层管理者）（需要掌握）（应用场景、技术基础、技术栈中的技术细节）。技术基础要扎实，技术栈了解程度深（对技术原理和细节清楚），应用场景不能浮于表面。总的来说就是一句话：**技术细节与技术深度**。
@@ -597,6 +603,10 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **技术栈**：csuldw，专注于机器学习、数据挖掘、人工智能。
 - [https://molunerfinn.com/](https://molunerfinn.com/)<br>
 **技术栈**：molunerfinn，专注于前端，北邮大佬，和404notfound同级
+## 注意事项
+### 要
+* **领域点-线-面体系**：点：自己focus的领域；线：上游和下游；面：大领域。不要过度focus在自己工作的领域，要有全局化的眼光，特别是自己的上游和下游。
+* **日常学习点-线-面体系**：点：自己focus的安全数据分析领域；线：安全/数据分析；面：全局安全内容/行业发展/职业规划。每日专研至少一小时小领域；每日精读至少半小时/至少一篇安全/数据分析/行业发展/职业规划精品文章；每日大量浏览增量文章/存量文章。**保持学习与思考的敏感性。**
 ## 挖坑
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
 - [Efficient and Flexible Discovery of PHP Application Vulnerabilities原文](https://swag.cispa.saarland/papers/skoruppa2017php.pdf)
