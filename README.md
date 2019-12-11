@@ -1,10 +1,14 @@
 # 404 Not Found的知识库
-最近更新日期：2019/10/21
+最近更新日期：2019/12/11
 
 最近一周新增：
 - [厉害的人是怎么分析问题的？](https://www.zhihu.com/question/304174916/answer/542373452)
 - [深度强化学习的弱点和局限](https://mp.weixin.qq.com/s?__biz=MzI3ODkxODU3Mg==&mid=2247485609&idx=1&sn=6b71f5f8ebd4e920384f07b97ce92a9c&chksm=eb4eec6adc39657c81169f1ae9ce477e4da692941238c35deb26a11ed7ec70073784cfd935a8&scene=21#wechat_redirect)
 - [关于强化学习的局限的一些思考](https://zhuanlan.zhihu.com/p/34916891)
+- [好的研究想法从哪里来](https://mp.weixin.qq.com/s/OSVpS3Q15kI0NshpzCjavA)
+- [从安全视角对机器学习的部分思考](https://mp.weixin.qq.com/s/kP4YuiksI1dfZdT8Z_j_cQ)
+- [中科院信工所发布《深度学习系统的隐私与安全》综述论文，187篇文献总结](https://mp.weixin.qq.com/s/B0FTTAppy_AUt6SXVFL-Pg)
+- [Towards Privacy and Security of Deep Learning Systems: A Survey](https://arxiv.org/pdf/1911.12562v1.pdf)
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
   - [计算机网络](#计算机网络)
@@ -52,6 +56,7 @@
   - [对抗机器流量](#对抗机器流量)
   - [异常检测](#异常检测)
   - [图与安全](#图与安全)
+  - [AI安全](#AI安全)
 - [人工智能](#人工智能)
   - [算法体系](#算法体系)
   - [基础知识](#基础知识)
@@ -129,9 +134,10 @@
 - [职业规划](#职业规划)
 - [综合素质](#综合素质)
   - [逻辑思维与语言表达](#逻辑思维与语言表达)
-  - [管理者](#管理者)
+  - [管理](#管理)
   - [国内优秀技术人](#国内优秀技术人)
   - [国外优秀技术站点](#国外优秀技术站点)
+- [思考](#思考)
 - [注意事项](#注意事项)
 
 ## 正文：
@@ -331,6 +337,13 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 图承载者拓扑信息，而拓扑信息可以看作一种特征维度，有些攻防场景有明显的拓扑特征。Louvain算法的关键点是图的边的权重，在具体的攻防场景下需要专门研究，例如在DGA场景下，域名A与B的相关性(weight)=同时访问过A和B域名的IP数量。cdxy师傅用SQL实现了这种逻辑。
 - [社区发现算法 - Fast Unfolding（Louvian）算法初探](https://www.cnblogs.com/LittleHann/p/9078909.html)
 - [A DGA Odyssey PDNS Driven DGA Analysis](https://pc.nanog.org/static/published/meetings/NANOG71/1444/20171004_Gong_A_Dga_Odyssey__v1.pdf)
+
+### AI安全
+- [从安全视角对机器学习的部分思考](https://mp.weixin.qq.com/s/kP4YuiksI1dfZdT8Z_j_cQ)
+- [中科院信工所发布《深度学习系统的隐私与安全》综述论文，187篇文献总结](https://mp.weixin.qq.com/s/B0FTTAppy_AUt6SXVFL-Pg)
+- [Towards Privacy and Security of Deep Learning Systems: A Survey](https://arxiv.org/pdf/1911.12562v1.pdf)<br>
+**AI安全的攻击面**：训练阶段和测试阶段的数据和模型方面，攻击有数据中毒和对抗性样本，模型提取和模型反转等。
+
 ## 人工智能
 ### 算法体系
 - [机器学习算法集锦：从贝叶斯到深度学习及各自优缺点](https://mp.weixin.qq.com/s/idxuzwUKG_Q1yUtpipG4Xw)<br>
@@ -553,7 +566,8 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [厉害的人是怎么分析问题的？](https://www.zhihu.com/question/304174916/answer/542373452)（学到了）<br>
 **定义问题/描述问题：问题的本质是现实和期望的落差部分**；明确期望值B'，精准定位现状B，，用B--->B'这个落差，精准描述问题。<br>
 **分析问题/解决问题**：不能从现状B出发，找寻一条B--->B'的路径，要透过现象看本质。方法A，现实B，期望B'，变量C。**校准期望B'，重构方法A，消除变量C。**
-### 管理者
+
+### 管理
 - [“我是技术总监，你干嘛总问我技术细节？”](https://mp.weixin.qq.com/s/_tV71Ly2uU-op__sf1DlPQ)<br>
 （快速发展期、平稳期、衰退期等业务发展时期作为时间轴）（中高层管理者）（需要掌握）（应用场景、技术基础、技术栈中的技术细节）。技术基础要扎实，技术栈了解程度深（对技术原理和细节清楚），应用场景不能浮于表面。总的来说就是一句话：**技术细节与技术深度**。
 - [如何在企业中从0-1建立一个数据/商业分析部门？](https://mp.weixin.qq.com/s/ADblJqYIaiDRTwE2IZWulg?-utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136&from=singlemessage&isappinstalled=0)(**学到了**)<br>
@@ -603,6 +617,10 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **技术栈**：csuldw，专注于机器学习、数据挖掘、人工智能。
 - [https://molunerfinn.com/](https://molunerfinn.com/)<br>
 **技术栈**：molunerfinn，专注于前端，北邮大佬，和404notfound同级
+
+## 思考
+- [好的研究想法从哪里来](https://mp.weixin.qq.com/s/OSVpS3Q15kI0NshpzCjavA)<br>
+**研究的本质是对未知领域的探索，是对开放问题的答案的追寻。“好”的定义-》区分好与不好的能力-》全面了解所在研究方向的历史和现状-》实践法/类比法/组合法**。 **这就好比是机器学习的训练和测试阶段，****训练**：全面了解所在研究方向的历史和现状，判断不同时期的研究工作的好与不好。**测试**：实践法/类比法/组合法出的idea，判断自己的研究工作好与不好。
 ## 注意事项
 ### 要
 * **领域点-线-面体系**：点：自己focus的领域；线：上游和下游；面：大领域。不要过度focus在自己工作的领域，要有全局化的眼光，特别是自己的上游和下游。
