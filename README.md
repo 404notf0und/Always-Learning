@@ -54,10 +54,9 @@
 	- [安全管理](#安全管理)
 	- [安全思考](#安全思考)
 	- [安全架构](#安全架构)
-	
 	- [红蓝对抗](#红蓝对抗)
 - [安全发展](#安全发展)
-  - [个人发展](#个人发展)
+	- [个人发展](#个人发展)
 	- [行业发展](#行业发展)  
 ## 软实力
 - [职业规划](#职业规划)
@@ -113,20 +112,20 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 ### 语言
 - [万字长文深度解析Python装饰器](https://zhuanlan.zhihu.com/p/53837833?utm_source=wechat_session&utm_medium=social&s_s_i=fnTFc5tcnJAFiGn2nobqDexCtTjMulfSsMtJHUvT7%2B4%3D&s_r=1#showWechatShareTip)
 - [Python3 迭代器与生成器](http://www.runoob.com/python3/python3-iterator-generator.html)<br>
-**Python：**迭代器有两个基本的方法：iter()和next()，字符串、元组、列表等可迭代对象都可用于创建迭代器（这是因为这些类内部都实现了`__iter__()`函数，调用iter()之后，变成了一个`list_iterator`的对象，会发现增加了`__next__()`方法，所有实现了`__iter__`和`__next__`两个方法的对象，都是迭代器），迭代器是带状态的对象，它会记录当前迭代所处的位置，以方便下次迭代的时候获取正确的元素，`__iter__`返回迭代器自身，`__next__`返回容器的下一个值。生成器：使用了yield的函数被称为生成器，调用了一个生成器函数，返回的是一个迭代器对象，生成器可以看成是迭代器。
+**Python**：迭代器有两个基本的方法：iter()和next()，字符串、元组、列表等可迭代对象都可用于创建迭代器（这是因为这些类内部都实现了`__iter__()`函数，调用iter()之后，变成了一个`list_iterator`的对象，会发现增加了`__next__()`方法，所有实现了`__iter__`和`__next__`两个方法的对象，都是迭代器），迭代器是带状态的对象，它会记录当前迭代所处的位置，以方便下次迭代的时候获取正确的元素，`__iter__`返回迭代器自身，`__next__`返回容器的下一个值。生成器：使用了yield的函数被称为生成器，调用了一个生成器函数，返回的是一个迭代器对象，生成器可以看成是迭代器。
 - [python 黑科技之迭代器、生成器、装饰器](https://www.jianshu.com/p/efaa19594cf4)
 - [Python的高级特征你知多少？来对比看看](https://mp.weixin.qq.com/s/VBiQ2X7Y93h51GkIosC_Vw)<br>
-**Python：**lamda匿名函数，功能是执行某种简单的表达式或运算，而无需完全定义函数；Map函数是一种内置的python函数，可以将函数应用于各种数据结构中的元素；Filter内置函数与Map函数类似，但是只返回应用函数返回True的元素；Itertools模块是处理迭代器的工具集合，迭代器是一种可以在for循环语句中使用的数据类型；Generator函数是一个类似迭代器的函数。
+**Python**：lamda匿名函数，功能是执行某种简单的表达式或运算，而无需完全定义函数；Map函数是一种内置的python函数，可以将函数应用于各种数据结构中的元素；Filter内置函数与Map函数类似，但是只返回应用函数返回True的元素；Itertools模块是处理迭代器的工具集合，迭代器是一种可以在for循环语句中使用的数据类型；Generator函数是一个类似迭代器的函数。
 - [为什么要使用 Go 语言？Go 语言的优势在哪里？](https://www.zhihu.com/question/21409296)<br>
-**Go：**go的优势和go的用处。go的优势主要有：静态语言，多并发，跨平台，可直接编译成机器码，丰富的标准库等。go的用处主要有服务器编程、网络编程、分布式系统、内存数据库、云平台。
+**Go**：go的优势和go的用处。go的优势主要有：静态语言，多并发，跨平台，可直接编译成机器码，丰富的标准库等。go的用处主要有服务器编程、网络编程、分布式系统、内存数据库、云平台。
 - [Gin实践 连载一 Golang介绍与环境安装](https://segmentfault.com/a/1190000013297625)<br>
-**Go：**go的环境安装，环境安装后各个文件夹的含义；go的工作区，工作区各个文件夹的含义。
+**Go**：go的环境安装，环境安装后各个文件夹的含义；go的工作区，工作区各个文件夹的含义。
 - [ruby-on-rails – Ruby和JRuby有什么区别](https://codeday.me/bug/20170830/62159.html)<br>
-**Ruby：**Ruby是一种编程语言，我们一般说的Ruby解释器是指CRuby，CRuby在本地C语言解释器环境中运行，JRuby是一个采用纯Java实现的Ruby解释器，JRuby在Java虚拟机中运行。
+**Ruby**：Ruby是一种编程语言，我们一般说的Ruby解释器是指CRuby，CRuby在本地C语言解释器环境中运行，JRuby是一个采用纯Java实现的Ruby解释器，JRuby在Java虚拟机中运行。
 
 ### 框架
 - [Gin - 高性能 Golang Web 框架的介绍和使用](https://www.yoytang.com/go-gin-doc.html)<br>
-**Gin：**是用Go编写的一个Web应用框架。
+**Gin**：是用Go编写的一个Web应用框架。
 - [spring boot与spring mvc的区别是什么？](https://www.zhihu.com/question/64671972)<br>
 **Spring**—》Spring MVC—》Spring Boot。
 
