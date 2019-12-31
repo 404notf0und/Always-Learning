@@ -1,14 +1,8 @@
 # 404 Not Found的知识库
-最近更新日期：2019/12/27
+最近更新日期：2019/12/31
 
 最近一周新增：
--  [对乌云漏洞库payload的整理以及Burp辅助插件](https://mp.weixin.qq.com/s/9RHVsw-HtAfo1UuPAqXZEw)
--  [boy-hack/wooyun-payload](https://github.com/boy-hack/wooyun-payload)
--  [下一座圣杯 - 2019](https://mp.weixin.qq.com/s/6Kli-u6LEInoliTVQgdrFQ)
--  [恶意样本分析资源汇总](https://www.malwareanalysis.cn/1054/?from=groupmessage&isappinstalled=0)
--  [从研究者视角看漏洞研究之2010年代](https://mp.weixin.qq.com/s/UBZv0pd7Nr-o-NMxjV53RQ)
--  [网络安全架构 | 通过安全架构提升安全性](https://mp.weixin.qq.com/s/m90wYaEvHzfsdgnFHMGxCw)
--  [什么是Service Mesh（服务网格）](https://jimmysong.io/posts/what-is-a-service-mesh/)
+-  [Updater fails if not run as admin, even on a user installation](https://github.com/MiKTeX/miktex/issues/56)
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
 	- [计算机网络](#计算机网络)
@@ -151,10 +145,11 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
     `2、<a href=javascript:al%65rt(1)>click</a> 采用url编码，在执行js前，url解码%65，所以到了js引擎启动时，看到了完整的alert(1)`
     `3、<a href=javascript:alert(1)>click</a> html实体解码先执行了`
     `4、<a href=java%61script:alert(1)>click</a> 在url解码环节，不会认为javascript是伪协议，会出现错误。`
-	`5、<a href=# onclick="alert('&#x27;&#x29;;alert&#x28;&#x27;2');">click</a> htmlparser会优先于JavaScript parser执行，所以解析过程是htmlencode的字符先被解码，然后执行JavaScript事件`
-<<<<<<< HEAD
-	**浏览器解码顺序是XSS中bypass的基础**。
-	
+  
+  `5、<a href=# onclick="alert('&#x27;&#x29;;alert&#x28;&#x27;2');">click</a> htmlparser会优先于JavaScript parser执行，所以解析过程是htmlencode的字符先被解码，然后执行JavaScript事件`
+  
+  **浏览器解码顺序是XSS中bypass的基础**。
+
 - [数据分析与可视化：谁是安全圈的吃鸡第一人](https://www.freebuf.com/articles/web/199925.html?from=timeline&isappinstalled=0)（学到了）
   **数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
 
@@ -176,32 +171,43 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 - [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)
   **Kerberos**：Kerberos的基本描述、协议内容和具体流程。
 
-=======
-	**浏览器解码顺序是XSS中bypass的基础**。<br>
 - [数据分析与可视化：谁是安全圈的吃鸡第一人](https://www.freebuf.com/articles/web/199925.html?from=timeline&isappinstalled=0)（学到了）<br>
-**数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
+  **数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
+
 - [dockerfile 和 docker-compose 的关系](https://segmentfault.com/q/1010000009883848)<br>
-**docker技术**：文件和文件夹的关系。
+  **docker技术**：文件和文件夹的关系。
+
 - [dockerfile 与 docker-compose的区别是什么?](https://segmentfault.com/q/1010000009883848)<br>
-**docker技术**：docker-compose是编排容器的。
+  **docker技术**：docker-compose是编排容器的。
+
 - [堡垒机是什么？](https://www.zhihu.com/question/21036511)<br>
-**堡垒机技术**：为访问集群限定一个入口；方便权限控制以及监控。
+  **堡垒机技术**：为访问集群限定一个入口；方便权限控制以及监控。
+
 - [产品的可行性需从哪几个方面分析？](https://zhuanlan.zhihu.com/p/20875988)<br>
-**可行性分析**：产品可行性分为：技术可行性、经济可行性、社会可行性，其中我关注的是技术可行性。技术可行性主要从竞争对手功能比较、技术风险及规避方法、易用性及用户使用门槛、产品环境依赖性等方面衡量。
+  **可行性分析**：产品可行性分为：技术可行性、经济可行性、社会可行性，其中我关注的是技术可行性。技术可行性主要从竞争对手功能比较、技术风险及规避方法、易用性及用户使用门槛、产品环境依赖性等方面衡量。
+
 - [Nginx、Gunicorn在服务器中分别起什么作用？](https://www.zhihu.com/question/38528616)<br>
-**应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
+  **应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
+
 - [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)<br>
-**Kerberos**：Kerberos的基本描述、协议内容和具体流程。
->>>>>>> parent of a929e4b... Revert "Revert "[+] pdf版本""
+  **Kerberos**：Kerberos的基本描述、协议内容和具体流程。
+
 - [什么是**微服务架构**？](https://www.zhihu.com/question/65502802)
 
 - [什么是Service Mesh（服务网格）](https://jimmysong.io/posts/what-is-a-service-mesh/)
 
-  Why：为什么使用服务网格？传统的MVC三层Web应用程序架构下，服务之间的通讯并不复杂，在应用程序内部自己管理即可，但在如今复杂的大型网站情况下，单体应用被分解成众多的微服务，服务之间的依赖和通讯十分复杂。What：服务网格，是服务间通信的基础设施层，可以把它比作是应用程序或是微服务间的TCP/IP，负责服务间网络调用、限流、熔断和监控。Service Mesh的特点：应用程序间通讯的中间层、轻量级网络代理、应用程序无感知、解耦应用程序的重试/超时、监控、追踪和服务发现。目前流行的开源软件是Istio和Linkerd，都可以在Cloud Native的kubernetes环境中集成。
+  **微服务架构**：Why：为什么使用服务网格？传统的MVC三层Web应用程序架构下，服务之间的通讯并不复杂，在应用程序内部自己管理即可，但在如今复杂的大型网站情况下，单体应用被分解成众多的微服务，服务之间的依赖和通讯十分复杂。What：服务网格，是服务间通信的基础设施层，可以把它比作是应用程序或是微服务间的TCP/IP，负责服务间网络调用、限流、熔断和监控。Service Mesh的特点：应用程序间通讯的中间层、轻量级网络代理、应用程序无感知、解耦应用程序的重试/超时、监控、追踪和服务发现。目前流行的开源软件是Istio和Linkerd，都可以在Cloud Native的kubernetes环境中集成。
+  
+- [Updater fails if not run as admin, even on a user installation](https://github.com/MiKTeX/miktex/issues/56)<br>
+
+  ![miktex1](https://user-images.githubusercontent.com/6771275/35782587-665090de-09fa-11e8-95c7-e16ea39ce46e.png)
+  
+  **LaTeX**：MiKTeX（注册表问题和管理员权限问题）+TeXnicCenter（不能生成pdf问题，设置Build中adobe execute path为正版AcroRd32.exe）+Adobe Acrobat Reader DC，再利用破解版Adobe Acrobat DC转其他格式。
 
 ## 底层研究
 - [python requests库流程简析](https://www.jianshu.com/p/a5e98489dcb8)<br>
 **python requests库实现**：socket->httplib->urllib->urllib3->requests。requests.get的内部调用流程：requests.get->requests()->Session.request->Session.send->adapter.send->HTTPConnectionPool(urllib3)->HTTPConnection(httplib)。
+
 	1、socket：是TCP/IP最直接的实现，实现端到端的网络传输
 	2、httplib：基于socket库，是最基础最底层的http库，主要将数据按照http协议组织，然后创建socket连接，将封装的数据发往服务端
 	3、urllib：基于httplib库，主要对url的解析和编码做进一步处理
@@ -566,6 +572,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 ## 职业规划
 - [至关重要：如何做好我们的职业规划](https://zhuanlan.zhihu.com/p/83620510)**（学到了）**<br>
 ![](https://i.imgur.com/y45VJrI.png)
+
 	1. 认清自己，确认方向。按照**职业规划探寻模型**来思考
 	2. 收集信息，心中有数。校招/社招/JD
 	3. **目标设远，步步拆解**。拆解框架：时间/目标/准备(技术能力、汇报能力|领导能力、沟通能力、团队建设能力)
