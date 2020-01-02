@@ -145,43 +145,64 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 ### 技术
 - [解码与xss](https://blog.csdn.net/he_and/article/details/80588409)(**原文中有一处错误“html实体编码后“应该是`&#x5c;&#x75;&#x37;&#x32;` 产生的原因就是浏览器的html自解码**)<br>
 **浏览器技术-解码顺序**：浏览器解码主要涉及到两个部分：渲染引擎和js解析器。解码顺序：在什么环境下就进行什么解码，解码顺序为：最外层的环境对应的编码最先解码。举个例子:在`<a href=javascript:alert(1)>click</a>`中alert(1)处在html->url->js环境中。
-    `1、<a href=javascript:al\u65rt(1)>click</a> 采用unicode编码e，html和url环境下都不能解码，只有在js环境下才能解码为字符e，所以不会弹窗`
-    `2、<a href=javascript:al%65rt(1)>click</a> 采用url编码，在执行js前，url解码%65，所以到了js引擎启动时，看到了完整的alert(1)`
-    `3、<a href=javascript:alert(1)>click</a> html实体解码先执行了`
-    `4、<a href=java%61script:alert(1)>click</a> 在url解码环节，不会认为javascript是伪协议，会出现错误。`
-    `5、<a href=# onclick="alert('&#x27;&#x29;;alert&#x28;&#x27;2');">click</a> htmlparser会优先于JavaScript parser执行，所以解析过程是htmlencode的字符先被解码，然后执行JavaScript事件`
+  
+  ```
+  1、<a href=javascript:al\u65rt(1)>click</a> 采用unicode编码e，html和url环境下都不能解码，只有在js环境下才能解码为字符e，所以不会弹窗
+  2、<a href=javascript:al%65rt(1)>click</a> 采用url编码，在执行js前，url解码%65，所以到了js引擎启动时，看到了完整的alert(1)
+  3、<a href=javascript:alert(1)>click</a> html实体解码先执行了
+  4、<a href=java%61script:alert(1)>click</a> 在url解码环节，不会认为javascript是伪协议，会出现错误。
+  5、<a href=# onclick="alert('&#x27;&#x29;;alert&#x28;&#x27;2');">click</a> htmlparser会优先于JavaScript parser执行，所以解析过程是htmlencode的字符先被解码，然后执行JavaScript事件。
+  ```
+  
   **浏览器解码顺序是XSS中bypass的基础**。
+  
 - [数据分析与可视化：谁是安全圈的吃鸡第一人](https://www.freebuf.com/articles/web/199925.html?from=timeline&isappinstalled=0)（学到了）<br>
-**数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
-- [dockerfile 和 docker-compose 的关系](https://segmentfault.com/q/1010000009883848)<br>
-**docker技术**：文件和文件夹的关系。
-- [dockerfile 与 docker-compose的区别是什么?](https://segmentfault.com/q/1010000009883848)<br>
-**docker技术**：docker-compose是编排容器的。
-- [堡垒机是什么？](https://www.zhihu.com/question/21036511)<br>
-**堡垒机技术**：为访问集群限定一个入口；方便权限控制以及监控。
-- [产品的可行性需从哪几个方面分析？](https://zhuanlan.zhihu.com/p/20875988)<br>
-**可行性分析**：产品可行性分为：技术可行性、经济可行性、社会可行性，其中我关注的是技术可行性。技术可行性主要从竞争对手功能比较、技术风险及规避方法、易用性及用户使用门槛、产品环境依赖性等方面衡量。
-- [Nginx、Gunicorn在服务器中分别起什么作用？](https://www.zhihu.com/question/38528616)<br>
-**应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
-- [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)<br>
-**Kerberos**：Kerberos的基本描述、协议内容和具体流程。
-- [数据分析与可视化：谁是安全圈的吃鸡第一人](https://www.freebuf.com/articles/web/199925.html?from=timeline&isappinstalled=0)（学到了）<br>
-**数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
+  **数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
+
 - [dockerfile 和 docker-compose 的关系](https://segmentfault.com/q/1010000009883848)<br>
   **docker技术**：文件和文件夹的关系。
+
 - [dockerfile 与 docker-compose的区别是什么?](https://segmentfault.com/q/1010000009883848)<br>
-**docker技术**：docker-compose是编排容器的。
+  **docker技术**：docker-compose是编排容器的。
+
 - [堡垒机是什么？](https://www.zhihu.com/question/21036511)<br>
-**堡垒机技术**：为访问集群限定一个入口；方便权限控制以及监控。
+  **堡垒机技术**：为访问集群限定一个入口；方便权限控制以及监控。
+
 - [产品的可行性需从哪几个方面分析？](https://zhuanlan.zhihu.com/p/20875988)<br>
-**可行性分析**：产品可行性分为：技术可行性、经济可行性、社会可行性，其中我关注的是技术可行性。技术可行性主要从竞争对手功能比较、技术风险及规避方法、易用性及用户使用门槛、产品环境依赖性等方面衡量。
+  **可行性分析**：产品可行性分为：技术可行性、经济可行性、社会可行性，其中我关注的是技术可行性。技术可行性主要从竞争对手功能比较、技术风险及规避方法、易用性及用户使用门槛、产品环境依赖性等方面衡量。
+
 - [Nginx、Gunicorn在服务器中分别起什么作用？](https://www.zhihu.com/question/38528616)<br>
-**应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
+  **应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
+
 - [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)<br>
-**Kerberos**：Kerberos的基本描述、协议内容和具体流程。
+  **Kerberos**：Kerberos的基本描述、协议内容和具体流程。
+
+- [数据分析与可视化：谁是安全圈的吃鸡第一人](https://www.freebuf.com/articles/web/199925.html?from=timeline&isappinstalled=0)（学到了）<br>
+  **数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
+
+- [dockerfile 和 docker-compose 的关系](https://segmentfault.com/q/1010000009883848)<br>
+  **docker技术**：文件和文件夹的关系。
+  
+- [dockerfile 与 docker-compose的区别是什么?](https://segmentfault.com/q/1010000009883848)<br>
+  **docker技术**：docker-compose是编排容器的。
+
+- [堡垒机是什么？](https://www.zhihu.com/question/21036511)<br>
+  **堡垒机技术**：为访问集群限定一个入口；方便权限控制以及监控。
+
+- [产品的可行性需从哪几个方面分析？](https://zhuanlan.zhihu.com/p/20875988)<br>
+  **可行性分析**：产品可行性分为：技术可行性、经济可行性、社会可行性，其中我关注的是技术可行性。技术可行性主要从竞争对手功能比较、技术风险及规避方法、易用性及用户使用门槛、产品环境依赖性等方面衡量。
+
+- [Nginx、Gunicorn在服务器中分别起什么作用？](https://www.zhihu.com/question/38528616)<br>
+  **应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
+
+- [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)<br>
+  **Kerberos**：Kerberos的基本描述、协议内容和具体流程。
+
 - [什么是**微服务架构**？](https://www.zhihu.com/question/65502802)
+
 - [什么是Service Mesh（服务网格）](https://jimmysong.io/posts/what-is-a-service-mesh/)<br>
-**微服务架构**：Why：为什么使用服务网格？传统的MVC三层Web应用程序架构下，服务之间的通讯并不复杂，在应用程序内部自己管理即可，但在如今复杂的大型网站情况下，单体应用被分解成众多的微服务，服务之间的依赖和通讯十分复杂。What：服务网格，是服务间通信的基础设施层，可以把它比作是应用程序或是微服务间的TCP/IP，负责服务间网络调用、限流、熔断和监控。Service Mesh的特点：应用程序间通讯的中间层、轻量级网络代理、应用程序无感知、解耦应用程序的重试/超时、监控、追踪和服务发现。目前流行的开源软件是Istio和Linkerd，都可以在Cloud Native的kubernetes环境中集成。
+  **微服务架构**：Why：为什么使用服务网格？传统的MVC三层Web应用程序架构下，服务之间的通讯并不复杂，在应用程序内部自己管理即可，但在如今复杂的大型网站情况下，单体应用被分解成众多的微服务，服务之间的依赖和通讯十分复杂。What：服务网格，是服务间通信的基础设施层，可以把它比作是应用程序或是微服务间的TCP/IP，负责服务间网络调用、限流、熔断和监控。Service Mesh的特点：应用程序间通讯的中间层、轻量级网络代理、应用程序无感知、解耦应用程序的重试/超时、监控、追踪和服务发现。目前流行的开源软件是Istio和Linkerd，都可以在Cloud Native的kubernetes环境中集成。
+
 - [Updater fails if not run as admin, even on a user installation](https://github.com/MiKTeX/miktex/issues/56)<br>
   ![miktex1](https://user-images.githubusercontent.com/6771275/35782587-665090de-09fa-11e8-95c7-e16ea39ce46e.png)<br>
   **LaTeX**：MiKTeX（注册表问题和管理员权限问题）+TeXnicCenter（不能生成pdf问题，设置Build中adobe execute path为正版AcroRd32.exe）+Adobe Acrobat Reader DC，再利用破解版Adobe Acrobat DC转其他格式。
@@ -547,7 +568,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 
 - [ZoomEye 网络空间测绘——委内瑞拉停电事件对其网络关键基础设施和重要信息系统影响](https://mp.weixin.qq.com/s/rGMggOde1XQjrYClphsi4A)
 
-- [2020安全工作展望](https://mp.weixin.qq.com/s/mihqZ0BJAgee1bEm1ZJAQw)
+- [2020安全工作展望](https://mp.weixin.qq.com/s/mihqZ0BJAgee1bEm1ZJAQw)<br>
 
   **行文逻辑**：**2019大事件**：HW行动将安全从隐性变成显性，低频变成高频，暴露问题，促进管理层对安全的重视，此为大背景；等保2.0安全合规愈加严格。**2019大变化**：领导重视了；实战化了。**2020甲方安全关注技术点**：安全运营（覆盖率和正常率等指标、是否有验证思路：能否在一定时间内主动发现安全措施失效）和安全资产管理（CMDB、主机上数据、流量、扫描、人工添加）。**2020关注“人”的需求**。**2020展望行业**：甲方安全团队组织架构会发生剧烈变化，安全团队能否承受变化；甲乙两方相处之道；安全黑天鹅事件越来越多。
 
