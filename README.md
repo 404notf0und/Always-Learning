@@ -1,16 +1,20 @@
 # 404 Not Found的知识库
-最近更新日期：2019/12/31
+最近更新日期：2020/1/2
 
 最近一周新增：
 -  [Updater fails if not run as admin, even on a user installation](https://github.com/MiKTeX/miktex/issues/56)
+-  [智能威胁检测：基于Spark的SOC机器学习检测平台](https://mp.weixin.qq.com/s/0FNXGMQXu4LkTIC0ZbwwpQ)
+-  [网络空间安全时代的红蓝对抗建设](https://mp.weixin.qq.com/s/dzU7mTbD-Hmw7ZxB6FRb5Q)
+-  [2020安全工作展望](https://mp.weixin.qq.com/s/mihqZ0BJAgee1bEm1ZJAQw)
+
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
-	- [计算机网络](#计算机网络)
-	- [操作系统](#操作系统)
-	- [数据结构与算法](#数据结构与算法)
-	- [数据库](#数据库)
+    - [计算机网络](#计算机网络)
+    - [操作系统](#操作系统)
+    - [数据结构与算法](#数据结构与算法)
+    - [数据库](#数据库)
 - [计算机技术基础](#计算机技术)
-  	- [语言](#语言)
+    - [语言](#语言)
     - [框架](#框架)
     - [工具](#工具)
     - [技术](#技术)
@@ -23,7 +27,7 @@
 	- [数据安全](#数据安全)
 	- [云安全](#云安全)
 - [安全研究](#安全研究)
-	- [APT检测](#APT检测)
+    - [APT检测](#APT检测)
 	- [恶意样本](#恶意样本)
 	- [Red Team](#RedTeam)
 	- [WAF](#WAF)
@@ -31,17 +35,17 @@
 	- [对抗机器流量](#对抗机器流量)
 	- [异常检测](#异常检测)
 	- [图与安全](#图与安全)
-	- [AI安全](#AI安全)
+	- [AI与安全](#AI与安全)
 - [人工智能](#人工智能)
-	- [算法体系](#算法体系)
-	- [基础知识](#基础知识)
-	- [机器学习](#机器学习)
-	- [深度学习](#深度学习)
-	- [强化学习](#强化学习)
-	- [应用领域](#应用领域)
-	- [综合素质](#技术素质)
+    - [算法体系](#算法体系)
+    - [基础知识](#基础知识)
+    - [机器学习](#机器学习)
+    - [深度学习](#深度学习)
+    - [强化学习](#强化学习)
+    - [应用领域](#应用领域)
+    - [综合素质](#技术素质)
 - [企业安全建设](#企业安全建设)
-	- [安全开发](#安全开发)
+    - [安全开发](#安全开发)
 	- [安全数据分析](#安全数据分析)
 	- [安全检测](#安全检测)
 	- [优秀开源安全项目/安全产品](#安全产品)
@@ -51,7 +55,7 @@
 	- [安全架构](#安全架构)
 	- [红蓝对抗](#红蓝对抗)
 - [安全发展](#安全发展)
-	- [个人发展](#个人发展)
+    - [个人发展](#个人发展)
 	- [行业发展](#行业发展)  
 ## 软实力
 - [职业规划](#职业规划)
@@ -179,18 +183,19 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 - [什么是Service Mesh（服务网格）](https://jimmysong.io/posts/what-is-a-service-mesh/)<br>
 **微服务架构**：Why：为什么使用服务网格？传统的MVC三层Web应用程序架构下，服务之间的通讯并不复杂，在应用程序内部自己管理即可，但在如今复杂的大型网站情况下，单体应用被分解成众多的微服务，服务之间的依赖和通讯十分复杂。What：服务网格，是服务间通信的基础设施层，可以把它比作是应用程序或是微服务间的TCP/IP，负责服务间网络调用、限流、熔断和监控。Service Mesh的特点：应用程序间通讯的中间层、轻量级网络代理、应用程序无感知、解耦应用程序的重试/超时、监控、追踪和服务发现。目前流行的开源软件是Istio和Linkerd，都可以在Cloud Native的kubernetes环境中集成。
 - [Updater fails if not run as admin, even on a user installation](https://github.com/MiKTeX/miktex/issues/56)<br>
-  ![miktex1](https://user-images.githubusercontent.com/6771275/35782587-665090de-09fa-11e8-95c7-e16ea39ce46e.png)
-**LaTeX**：MiKTeX（注册表问题和管理员权限问题）+TeXnicCenter（不能生成pdf问题，设置Build中adobe execute path为正版AcroRd32.exe）+Adobe Acrobat Reader DC，再利用破解版Adobe Acrobat DC转其他格式。
+  ![miktex1](https://user-images.githubusercontent.com/6771275/35782587-665090de-09fa-11e8-95c7-e16ea39ce46e.png)<br>
+  **LaTeX**：MiKTeX（注册表问题和管理员权限问题）+TeXnicCenter（不能生成pdf问题，设置Build中adobe execute path为正版AcroRd32.exe）+Adobe Acrobat Reader DC，再利用破解版Adobe Acrobat DC转其他格式。
 
 ## 底层研究
 - [python requests库流程简析](https://www.jianshu.com/p/a5e98489dcb8)<br>
-**python requests库实现**：socket->httplib->urllib->urllib3->requests。requests.get的内部调用流程：requests.get->requests()->Session.request->Session.send->adapter.send->HTTPConnectionPool(urllib3)->HTTPConnection(httplib)。
-
-	1、socket：是TCP/IP最直接的实现，实现端到端的网络传输
-	2、httplib：基于socket库，是最基础最底层的http库，主要将数据按照http协议组织，然后创建socket连接，将封装的数据发往服务端
-	3、urllib：基于httplib库，主要对url的解析和编码做进一步处理
-	4、urllib3：基于httplib库，相较于urllib更高级的地方在于用PoolManager实现了socket连接复用和线程安全，提高了效率
-	5、requests：基于urllib3库，比urllib3更高级的是实现了Session对象，用Session对象保存一些数据状态，进一步提高了效率
+  **python requests库实现**：socket->httplib->urllib->urllib3->requests。requests.get的内部调用流程：requests.get->requests()->Session.request->Session.send->adapter.send->HTTPConnectionPool(urllib3)->HTTPConnection(httplib)。
+  ```
+  1、socket：是TCP/IP最直接的实现，实现端到端的网络传输
+  2、httplib：基于socket库，是最基础最底层的http库，主要将数据按照http协议组织，然后创建socket连接，将封装的数据发往服务端
+  3、urllib：基于httplib库，主要对url的解析和编码做进一步处理
+  4、urllib3：基于httplib库，相较于urllib更高级的地方在于用PoolManager实现了socket连接复用和线程安全，提高了效率
+  5、requests：基于urllib3库，比urllib3更高级的是实现了Session对象，用Session对象保存一些数据状态，进一步提高了效率
+  ```
 - [XGBoost原理和底层实现剖析](https://snaildove.github.io/2018/10/02/get-started-XGBoost/)（学到了）<br>
 **XGBoost**：从树的分数（目标函数：损失函数（二阶展开）+正则项），树的结构（分裂决策（预排序））方面理解。
 - [Lightgbm 直方图优化算法深入理解](https://blog.csdn.net/anshuai_aw1/article/details/83040541)<br>
@@ -253,7 +258,7 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 **恶意HTTP外连流量检测**：**总体思路**：**1、数据收集**，沙箱运行恶意样本，收集恶意流量，人工区分恶意流量和白流量，再根据威胁情报对恶意流量划分家族。**2、数据分析**（特征工程）：同一家族恶意外连流量的相似性，可以考虑使用聚类算法将同一家族的流量聚为一类，提取它们的共性，形成模板，再用模板检测未知流量。**3、算法：训练阶段**：提取HTTP外连流量--->提取请求头字段--->泛化--->相似度计算（**请求头中字段特异性加权再计算相似性**）--->层次聚类--->生成恶意外连流量模板（聚类中该字段并集作为该字段在模板中的值）。**检测阶段**：未知HTTP外连流量--->提取请求头字段--->泛化--->与恶意模板匹配--->判断相似度是否超过阈值（阈值确定）
 - [Cuckoo恶意软件自动化分析平台搭建](https://wooyun.js.org/drops/Cuckoo%E6%81%B6%E6%84%8F%E8%BD%AF%E4%BB%B6%E8%87%AA%E5%8A%A8%E5%8C%96%E5%88%86%E6%9E%90%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA.html)
 - [Cuckoo 恶意软件分析环境](https://github.com/crazywa1ker/DarthSidious-Chinese/blob/master/BUILDING-A-LAB/Cuckoo%E6%81%B6%E6%84%8F%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E7%8E%AF%E5%A2%83.md)
-- [Playing with Cuckoo](https://rastamouse.me/2017/05/playing-with-cuckoo/)
+- [Playing with Cuckoo](https://rastamouse.me/2017/05/playing-with-cuckoo/)<br>
 **Cuckoo沙箱：**在搭建Cuckoo恶意样本分析环境的过程中遇到了很多坑，现在还印象深刻的还有**pip 换源** -i https://pypi.tuna.tsinghua.edu.cn/simple；配置agent.py到startup文件夹中；注意windows10、ubuntu16和windows7之间的网络关系，NAT和Host-Only模式。物理主机windows10装vmware，vmware装ubuntu16，ubuntu16装virtualbox和cuckoo server端，virtualbox装windows7 作为agent端。
 - [恶意样本分析资源汇总](https://www.malwareanalysis.cn/1054/?from=groupmessage&isappinstalled=0)
 
@@ -309,18 +314,14 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [社区发现算法 - Fast Unfolding（Louvian）算法初探](https://www.cnblogs.com/LittleHann/p/9078909.html)
 - [A DGA Odyssey PDNS Driven DGA Analysis](https://pc.nanog.org/static/published/meetings/NANOG71/1444/20171004_Gong_A_Dga_Odyssey__v1.pdf)
 
-### AI安全
-- [从安全视角对机器学习的部分思考](https://mp.weixin.qq.com/s/kP4YuiksI1dfZdT8Z_j_cQ)
-- [中科院信工所发布《深度学习系统的隐私与安全》综述论文，187篇文献总结](https://mp.weixin.qq.com/s/B0FTTAppy_AUt6SXVFL-Pg)
+### AI与安全
+- [安全场景、基于AI的安全算法和安全数据分析学习资料整理](https://github.com/404notf0und/AI-for-Security-Learning)
 - [Towards Privacy and Security of Deep Learning Systems: A Survey](https://arxiv.org/pdf/1911.12562v1.pdf)<br>
 **AI安全的攻击面**：训练阶段和测试阶段的数据和模型方面，攻击有数据中毒和对抗性样本，模型提取和模型反转等。
-
-### 强化学习与安全
-- [Deep Exploit: Fully automatic penetration test tool using Machine Learning](https://securityonline.info/deep-exploit/)
-- [Github:Deep Exploit](https://github.com/13o-bbr-bbq/machine_learning_security/tree/master/DeepExploit)
-- [Github:GyoiThon](https://github.com/gyoisamurai/GyoiThon)
+- [智能威胁检测：基于Spark的SOC机器学习检测平台](https://mp.weixin.qq.com/s/0FNXGMQXu4LkTIC0ZbwwpQ) 
 
 ## 人工智能
+
 ### 算法体系
 - [机器学习算法集锦：从贝叶斯到深度学习及各自优缺点](https://mp.weixin.qq.com/s/idxuzwUKG_Q1yUtpipG4Xw)<br>
 **算法知识框架**：主要从算法的定义、过程、代表性算法、优缺点解释回归、正则化算法、人工神经网络、深度学习||决策树算法、集成算法||支持向量机||降维算法、聚类算法||基于实例的算法||贝叶斯算法||关联规则学习算法||图模型。<br>
@@ -499,11 +500,15 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 
 ### 红蓝对抗
 - [【红蓝对抗】大型互联网企业安全蓝军建设](https://kingx.me/Thinking-about-Red-Teaming.html)（学到了）<br>
-**红蓝对抗的Why**：检验企业安全防护体系；梳理风险盲点和攻防场景，为安全建设提供有价值的建议；安全价值的体现；强化业务同事的安全意识。<br>
-**红蓝对抗的What**：入侵发现率；攻防场景发现率；攻击覆盖度；演戏频次/安全风险数/策略缺陷数/效率提升；攻击成本；目标达成率。<br>
-**红蓝对抗的How**：仿真APT--->蓝军团队需要沉淀出一套体系化的攻击手法知识库和武器库--->ATT&&CK矩阵框架。<br>
-**红蓝对抗Do过程中的挑战**：效率/收益；攻击成本量化；来自业务的挑战（红蓝对抗的核心目标是为业务保驾护航）。<br>
-**红蓝对抗的Future**：多层次多范围的蓝军；蓝军的自动化渗透平台/协同作战平台；蓝军能力对外输出。
+  **红蓝对抗的Why**：检验企业安全防护体系；梳理风险盲点和攻防场景，为安全建设提供有价值的建议；安全价值的体现；强化业务同事的安全意识。<br>
+  **红蓝对抗的What**：入侵发现率；攻防场景发现率；攻击覆盖度；演戏频次/安全风险数/策略缺陷数/效率提升；攻击成本；目标达成率。<br>
+  **红蓝对抗的How**：仿真APT--->蓝军团队需要沉淀出一套体系化的攻击手法知识库和武器库--->ATT&&CK矩阵框架。<br>
+  **红蓝对抗Do过程中的挑战**：效率/收益；攻击成本量化；来自业务的挑战（红蓝对抗的核心目标是为业务保驾护航）。<br>
+  **红蓝对抗的Future**：多层次多范围的蓝军；蓝军的自动化渗透平台/协同作战平台；蓝军能力对外输出。
+
+- [网络空间安全时代的红蓝对抗建设](https://mp.weixin.qq.com/s/dzU7mTbD-Hmw7ZxB6FRb5Q)（附录存在红蓝对抗相关文章）<br>
+
+  **实战是检验安全防护能力的唯一标准。**渗透测试，适用于企业安全体系建设初期或者一穷二白阶段，而红蓝对抗是渗透测试的升级版，不仅关注安全漏洞，重点检验的是企业安全建设体系的缺陷，**红蓝对抗的边界**不只是信息安全视角下的网络渗透攻击，随着新技术新架构的出现，**还拓展到网络空间安全视角下的AIoT、工业互联网、业务风控、窃听/窃视等领域。**
 
 ## 安全发展
 ### 个人发展
@@ -533,11 +538,18 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 ### 行业发展
 #### 安全格局
 - [最新统计2005-2017年国内科研单位在国际安全顶级会议中发表文章量统计](https://mp.weixin.qq.com/s/kd4S6hCE_GPpPGbp1aD5Jw)
+
 - [从内容产出看安全领域变化](https://mp.weixin.qq.com/s/MZp_BOPPrX4hTgP5s5hUPw)<br>
-**技术格局**：企鹅等互联网巨头开始进行流量封锁，对安全从业人员影响很大，爬不到数据，api又有限，只能上升到app hook了；技术上安全分析、数据挖掘、威胁情报的比重越来越重，**AI已经不仅仅是噱头了，智能安全势不可挡**；安全的职业发展方面，越来越多大佬们开始转型业务安全、数据安全。
+  **技术格局**：企鹅等互联网巨头开始进行流量封锁，对安全从业人员影响很大，爬不到数据，api又有限，只能上升到app hook了；技术上安全分析、数据挖掘、威胁情报的比重越来越重，**AI已经不仅仅是噱头了，智能安全势不可挡**；安全的职业发展方面，越来越多大佬们开始转型业务安全、数据安全。
+
 - [网络安全行业竞争格局浅析](https://mp.weixin.qq.com/s/4odKGqDzyFI1CzWwVvmXEw)<br>
-**市场格局**：基础安全防护（传统安全防护能力），中级安全防护（海量数据建模与分析能力），高级安全防护（云端威胁情报与分析能力），中高级安全防护市场广阔。此外，全文在多处凸显了人工智能技术，智能安全开始迈入开悟之坡了吗？！半数以上的人看好智能安全，也有人不看好智能安全，未来会怎么样，让我们拭目以待！
+  **市场格局**：基础安全防护（传统安全防护能力），中级安全防护（海量数据建模与分析能力），高级安全防护（云端威胁情报与分析能力），中高级安全防护市场广阔。此外，全文在多处凸显了人工智能技术，智能安全开始迈入开悟之坡了吗？！半数以上的人看好智能安全，也有人不看好智能安全，未来会怎么样，让我们拭目以待！
+
 - [ZoomEye 网络空间测绘——委内瑞拉停电事件对其网络关键基础设施和重要信息系统影响](https://mp.weixin.qq.com/s/rGMggOde1XQjrYClphsi4A)
+
+- [2020安全工作展望](https://mp.weixin.qq.com/s/mihqZ0BJAgee1bEm1ZJAQw)
+
+  **行文逻辑**：**2019大事件**：HW行动将安全从隐性变成显性，低频变成高频，暴露问题，促进管理层对安全的重视，此为大背景；等保2.0安全合规愈加严格。**2019大变化**：领导重视了；实战化了。**2020甲方安全关注技术点**：安全运营（覆盖率和正常率等指标、是否有验证思路：能否在一定时间内主动发现安全措施失效）和安全资产管理（CMDB、主机上数据、流量、扫描、人工添加）。**2020关注“人”的需求**。**2020展望行业**：甲方安全团队组织架构会发生剧烈变化，安全团队能否承受变化；甲乙两方相处之道；安全黑天鹅事件越来越多。
 
 #### 安全产品
 - [C端安全产品的未来之路](https://mp.weixin.qq.com/s/Sp15EkyNKBZvOZHrJ7zJ2w)<br>
@@ -636,8 +648,3 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [Efficient and Flexible Discovery of PHP Application Vulnerabilities原文](https://swag.cispa.saarland/papers/skoruppa2017php.pdf)
 - [The Code Analysis Platform "Octopus"](https://github.com/octopus-platform)
 - [A Code Intelligence System：The Octopus Platform](https://octopus-platform.github.io/)
-
-
-
-
-
