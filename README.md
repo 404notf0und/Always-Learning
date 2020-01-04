@@ -8,12 +8,24 @@
 -  [2020安全工作展望](https://mp.weixin.qq.com/s/mihqZ0BJAgee1bEm1ZJAQw)
 -  [云安全的未来](https://mp.weixin.qq.com/s/MfjRfJ04fnRY8gI5s6BA8g)
 -  [阿里巴巴高级算法专家威视：组建技术团队的一些思考](https://zhuanlan.zhihu.com/p/99701435)
+-  [安全招聘之面试题](https://feei.cn/security-recruit-questions/)
+- [安全招聘之好的简历是怎么样的？](https://feei.cn/security-recruit-resume/)
+- [安全招聘之安全行业现状](https://feei.cn/security-recruit-industry-status/)
+- [安全招聘之安全从业人员必备素质](https://feei.cn/security-recruit-employees-quality/)
+- [安全招聘之面试流程](https://feei.cn/security-recruit-process/)
+-  [CRLF Injection漏洞的利用与实例分析]([https://wooyun.js.org/drops/CRLF%20Injection%E6%BC%8F%E6%B4%9E%E7%9A%84%E5%88%A9%E7%94%A8%E4%B8%8E%E5%AE%9E%E4%BE%8B%E5%88%86%E6%9E%90.html](https://wooyun.js.org/drops/CRLF Injection漏洞的利用与实例分析.html))
+- [对称加密与非对称加密优缺点详解](https://blog.csdn.net/aschulianwuyanzu/article/details/77978484)
+-  [HTTPS原理及交互过程](https://zhuanlan.zhihu.com/p/28197870)
+-  [浏览器的同源策略](https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy)
+-  [九种跨域方式实现原理（完整版）](https://juejin.im/post/5c23993de51d457b8c1f4ee1)
+
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
     - [计算机网络](#计算机网络)
     - [操作系统](#操作系统)
     - [数据结构与算法](#数据结构与算法)
     - [数据库](#数据库)
+    - [密码学基础](#密码学基础)
 - [计算机技术基础](#计算机技术)
     - [语言](#语言)
     - [框架](#框架)
@@ -102,6 +114,10 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 - [【视频讲解】LeetCode 第 1 号问题：两数之和](https://mp.weixin.qq.com/s/BEefuwFek3dpXl8wE0b9Iw)<br>
 - [年会抢红包策略](https://www.cdxy.me/?p=802)
 
+### 密码学基础
+- [对称加密与非对称加密优缺点详解](https://blog.csdn.net/aschulianwuyanzu/article/details/77978484)
+对称加密也称单秘钥加密。算法有：AES、RC4、3DES。速度快，需要加密大量数据时使用，计算量小，效率高；一方秘钥泄露整个加密都不安全。非对称加密，算法有RSA、DSA/DSS，速度慢，安全性高。Hash算法有MD5、SHA1、SHA256。**三类算法是HTTPS通信的基础**。
+
 ### 数据库
 - [腾讯面试：一条SQL语句执行得很慢的原因有哪些？](https://zhuanlan.zhihu.com/p/62941196)<br>
 **补充学习**：数据库引擎（InnoDB支持事物处理和外键，但是慢一点、ISAM和MyISAM空间和内存使用低，插入数据快）、数据库编码（`character_set_client、character_set_connection、character_set_database、character_set_results、character_set_server、character_set_system`）、数据库索引(主键索引、聚集索引和非聚集索引)等基础知识点。<br>
@@ -188,6 +204,13 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 - [Updater fails if not run as admin, even on a user installation](https://github.com/MiKTeX/miktex/issues/56)<br>
   ![miktex1](https://user-images.githubusercontent.com/6771275/35782587-665090de-09fa-11e8-95c7-e16ea39ce46e.png)<br>
 **LaTeX**：MiKTeX（注册表问题和管理员权限问题）+TeXnicCenter（不能生成pdf问题，设置Build中adobe execute path为正版AcroRd32.exe）+Adobe Acrobat Reader DC，再利用破解版Adobe Acrobat DC转其他格式。
+- [HTTPS原理及交互过程](https://zhuanlan.zhihu.com/p/28197870)<br>
+HTTPS：HTTPS在传输数据之前需要浏览器和网站之间进行一次握手，在握手的过程中将确认双方加密传输数据的密码信息。获取公钥-》浏览器产生随机（对称）秘钥-》使用公钥对对称秘钥加密-》发送加密后的对称秘钥-》通过对称秘钥加密的密文通信。**HTTPS通信的整个过程使用了对称加密、非对称加密和HASH算法**。
+- [浏览器的同源策略](https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy)<br>
+**浏览器技术**：同源策略是浏览器最核心最基本的安全功能，同源的定义为：协议/主机/端口。
+- [九种跨域方式实现原理（完整版）](https://juejin.im/post/5c23993de51d457b8c1f4ee1)<br>
+**浏览器技术**：跨域请求解决方案：JSONP（依赖script标签没有跨域限制的漏洞）、CORS（跨域资源共享）、postMessage、websocket、Node中间件代理、nginx反向代理、windows.name+iframe、location.hash+iframe、document.domain+iframe。<br>
+**CORS**支持所有类型的HTTP请求，是跨域HTTP请求的根本解决方案。**JSONP**只支持GET请求，优势在于支持老式浏览器，以及可以向不支持CORS的网站请求数据。不管是**Node中间件代理**还是**nginx反向代理**，主要是通过同源策略对服务器不加限制。日常工作中，用的比较多的跨域方案是CORS和nginx反向代理。
 
 ## 底层研究
 - [python requests库流程简析](https://www.jianshu.com/p/a5e98489dcb8)<br>
@@ -216,6 +239,8 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 **XXE漏洞**：XXE的原理：调用外部实体，XXE的利用：利用通用实体、参数实体、外部实体、内部实体进行文件读取，内网主机和端口探测、内网RCE（php下需要expect扩展的支持）
 - [mysql无逗号的注入技巧](http://wonderkun.cc/index.html/?p=442)<br>
 **注入攻击**：sql注入、xml注入（一种标记语言，通过标签对数据进行结构化表示）、代码注入（eval类）、CRLF注入（\r\n）。Mysql injection：使用注释绕过空格，使用括号绕过空格，使用%20 %0a等符号替换空格；union查询下，使用join绕过逗号过滤，`select id,ip from client_ip where 1>2  union select * from  ( (select user())a JOIN  (select version())b ); `使用`select case when（条件） then 代码1 else 代码2 end`绕过逗号过滤，`insert into client_ip (ip) values ('ip'+(select case when (substring((select user()) from 1 for 1)='e') then sleep(3) else 0 end));`
+- [CRLF Injection漏洞的利用与实例分析]([https://wooyun.js.org/drops/CRLF%20Injection%E6%BC%8F%E6%B4%9E%E7%9A%84%E5%88%A9%E7%94%A8%E4%B8%8E%E5%AE%9E%E4%BE%8B%E5%88%86%E6%9E%90.html](https://wooyun.js.org/drops/CRLF Injection漏洞的利用与实例分析.html))<br>
+CRLF是“回车+换行”(\r\n)的简称。HTTP Header和HTTP Body是用两个CRLF分隔的。CRLF injection又叫做HTTP Response Splitting，简称HRS。X-XSS-Protection:0关掉浏览器对反射型XSS过滤的保护策略。
 - [SSRF漏洞利用与getshell实战（精选）](https://mp.weixin.qq.com/s/1hzfFhh4HBlilNmHxSfa8g)
 - [SSRF漏洞中绕过过滤（IP限制）的几种方法总结](https://www.freebuf.com/articles/web/135342.html)<br>
 **SSRF**：利用302跳转（xip.io、短地址、自写服务）；DNS 重绑定（绕过IP限制）；更改IP地址写法；利用解析URL所出现的问题：`http://www.baidu.com@192.168.0.1/`；通过各种非HTTP协议
@@ -527,6 +552,15 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [十面阿里，七面头条，你猜我进阿里没？](https://mp.weixin.qq.com/s/CUYbxx2qm9OXb8SUHdjbXA)<br>
 **面试**：Java版优秀面经，java必备。
 - [书剑恩仇录之我与阿里巴巴](http://michael282694.com/post/shu-jian-en-chou-lu-zhi-wo-yu-a-li-ba-ba)（太强了）
+- [安全招聘之面试题](https://feei.cn/security-recruit-questions/)（学到了）<br>
+**行文思路**：渗透测试（WEB方向）、安全研发（JAVA方向）、安全运营（合规审计方向）、安全架构（安全管理方向）<br>
+**补充学习**：CRLF、对称加密和非对称加密的区别和优缺点、HTTPS的交互流程、同源策略、跨域请求。
+- [安全招聘之好的简历是怎么样的？](https://feei.cn/security-recruit-resume/)
+- [安全招聘之安全行业现状](https://feei.cn/security-recruit-industry-status/)
+- [安全招聘之安全从业人员必备素质](https://feei.cn/security-recruit-employees-quality/)<br>
+**行文思路：基础素质=基础能力（自我驱动+自主学习）+专业能力（渗透攻防+软件开发）。进阶素质=聪明（智商+情商）+勇敢乐观+自省**。
+- [安全招聘之面试流程](https://feei.cn/security-recruit-process/)<br>
+现在偷的懒后面会花更多代价来弥补。
 
 #### 职业发展
 - [安全研究者的自我修养](https://mp.weixin.qq.com/s/WrSZpqgq6gvZwEIqghqggg)
