@@ -18,6 +18,7 @@
 -  [HTTPS原理及交互过程](https://zhuanlan.zhihu.com/p/28197870)
 -  [浏览器的同源策略](https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy)
 -  [九种跨域方式实现原理（完整版）](https://juejin.im/post/5c23993de51d457b8c1f4ee1)
+-  [一个安全工程师的2019](https://mp.weixin.qq.com/s/rr2f1RxFTjLSGlqxaG-aog)
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -562,6 +563,8 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **行文思路：基础素质=基础能力（自我驱动+自主学习）+专业能力（渗透攻防+软件开发）。进阶素质=聪明（智商+情商）+勇敢乐观+自省**。
 - [安全招聘之面试流程](https://feei.cn/security-recruit-process/)<br>
 现在偷的懒后面会花更多代价来弥补。
+- [一个安全工程师的2019](https://mp.weixin.qq.com/s/rr2f1RxFTjLSGlqxaG-aog)<br>
+**行文思路**：老赛道与新征程-》行业探索者还是追随者-》行业信息透明互通-》生活加点盐。
 
 #### 职业发展
 - [安全研究者的自我修养](https://mp.weixin.qq.com/s/WrSZpqgq6gvZwEIqghqggg)
