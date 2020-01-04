@@ -13,7 +13,7 @@
 - [安全招聘之安全行业现状](https://feei.cn/security-recruit-industry-status/)
 - [安全招聘之安全从业人员必备素质](https://feei.cn/security-recruit-employees-quality/)
 - [安全招聘之面试流程](https://feei.cn/security-recruit-process/)
--  [CRLF Injection漏洞的利用与实例分析]([https://wooyun.js.org/drops/CRLF%20Injection%E6%BC%8F%E6%B4%9E%E7%9A%84%E5%88%A9%E7%94%A8%E4%B8%8E%E5%AE%9E%E4%BE%8B%E5%88%86%E6%9E%90.html](https://wooyun.js.org/drops/CRLF Injection漏洞的利用与实例分析.html))
+-  [CRLF Injection漏洞的利用与实例分析](https://wooyun.js.org/drops/CRLF Injection漏洞的利用与实例分析.html)
 - [对称加密与非对称加密优缺点详解](https://blog.csdn.net/aschulianwuyanzu/article/details/77978484)
 -  [HTTPS原理及交互过程](https://zhuanlan.zhihu.com/p/28197870)
 -  [浏览器的同源策略](https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy)
@@ -161,7 +161,8 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 
 ### 技术
 - [解码与xss](https://blog.csdn.net/he_and/article/details/80588409)(**原文中有一处错误“html实体编码后“应该是`&#x5c;&#x75;&#x37;&#x32;` 产生的原因就是浏览器的html自解码**)<br>
-**浏览器技术-解码顺序**：浏览器解码主要涉及到两个部分：渲染引擎和js解析器。解码顺序：在什么环境下就进行什么解码，解码顺序为：最外层的环境对应的编码最先解码。举个例子:在`<a href=javascript:alert(1)>click</a>`中alert(1)处在html->url->js环境中。
+  **浏览器技术-解码顺序**：浏览器解码主要涉及到两个部分：渲染引擎和js解析器。解码顺序：在什么环境下就进行什么解码，解码顺序为：最外层的环境对应的编码最先解码。举个例子:在`<a href=javascript:alert(1)>click</a>`中alert(1)处在html->url->js环境中。
+
   ```
   1、<a href=javascript:al\u65rt(1)>click</a> 采用unicode编码e，html和url环境下都不能解码，只有在js环境下才能解码为字符e，所以不会弹窗
   2、<a href=javascript:al%65rt(1)>click</a> 采用url编码，在执行js前，url解码%65，所以到了js引擎启动时，看到了完整的alert(1)
@@ -169,7 +170,7 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
   4、<a href=java%61script:alert(1)>click</a> 在url解码环节，不会认为javascript是伪协议，会出现错误。
   5、<a href=# onclick="alert('&#x27;&#x29;;alert&#x28;&#x27;2');">click</a> htmlparser会优先于JavaScript parser执行，所以解析过程是htmlencode的字符先被解码，然后执行JavaScript事件。
   ```
-**浏览器解码顺序是XSS中bypass的基础**。
+  **浏览器解码顺序是XSS中bypass的基础**。
 - [数据分析与可视化：谁是安全圈的吃鸡第一人](https://www.freebuf.com/articles/web/199925.html?from=timeline&isappinstalled=0)（学到了）<br>
 **数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
 - [dockerfile 和 docker-compose 的关系](https://segmentfault.com/q/1010000009883848)<br>
