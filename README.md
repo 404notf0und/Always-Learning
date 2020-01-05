@@ -1,24 +1,14 @@
 # 404 Not Found的知识库
-最近更新日期：2020/1/4
+最近更新日期：2020/1/5
 
 最近一周新增：
--  [Updater fails if not run as admin, even on a user installation](https://github.com/MiKTeX/miktex/issues/56)
--  [智能威胁检测：基于Spark的SOC机器学习检测平台](https://mp.weixin.qq.com/s/0FNXGMQXu4LkTIC0ZbwwpQ)
--  [网络空间安全时代的红蓝对抗建设](https://mp.weixin.qq.com/s/dzU7mTbD-Hmw7ZxB6FRb5Q)
--  [2020安全工作展望](https://mp.weixin.qq.com/s/mihqZ0BJAgee1bEm1ZJAQw)
--  [云安全的未来](https://mp.weixin.qq.com/s/MfjRfJ04fnRY8gI5s6BA8g)
--  [阿里巴巴高级算法专家威视：组建技术团队的一些思考](https://zhuanlan.zhihu.com/p/99701435)
--  [安全招聘之面试题](https://feei.cn/security-recruit-questions/)
-- [安全招聘之好的简历是怎么样的？](https://feei.cn/security-recruit-resume/)
-- [安全招聘之安全行业现状](https://feei.cn/security-recruit-industry-status/)
-- [安全招聘之安全从业人员必备素质](https://feei.cn/security-recruit-employees-quality/)
-- [安全招聘之面试流程](https://feei.cn/security-recruit-process/)
--  [CRLF Injection漏洞的利用与实例分析](https://wooyun.js.org/drops/CRLF%20Injection%E6%BC%8F%E6%B4%9E%E7%9A%84%E5%88%A9%E7%94%A8%E4%B8%8E%E5%AE%9E%E4%BE%8B%E5%88%86%E6%9E%90.html)
-- [对称加密与非对称加密优缺点详解](https://blog.csdn.net/aschulianwuyanzu/article/details/77978484)
--  [HTTPS原理及交互过程](https://zhuanlan.zhihu.com/p/28197870)
--  [浏览器的同源策略](https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy)
--  [九种跨域方式实现原理（完整版）](https://juejin.im/post/5c23993de51d457b8c1f4ee1)
--  [一个安全工程师的2019](https://mp.weixin.qq.com/s/rr2f1RxFTjLSGlqxaG-aog)
+-  [Tensorflow和Keras 常见问题（持续更新~）](https://zhuanlan.zhihu.com/p/81721574)（坑点）
+-  [Tested build configurations](https://tensorflow.google.cn/install/source)（版本对应速查表）
+-  [windows tensorflow-gpu的安装](https://zhuanlan.zhihu.com/p/35717544)（靠谱）
+-  [windows下安装配置cudn和cudnn](https://www.jianshu.com/p/9bdeb033e765)
+-  [如何在Jupyter Notebook中使用Python虚拟环境？](https://zhuanlan.zhihu.com/p/29564719)
+-  [深度学习中的batch的大小对学习效果有何影响？](https://www.zhihu.com/question/32673260)
+-  [Batch Normalization原理与实战](https://zhuanlan.zhihu.com/p/34879333)
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -163,56 +153,55 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 ### 技术
 - [解码与xss](https://blog.csdn.net/he_and/article/details/80588409)(**原文中有一处错误“html实体编码后“应该是`&#x5c;&#x75;&#x37;&#x32;` 产生的原因就是浏览器的html自解码**)<br>
   **浏览器技术-解码顺序**：浏览器解码主要涉及到两个部分：渲染引擎和js解析器。解码顺序：在什么环境下就进行什么解码，解码顺序为：最外层的环境对应的编码最先解码。举个例子:在`<a href=javascript:alert(1)>click</a>`中alert(1)处在html->url->js环境中。
-
-  ```
-  1、<a href=javascript:al\u65rt(1)>click</a> 采用unicode编码e，html和url环境下都不能解码，只有在js环境下才能解码为字符e，所以不会弹窗
-  2、<a href=javascript:al%65rt(1)>click</a> 采用url编码，在执行js前，url解码%65，所以到了js引擎启动时，看到了完整的alert(1)
-  3、<a href=javascript:alert(1)>click</a> html实体解码先执行了
-  4、<a href=java%61script:alert(1)>click</a> 在url解码环节，不会认为javascript是伪协议，会出现错误。
-  5、<a href=# onclick="alert('&#x27;&#x29;;alert&#x28;&#x27;2');">click</a> htmlparser会优先于JavaScript parser执行，所以解析过程是htmlencode的字符先被解码，然后执行JavaScript事件。
-  ```
+  1、<a href=javascript:al\u65rt(1)>click</a> 采用unicode编码e，html和url环境下都不能解码，只有在js环境下才能解码为字符e，所以不会弹窗<br>
+  2、<a href=javascript:al%65rt(1)>click</a> 采用url编码，在执行js前，url解码%65，所以到了js引擎启动时，看到了完整的alert(1)<br>
+  3、<a href=javascript:alert(1)>click</a> html实体解码先执行了<br>
+  4、<a href=java%61script:alert(1)>click</a> 在url解码环节，不会认为javascript是伪协议，会出现错误。<br>
+  5、<a href=# onclick="alert('&#x27;&#x29;;alert&#x28;&#x27;2');">click</a> htmlparser会优先于JavaScript parser执行，所以解析过程是htmlencode的字符先被解码，然后执行JavaScript事件。<br>
   **浏览器解码顺序是XSS中bypass的基础**。
 - [数据分析与可视化：谁是安全圈的吃鸡第一人](https://www.freebuf.com/articles/web/199925.html?from=timeline&isappinstalled=0)（学到了）<br>
-**数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
+  **数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
 - [dockerfile 和 docker-compose 的关系](https://segmentfault.com/q/1010000009883848)<br>
-**docker技术**：文件和文件夹的关系。
+  **docker技术**：文件和文件夹的关系。
 - [dockerfile 与 docker-compose的区别是什么?](https://segmentfault.com/q/1010000009883848)<br>
-**docker技术**：docker-compose是编排容器的。
+  **docker技术**：docker-compose是编排容器的。
 - [堡垒机是什么？](https://www.zhihu.com/question/21036511)<br>
-**堡垒机技术**：为访问集群限定一个入口；方便权限控制以及监控。
+  **堡垒机技术**：为访问集群限定一个入口；方便权限控制以及监控。
 - [产品的可行性需从哪几个方面分析？](https://zhuanlan.zhihu.com/p/20875988)<br>
-**可行性分析**：产品可行性分为：技术可行性、经济可行性、社会可行性，其中我关注的是技术可行性。技术可行性主要从竞争对手功能比较、技术风险及规避方法、易用性及用户使用门槛、产品环境依赖性等方面衡量。
+  **可行性分析**：产品可行性分为：技术可行性、经济可行性、社会可行性，其中我关注的是技术可行性。技术可行性主要从竞争对手功能比较、技术风险及规避方法、易用性及用户使用门槛、产品环境依赖性等方面衡量。
 - [Nginx、Gunicorn在服务器中分别起什么作用？](https://www.zhihu.com/question/38528616)<br>
-**应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
+  **应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
 - [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)<br>
-**Kerberos**：Kerberos的基本描述、协议内容和具体流程。
+  **Kerberos**：Kerberos的基本描述、协议内容和具体流程。
 - [数据分析与可视化：谁是安全圈的吃鸡第一人](https://www.freebuf.com/articles/web/199925.html?from=timeline&isappinstalled=0)（学到了）<br>
-**数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
+  **数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
 - [dockerfile 和 docker-compose 的关系](https://segmentfault.com/q/1010000009883848)<br>
-**docker技术**：文件和文件夹的关系。
+  **docker技术**：文件和文件夹的关系。
 - [dockerfile 与 docker-compose的区别是什么?](https://segmentfault.com/q/1010000009883848)<br>
-**docker技术**：docker-compose是编排容器的。
+  **docker技术**：docker-compose是编排容器的。
 - [堡垒机是什么？](https://www.zhihu.com/question/21036511)<br>
-**堡垒机技术**：为访问集群限定一个入口；方便权限控制以及监控。
+  **堡垒机技术**：为访问集群限定一个入口；方便权限控制以及监控。
 - [产品的可行性需从哪几个方面分析？](https://zhuanlan.zhihu.com/p/20875988)<br>
-**可行性分析**：产品可行性分为：技术可行性、经济可行性、社会可行性，其中我关注的是技术可行性。技术可行性主要从竞争对手功能比较、技术风险及规避方法、易用性及用户使用门槛、产品环境依赖性等方面衡量。
+  **可行性分析**：产品可行性分为：技术可行性、经济可行性、社会可行性，其中我关注的是技术可行性。技术可行性主要从竞争对手功能比较、技术风险及规避方法、易用性及用户使用门槛、产品环境依赖性等方面衡量。
 - [Nginx、Gunicorn在服务器中分别起什么作用？](https://www.zhihu.com/question/38528616)<br>
-**应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
+  **应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
 - [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)<br>
-**Kerberos**：Kerberos的基本描述、协议内容和具体流程。
+  **Kerberos**：Kerberos的基本描述、协议内容和具体流程。
 - [什么是**微服务架构**？](https://www.zhihu.com/question/65502802)
 - [什么是Service Mesh（服务网格）](https://jimmysong.io/posts/what-is-a-service-mesh/)<br>
-**微服务架构**：Why：为什么使用服务网格？传统的MVC三层Web应用程序架构下，服务之间的通讯并不复杂，在应用程序内部自己管理即可，但在如今复杂的大型网站情况下，单体应用被分解成众多的微服务，服务之间的依赖和通讯十分复杂。What：服务网格，是服务间通信的基础设施层，可以把它比作是应用程序或是微服务间的TCP/IP，负责服务间网络调用、限流、熔断和监控。Service Mesh的特点：应用程序间通讯的中间层、轻量级网络代理、应用程序无感知、解耦应用程序的重试/超时、监控、追踪和服务发现。目前流行的开源软件是Istio和Linkerd，都可以在Cloud Native的kubernetes环境中集成。
+  **微服务架构**：Why：为什么使用服务网格？传统的MVC三层Web应用程序架构下，服务之间的通讯并不复杂，在应用程序内部自己管理即可，但在如今复杂的大型网站情况下，单体应用被分解成众多的微服务，服务之间的依赖和通讯十分复杂。What：服务网格，是服务间通信的基础设施层，可以把它比作是应用程序或是微服务间的TCP/IP，负责服务间网络调用、限流、熔断和监控。Service Mesh的特点：应用程序间通讯的中间层、轻量级网络代理、应用程序无感知、解耦应用程序的重试/超时、监控、追踪和服务发现。目前流行的开源软件是Istio和Linkerd，都可以在Cloud Native的kubernetes环境中集成。
 - [Updater fails if not run as admin, even on a user installation](https://github.com/MiKTeX/miktex/issues/56)<br>
   ![miktex1](https://user-images.githubusercontent.com/6771275/35782587-665090de-09fa-11e8-95c7-e16ea39ce46e.png)<br>
 **LaTeX**：MiKTeX（注册表问题和管理员权限问题）+TeXnicCenter（不能生成pdf问题，设置Build中adobe execute path为正版AcroRd32.exe）+Adobe Acrobat Reader DC，再利用破解版Adobe Acrobat DC转其他格式。
 - [HTTPS原理及交互过程](https://zhuanlan.zhihu.com/p/28197870)<br>
-HTTPS：HTTPS在传输数据之前需要浏览器和网站之间进行一次握手，在握手的过程中将确认双方加密传输数据的密码信息。获取公钥-》浏览器产生随机（对称）秘钥-》使用公钥对对称秘钥加密-》发送加密后的对称秘钥-》通过对称秘钥加密的密文通信。**HTTPS通信的整个过程使用了对称加密、非对称加密和HASH算法**。
+  **HTTPS**：HTTPS在传输数据之前需要浏览器和网站之间进行一次握手，在握手的过程中将确认双方加密传输数据的密码信息。获取公钥-》浏览器产生随机（对称）秘钥-》使用公钥对对称秘钥加密-》发送加密后的对称秘钥-》通过对称秘钥加密的密文通信。**HTTPS通信的整个过程使用了对称加密、非对称加密和HASH算法**。
 - [浏览器的同源策略](https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy)<br>
-**浏览器技术**：同源策略是浏览器最核心最基本的安全功能，同源的定义为：协议/主机/端口。
+  **浏览器技术**：同源策略是浏览器最核心最基本的安全功能，同源的定义为：协议/主机/端口。
 - [九种跨域方式实现原理（完整版）](https://juejin.im/post/5c23993de51d457b8c1f4ee1)<br>
-**浏览器技术**：跨域请求解决方案：JSONP（依赖script标签没有跨域限制的漏洞）、CORS（跨域资源共享）、postMessage、websocket、Node中间件代理、nginx反向代理、windows.name+iframe、location.hash+iframe、document.domain+iframe。<br>
-**CORS**支持所有类型的HTTP请求，是跨域HTTP请求的根本解决方案。**JSONP**只支持GET请求，优势在于支持老式浏览器，以及可以向不支持CORS的网站请求数据。不管是**Node中间件代理**还是**nginx反向代理**，主要是通过同源策略对服务器不加限制。日常工作中，用的比较多的跨域方案是CORS和nginx反向代理。
+  **浏览器技术**：跨域请求解决方案：JSONP（依赖script标签没有跨域限制的漏洞）、CORS（跨域资源共享）、postMessage、websocket、Node中间件代理、nginx反向代理、windows.name+iframe、location.hash+iframe、document.domain+iframe。<br>
+  **CORS**支持所有类型的HTTP请求，是跨域HTTP请求的根本解决方案。**JSONP**只支持GET请求，优势在于支持老式浏览器，以及可以向不支持CORS的网站请求数据。不管是**Node中间件代理**还是**nginx反向代理**，主要是通过同源策略对服务器不加限制。日常工作中，用的比较多的跨域方案是CORS和nginx反向代理。
+- [如何在Jupyter Notebook中使用Python虚拟环境？](https://zhuanlan.zhihu.com/p/29564719)<br>
+**Anaconda**：安装插件，conda install nb_conda
 
 ## 底层研究
 - [python requests库流程简析](https://www.jianshu.com/p/a5e98489dcb8)<br>
@@ -407,6 +396,15 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [Wasserstein GAN in Keras](https://myurasov.github.io/2017/09/24/wasserstein-gan-keras.html?r)
 - [WassersteinGAN](https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/WassersteinGAN)
 - [keras-acgan](https://github.com/lukedeo/keras-acgan)
+- [深度学习中的batch的大小对学习效果有何影响？](https://www.zhihu.com/question/32673260)
+- [Batch Normalization原理与实战](https://zhuanlan.zhihu.com/p/34879333)（**还没完全看懂**）
+
+#### GPU环境搭建
+- [Tensorflow和Keras 常见问题（持续更新~）](https://zhuanlan.zhihu.com/p/81721574)（坑点）
+- [Tested build configurations](https://tensorflow.google.cn/install/source)（版本对应速查表）
+- [windows tensorflow-gpu的安装](https://zhuanlan.zhihu.com/p/35717544)（靠谱）
+- [windows下安装配置cudn和cudnn](https://www.jianshu.com/p/9bdeb033e765)
+**问题本质**：总的来说，是英伟达显卡驱动版本、cuda、cudnn和tensorflow-gpu之间版本的对应问题。最好装tensorflow-gpu==1.14.0,tensorflow-gpu==2.0需要cuda==10.0，10.2会报错，tensorflow-gpu==2.0不支持。
 
 ### 强化学习
 - [深度强化学习的弱点和局限](https://mp.weixin.qq.com/s?__biz=MzI3ODkxODU3Mg==&mid=2247485609&idx=1&sn=6b71f5f8ebd4e920384f07b97ce92a9c&chksm=eb4eec6adc39657c81169f1ae9ce477e4da692941238c35deb26a11ed7ec70073784cfd935a8&scene=21#wechat_redirect)
