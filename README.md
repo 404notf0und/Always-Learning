@@ -1,14 +1,16 @@
 # 404 Not Found的知识库
-最近更新日期：2020/1/5
+最近更新日期：2020/1/10
 
 最近一周新增：
 -  [Tensorflow和Keras 常见问题（持续更新~）](https://zhuanlan.zhihu.com/p/81721574)（坑点）
 -  [Tested build configurations](https://tensorflow.google.cn/install/source)（版本对应速查表）
 -  [windows tensorflow-gpu的安装](https://zhuanlan.zhihu.com/p/35717544)（靠谱）
+-  [win10搭建tensorflow-gpu环境](https://www.cnblogs.com/wanyu416/p/9536853.html)
 -  [windows下安装配置cudn和cudnn](https://www.jianshu.com/p/9bdeb033e765)
 -  [如何在Jupyter Notebook中使用Python虚拟环境？](https://zhuanlan.zhihu.com/p/29564719)
 -  [深度学习中的batch的大小对学习效果有何影响？](https://www.zhihu.com/question/32673260)
 -  [Batch Normalization原理与实战](https://zhuanlan.zhihu.com/p/34879333)
+-  [使用 xray 代理模式进行漏洞扫描](https://xray.cool/xray/#/tutorial/webscan_proxy)
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -30,6 +32,8 @@
 	- [代码审计](#代码审计)
 	- [数据安全](#数据安全)
 	- [云安全](#云安全)
+- [安全工具](#安全工具)
+    - [漏洞扫描](#漏洞扫描)
 - [安全研究](#安全研究)
     - [APT检测](#APT检测)
 	- [恶意样本](#恶意样本)
@@ -269,6 +273,12 @@ CRLF是“回车+换行”(\r\n)的简称。HTTP Header和HTTP Body是用两个C
 ### 其他
 - [安全资料：企业实验室、安全社区、安全团队、安全工具等](http://blkstone.github.io/friend/)
 
+## 安全工具
+
+### 漏洞扫描
+
+- [使用 xray 代理模式进行漏洞扫描](https://xray.cool/xray/#/tutorial/webscan_proxy)
+
 ## 安全研究
 ### APT检测
 - [APT detection based on machine learning](https://mp.weixin.qq.com/s?__biz=MzU5MTM5MTQ2MA==&mid=2247484139&idx=1&sn=0da63a49f341eccc0bb48c954d8ebbb4&chksm=fe2efd60c95974767521fe6a6b7257a1d05e5482fc7ddeda281bdf0f0deb20add82d1a82d8ec&mpshare=1&scene=1&srcid=&pass_ticket=bjnNiDKomd79pQvRonW%2BXsTe6JrO%2FFs6oII12dZaLBPuQOtNK6Rzh9WSJ%2B%2F89ZUA#rd)<br>
@@ -405,6 +415,8 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [windows tensorflow-gpu的安装](https://zhuanlan.zhihu.com/p/35717544)（靠谱）
 - [windows下安装配置cudn和cudnn](https://www.jianshu.com/p/9bdeb033e765)
 **问题本质**：总的来说，是英伟达显卡驱动版本、cuda、cudnn和tensorflow-gpu之间版本的对应问题。最好装tensorflow-gpu==1.14.0,tensorflow-gpu==2.0需要cuda==10.0，10.2会报错，tensorflow-gpu==2.0不支持。
+- [win10搭建tensorflow-gpu环境](https://www.cnblogs.com/wanyu416/p/9536853.html)<br>
+**问题本质**：CUDA的各种环境变量添加。
 
 ### 强化学习
 - [深度强化学习的弱点和局限](https://mp.weixin.qq.com/s?__biz=MzI3ODkxODU3Mg==&mid=2247485609&idx=1&sn=6b71f5f8ebd4e920384f07b97ce92a9c&chksm=eb4eec6adc39657c81169f1ae9ce477e4da692941238c35deb26a11ed7ec70073784cfd935a8&scene=21#wechat_redirect)
