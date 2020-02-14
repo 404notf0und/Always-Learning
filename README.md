@@ -1,16 +1,13 @@
 # 404 Not Found的知识库
-最近更新日期：2020/1/10
+最近更新日期：2020/02/14
 
 最近一周新增：
--  [Tensorflow和Keras 常见问题（持续更新~）](https://zhuanlan.zhihu.com/p/81721574)（坑点）
--  [Tested build configurations](https://tensorflow.google.cn/install/source)（版本对应速查表）
--  [windows tensorflow-gpu的安装](https://zhuanlan.zhihu.com/p/35717544)（靠谱）
--  [win10搭建tensorflow-gpu环境](https://www.cnblogs.com/wanyu416/p/9536853.html)
--  [windows下安装配置cudn和cudnn](https://www.jianshu.com/p/9bdeb033e765)
--  [如何在Jupyter Notebook中使用Python虚拟环境？](https://zhuanlan.zhihu.com/p/29564719)
--  [深度学习中的batch的大小对学习效果有何影响？](https://www.zhihu.com/question/32673260)
--  [Batch Normalization原理与实战](https://zhuanlan.zhihu.com/p/34879333)
--  [使用 xray 代理模式进行漏洞扫描](https://xray.cool/xray/#/tutorial/webscan_proxy)
+- [使用TextCNN模型探究恶意软件检测问题](https://xz.aliyun.com/t/6785)
+- [如何计算感受野(Receptive Field)——原理](https://zhuanlan.zhihu.com/p/31004121)
+- [如何理解空洞卷积（dilated convolution）谭旭的回答](https://www.zhihu.com/question/54149221/answer/192025860)
+- [空洞卷积(dilated Convolution)](https://zhuanlan.zhihu.com/p/43784441)
+- [空洞卷积（dilated convolution）感受野计算](https://zhuanlan.zhihu.com/p/61889386)
+- [用深度学习（CNN RNN Attention）解决大规模文本分类问题 - 综述和实践](https://zhuanlan.zhihu.com/p/25928551)
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -397,18 +394,6 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **无监督学习-层次聚类-相似性计算**：曼哈顿距离、欧式距离、切比雪夫距离、余弦相似度、皮尔逊相关系数、Jaccard系数。
 
 ### 深度学习
-- [一组图文，读懂深度学习中的卷积网络到底怎么回事？](https://mp.weixin.qq.com/s?__biz=MzIyMzk1MDE3Nw==&mid=2247497838&idx=1&sn=0155aec301bfd63af03fb17727421e1e&chksm=e814dc60df635576971ccd515c440721af1e4d3c256d421953bc4944d2e724c476c5a689f197&mpshare=1&scene=1&srcid=0211JyZWQrYdounFDM2LW3AE&pass_ticket=hAXdmKc6AZ3DdksFdOmip3HL8cWLkL5u880JMyZ2etpYu1WnmEdvgA09xYgh9Im%2B#rd)<br>
-**卷积神经网络**：卷积层参数：内核大小（卷积视野3乘3）、步幅（下采样2）、padding（填充）、输入和输出通道。卷积类型：引入扩张率参数的扩张卷积、转置卷积、可分离卷积。
-- [[AI识人]OpenPose：实时多人2D姿态估计 | 附视频测试及源码链接](https://zhuanlan.zhihu.com/p/37526892)
-- [使用生成对抗网络(GAN)生成DGA](http://webber.tech/posts/%E4%BD%BF%E7%94%A8%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%28GAN%29%E7%94%9F%E6%88%90DGA/)
-- [GAN_for_DGA](https://github.com/bts-webber/GAN_for_DGA/blob/master/G.py)
-- [详解如何使用Keras实现Wassertein GAN](https://mp.weixin.qq.com/s/F2gBP23LCEF72QDlugbBZQ)
-- [Wasserstein GAN in Keras](https://myurasov.github.io/2017/09/24/wasserstein-gan-keras.html?r)
-- [WassersteinGAN](https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/WassersteinGAN)
-- [keras-acgan](https://github.com/lukedeo/keras-acgan)
-- [深度学习中的batch的大小对学习效果有何影响？](https://www.zhihu.com/question/32673260)
-- [Batch Normalization原理与实战](https://zhuanlan.zhihu.com/p/34879333)（**还没完全看懂**）
-
 #### GPU环境搭建
 - [Tensorflow和Keras 常见问题（持续更新~）](https://zhuanlan.zhihu.com/p/81721574)（坑点）
 - [Tested build configurations](https://tensorflow.google.cn/install/source)（版本对应速查表）
@@ -417,6 +402,33 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **问题本质**：总的来说，是英伟达显卡驱动版本、cuda、cudnn和tensorflow-gpu之间版本的对应问题。最好装tensorflow-gpu==1.14.0,tensorflow-gpu==2.0需要cuda==10.0，10.2会报错，tensorflow-gpu==2.0不支持。
 - [win10搭建tensorflow-gpu环境](https://www.cnblogs.com/wanyu416/p/9536853.html)<br>
 **问题本质**：CUDA的各种环境变量添加。
+
+#### 深度学习基础知识
+- [深度学习中的batch的大小对学习效果有何影响？](https://www.zhihu.com/question/32673260)
+- [Batch Normalization原理与实战](https://zhuanlan.zhihu.com/p/34879333)（**还没完全看懂**）
+
+#### 神经网络基本部件
+- [如何计算感受野(Receptive Field)——原理](https://zhuanlan.zhihu.com/p/31004121)<br>
+感受野：卷积层越深，感受野越大，计算公式为(N-1)_RF = f(N_RF, stride, kernel) = (N_RF - 1) * stride + kernel，思路为倒推法。
+- [如何理解空洞卷积（dilated convolution）谭旭的回答](https://www.zhihu.com/question/54149221/answer/192025860)<br>
+空洞卷积：池化层减小图像尺寸同时增大感受野，空洞卷积的优点是不做pooling损失信息的情况下，增大感受野。3层3*3的传统卷积叠加起来，stride为1的话，只能达到(kernel_size-1)*layer+1=7的感受野，和层数layer成线性关系，而空洞卷积的感受野是指数级的增长，计算公式为(2^layer-1)*(kernel_size-1)+kernel_size=15。
+- [空洞卷积（dilated convolution）感受野计算](https://zhuanlan.zhihu.com/p/61889386)
+- [空洞卷积(dilated Convolution)](https://zhuanlan.zhihu.com/p/43784441)
+
+#### 神经网络基本结构
+- [一组图文，读懂深度学习中的卷积网络到底怎么回事？](https://mp.weixin.qq.com/s?__biz=MzIyMzk1MDE3Nw==&mid=2247497838&idx=1&sn=0155aec301bfd63af03fb17727421e1e&chksm=e814dc60df635576971ccd515c440721af1e4d3c256d421953bc4944d2e724c476c5a689f197&mpshare=1&scene=1&srcid=0211JyZWQrYdounFDM2LW3AE&pass_ticket=hAXdmKc6AZ3DdksFdOmip3HL8cWLkL5u880JMyZ2etpYu1WnmEdvgA09xYgh9Im%2B#rd)<br>
+**卷积神经网络**：卷积层参数：内核大小（卷积视野3乘3）、步幅（下采样2）、padding（填充）、输入和输出通道。卷积类型：引入扩张率参数的扩张卷积、转置卷积、可分离卷积。
+
+#### 神经网络应用
+- [[AI识人]OpenPose：实时多人2D姿态估计 | 附视频测试及源码链接](https://zhuanlan.zhihu.com/p/37526892)
+- [使用生成对抗网络(GAN)生成DGA](http://webber.tech/posts/%E4%BD%BF%E7%94%A8%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%28GAN%29%E7%94%9F%E6%88%90DGA/)
+- [GAN_for_DGA](https://github.com/bts-webber/GAN_for_DGA/blob/master/G.py)
+- [详解如何使用Keras实现Wassertein GAN](https://mp.weixin.qq.com/s/F2gBP23LCEF72QDlugbBZQ)
+- [Wasserstein GAN in Keras](https://myurasov.github.io/2017/09/24/wasserstein-gan-keras.html?r)
+- [WassersteinGAN](https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/WassersteinGAN)
+- [keras-acgan](https://github.com/lukedeo/keras-acgan)
+- [用深度学习（CNN RNN Attention）解决大规模文本分类问题 - 综述和实践](https://zhuanlan.zhihu.com/p/25928551)<br>
+**NLP**：传统的高维稀疏->现在的低维稠密。**注意事项**：类目不均衡、理解数据（badcase）、fine-tuning（只用word2vec训练的词向量作为特征表示，可能会损失很大效果，**预训练+微调**）、一定要用dropout、避免训练震荡、超参调节、未必一定要softmax loss、模型不是最重要的、关注迭代质量（为什么？结论？下一步？）
 
 ### 强化学习
 - [深度强化学习的弱点和局限](https://mp.weixin.qq.com/s?__biz=MzI3ODkxODU3Mg==&mid=2247485609&idx=1&sn=6b71f5f8ebd4e920384f07b97ce92a9c&chksm=eb4eec6adc39657c81169f1ae9ce477e4da692941238c35deb26a11ed7ec70073784cfd935a8&scene=21#wechat_redirect)
@@ -444,6 +456,9 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **NLP**：NLP统计语言模型：定义（计算一个句子的概率的模型，也就是判断一句话是否是人话的概率）、马尔科夫假设（随便一个词出现的概率只与它前面出现的有限的一个或几个词有关）、N元模型（一元语言模型unigram、二元语言模型bigram）。
 - [有谁可以解释下word embedding? - YJango的回答 - 知乎](https://www.zhihu.com/question/32275069/answer/197000927)<br>
 **NLP**：单词表达：one hot representation、distributed representation。Word embedding：以神经网络分析one hot representation和distributed representation作为例子，证明用distributed representation表达一个单词是比较好的。word embedding就是神经网络分析distributed representation所显示的效果，降低训练所需的数据量，就是要从数据中自动学习出输入空间到distributed representation空间的映射f（相当于加入了先验知识，相同的东西不需要分别用不同的数据进行学习）。训练方法：如何自动寻找到映射f，将one hot representation转变成distributed representation呢？思想：单词意思需要放在特定的上下文中去理解，例子：`这个可爱的 泰迪 舔了我的脸`和`这个可爱的 京巴 舔了我的脸`，用输入单词 x 作为中心单词去预测其他单词 z 出现在其周边的可能性（**至此我才明白为什么说词嵌入是神经网络训练语言模型的副产品这句话**）。用输入单词作为中心单词去预测周边单词的方式叫skip-gram，用输入单词作为周边单词去预测中心单词的方式叫CBOW。
+- [使用TextCNN模型探究恶意软件检测问题](https://xz.aliyun.com/t/6785)<br>
+**恶意软件检测**：改进分为两个方面：调参和结构。调参：Embedding层的inputLen、output_dim，EarlyStopping，样本比例参数class_weight,卷积层和全连接层的正则化参数l2，适配硬件(GPU、TPU)的batch_size。结构：增加了全局池化层。<br>
+**学到了**：一个trick，通过训练集和评价指标logloss计算测试集的各标签数量，以此调整训练阶段的参数class_weight，还可以事先达到“对答案”的效果。和一个T大大佬在datacon域名安全检测比赛中使用的trick如出一辙。
 
 ### 综合素质
 - [算法工程师必须要知道的面试技能雷达图](https://zhuanlan.zhihu.com/p/54089811)（学到了）<br>
