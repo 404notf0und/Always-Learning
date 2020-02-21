@@ -1,13 +1,14 @@
 # 404 Not Found的知识库
-最近更新日期：2020/02/14
+最近更新日期：2020/02/21
 
 最近一周新增：
-- [使用TextCNN模型探究恶意软件检测问题](https://xz.aliyun.com/t/6785)
-- [如何计算感受野(Receptive Field)——原理](https://zhuanlan.zhihu.com/p/31004121)
-- [如何理解空洞卷积（dilated convolution）谭旭的回答](https://www.zhihu.com/question/54149221/answer/192025860)
-- [空洞卷积(dilated Convolution)](https://zhuanlan.zhihu.com/p/43784441)
-- [空洞卷积（dilated convolution）感受野计算](https://zhuanlan.zhihu.com/p/61889386)
-- [用深度学习（CNN RNN Attention）解决大规模文本分类问题 - 综述和实践](https://zhuanlan.zhihu.com/p/25928551)
+- [GRAPH CONVOLUTIONAL NETWORKS](http://tkipf.github.io/graph-convolutional-networks/)
+- [gcn](https://github.com/tkipf/gcn)
+- [git-lfs](https://coding.net/help/doc/git/git-lfs.html)
+- [卷积神经网络(CNN)模型结构](https://www.cnblogs.com/pinard/p/6483207.html)
+- [直观理解神经网络最后一层全连接+Softmax](https://www.cnblogs.com/shine-lee/p/10077961.html)（便于理解）
+- [总结卷积神经网络发展历程 - 没头脑的文章](https://zhuanlan.zhihu.com/p/76275427)（很全面）
+- [三次简化一张图：一招理解LSTM/GRU门控机制](https://zhuanlan.zhihu.com/p/28297161)（很清晰）
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -107,7 +108,7 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 - [年会抢红包策略](https://www.cdxy.me/?p=802)
 
 ### 密码学基础
-- [对称加密与非对称加密优缺点详解](https://blog.csdn.net/aschulianwuyanzu/article/details/77978484)
+- [对称加密与非对称加密优缺点详解](https://blog.csdn.net/aschulianwuyanzu/article/details/77978484)<br>
 对称加密也称单秘钥加密。算法有：AES、RC4、3DES。速度快，需要加密大量数据时使用，计算量小，效率高；一方秘钥泄露整个加密都不安全。非对称加密，算法有RSA、DSA/DSS，速度慢，安全性高。Hash算法有MD5、SHA1、SHA256。**三类算法是HTTPS通信的基础**。
 
 ### 数据库
@@ -149,6 +150,8 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 **MAC**：基础快捷键：截图、在应用程序中、文本处理、在finder中、在浏览器中；MAC启动和关机时的快捷键。
 - [常用 Git 命令单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)<br>
 **Git**：远程仓库-》本地仓库-〉暂存区-》工作区，git add .、git commit -m message、git push。
+- [git-lfs](https://coding.net/help/doc/git/git-lfs.html)<br>
+**Git-lfs**：git大文件上传扩展工具。
 - [tshark统计分析pcap包](https://www.wireshark.org/docs/man-pages/tshark.html)
 
 ### 技术
@@ -398,7 +401,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [Tensorflow和Keras 常见问题（持续更新~）](https://zhuanlan.zhihu.com/p/81721574)（坑点）
 - [Tested build configurations](https://tensorflow.google.cn/install/source)（版本对应速查表）
 - [windows tensorflow-gpu的安装](https://zhuanlan.zhihu.com/p/35717544)（靠谱）
-- [windows下安装配置cudn和cudnn](https://www.jianshu.com/p/9bdeb033e765)
+- [windows下安装配置cudn和cudnn](https://www.jianshu.com/p/9bdeb033e765)<br>
 **问题本质**：总的来说，是英伟达显卡驱动版本、cuda、cudnn和tensorflow-gpu之间版本的对应问题。最好装tensorflow-gpu==1.14.0,tensorflow-gpu==2.0需要cuda==10.0，10.2会报错，tensorflow-gpu==2.0不支持。
 - [win10搭建tensorflow-gpu环境](https://www.cnblogs.com/wanyu416/p/9536853.html)<br>
 **问题本质**：CUDA的各种环境变量添加。
@@ -411,13 +414,22 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [如何计算感受野(Receptive Field)——原理](https://zhuanlan.zhihu.com/p/31004121)<br>
 感受野：卷积层越深，感受野越大，计算公式为(N-1)_RF = f(N_RF, stride, kernel) = (N_RF - 1) * stride + kernel，思路为倒推法。
 - [如何理解空洞卷积（dilated convolution）谭旭的回答](https://www.zhihu.com/question/54149221/answer/192025860)<br>
-空洞卷积：池化层减小图像尺寸同时增大感受野，空洞卷积的优点是不做pooling损失信息的情况下，增大感受野。3层3*3的传统卷积叠加起来，stride为1的话，只能达到(kernel_size-1)*layer+1=7的感受野，和层数layer成线性关系，而空洞卷积的感受野是指数级的增长，计算公式为(2^layer-1)*(kernel_size-1)+kernel_size=15。
+空洞卷积：池化层减小图像尺寸同时增大感受野，空洞卷积的优点是不做pooling损失信息的情况下，增大感受野。3层3*3的传统卷积叠加起来，stride为1的话，只能达到(kernel_size-1)layer+1=7的感受野，和层数layer成线性关系，而空洞卷积的感受野是指数级的增长，计算公式为(2^layer-1)(kernel_size-1)+kernel_size=15。
 - [空洞卷积（dilated convolution）感受野计算](https://zhuanlan.zhihu.com/p/61889386)
 - [空洞卷积(dilated Convolution)](https://zhuanlan.zhihu.com/p/43784441)
+- [直观理解神经网络最后一层全连接+Softmax](https://www.cnblogs.com/shine-lee/p/10077961.html)（便于理解）<br>
+**全连接层**：可以理解为对特征的加权求和。
 
 #### 神经网络基本结构
 - [一组图文，读懂深度学习中的卷积网络到底怎么回事？](https://mp.weixin.qq.com/s?__biz=MzIyMzk1MDE3Nw==&mid=2247497838&idx=1&sn=0155aec301bfd63af03fb17727421e1e&chksm=e814dc60df635576971ccd515c440721af1e4d3c256d421953bc4944d2e724c476c5a689f197&mpshare=1&scene=1&srcid=0211JyZWQrYdounFDM2LW3AE&pass_ticket=hAXdmKc6AZ3DdksFdOmip3HL8cWLkL5u880JMyZ2etpYu1WnmEdvgA09xYgh9Im%2B#rd)<br>
 **卷积神经网络**：卷积层参数：内核大小（卷积视野3乘3）、步幅（下采样2）、padding（填充）、输入和输出通道。卷积类型：引入扩张率参数的扩张卷积、转置卷积、可分离卷积。
+- [卷积神经网络(CNN)模型结构](https://www.cnblogs.com/pinard/p/6483207.html)
+- [总结卷积神经网络发展历程 - 没头脑的文章](https://zhuanlan.zhihu.com/p/76275427)（很全面）
+- [三次简化一张图：一招理解LSTM/GRU门控机制](https://zhuanlan.zhihu.com/p/28297161)（很清晰）<br>
+**循环神经网络**：**文中电路图的形式好理解**。RNN：输入状态、隐藏状态。LSTM：输入状态、隐藏状态、细胞状态、3个门。GRU：输入状态、隐藏状态、2个门。LSTM和GRU通过设计门控机制缓解RNN梯度传播问题。
+- [gcn](https://github.com/tkipf/gcn)
+- [GRAPH CONVOLUTIONAL NETWORKS](http://tkipf.github.io/graph-convolutional-networks/)<br>
+**图神经网络**：相较于CNN，区别是图卷积算子计算公式。
 
 #### 神经网络应用
 - [[AI识人]OpenPose：实时多人2D姿态估计 | 附视频测试及源码链接](https://zhuanlan.zhihu.com/p/37526892)
@@ -688,24 +700,26 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **站点概括**：专注于数据科学。
 
 ### 国内优秀技术人
-- [http://michael282694.com](http://michael282694.com)<br>
-**技术栈**：michael282694，数据分析挖掘产品开发、爬虫、Java、Python。
-- [https://www.cnblogs.com/LittleHann](https://www.cnblogs.com/LittleHann)<br>
-**技术栈**：LittleHann，我也不知道该怎么描述，Han师傅会的太多了，C++、Java、Python、PHP、Web安全、系统安全，不过目前好像做算法多一些。
-- [https://feei.cn](https://feei.cn)<br>
-**技术栈**：FeeiCN，专注自动化漏洞发现和入侵检测防御。
-- [http://www.yqxiaojunjie.com](http://www.yqxiaojunjie.com)<br>
-**技术栈**：xiaojunjie，专注于代码审计、CTF。
+- [michael282694](http://michael282694.com)<br>
+**技术栈**：数据分析挖掘产品开发、爬虫、Java、Python。
+- [LittleHann](https://www.cnblogs.com/LittleHann)<br>
+**技术栈**：我也不知道该怎么描述，Han师傅会的太多了，C++、Java、Python、PHP、Web安全、系统安全，不过目前好像做算法多一些。
+- [FeeiCN](https://feei.cn)<br>
+**技术栈**：专注自动化漏洞发现和入侵检测防御。
+- [xiaojunjie](http://www.yqxiaojunjie.com)<br>
+**技术栈**：专注于代码审计、CTF。
 - [云雷](https://yq.aliyun.com/users/xorxhltb3una2?spm=a2c4e.11153940.blogrightarea90906.2.bc412a21Jh3MYf)<br>
-**技术栈**：云雷，阿里云存储技术专家，专注于日志分析与业务，日志计算驱动业务增长。
-- [https://iami.xyz](https://iami.xyz/)<br>
-**技术栈**：iami，主要研究Web安全、机器学习，喜欢Python和Go。一直偷学师傅的博客。
-- [https://www.cdxy.me](https://www.cdxy.me)<br>
-**技术栈**：cdxy，早先主要做Web安全，CTF，代码审计，现在主要做安全研究与数据分析，初步估算技术领先我1～2年，师傅别学了。
-- [http://www.csuldw.com](http://www.csuldw.com)<br>
-**技术栈**：csuldw，专注于机器学习、数据挖掘、人工智能。
-- [https://molunerfinn.com/](https://molunerfinn.com/)<br>
-**技术栈**：molunerfinn，专注于前端，北邮大佬，和404notfound同级。
+**技术栈**：阿里云存储技术专家，专注于日志分析与业务，日志计算驱动业务增长。
+- [iami](https://iami.xyz/)<br>
+**技术栈**：主要研究Web安全、机器学习，喜欢Python和Go。一直偷学师傅的博客。
+- [cdxy](https://www.cdxy.me)<br>
+**技术栈**：早先主要做Web安全，CTF，代码审计，现在主要做安全研究与数据分析，初步估算技术领先我1～2年，师傅别学了。
+- [csuldw](http://www.csuldw.com)<br>
+**技术栈**：专注于机器学习、数据挖掘、人工智能。
+- [molunerfinn](https://molunerfinn.com/)<br>
+**技术栈**：专注于前端，北邮大佬，和404notfound同级。
+- [刘建平Pinard](https://www.cnblogs.com/pinard)<br>
+**技术栈**：机器学习、深度学习、强化学习、自然语言处理、数学统计学、大数据挖掘，相关tutorial非常棒。
 
 ## 废弃
 - [Efficient and Flexible Discovery of PHP Vulnerability译文](https://mp.weixin.qq.com/s/xMoDTEvj91RgXFXfykS9tQ)
