@@ -1,14 +1,13 @@
 # 404 Not Found的知识库
-最近更新日期：2020/02/21
+最近更新日期：2020/02/26
 
 最近一周新增：
-- [GRAPH CONVOLUTIONAL NETWORKS](http://tkipf.github.io/graph-convolutional-networks/)
-- [gcn](https://github.com/tkipf/gcn)
-- [git-lfs](https://coding.net/help/doc/git/git-lfs.html)
-- [卷积神经网络(CNN)模型结构](https://www.cnblogs.com/pinard/p/6483207.html)
-- [直观理解神经网络最后一层全连接+Softmax](https://www.cnblogs.com/shine-lee/p/10077961.html)（便于理解）
-- [总结卷积神经网络发展历程 - 没头脑的文章](https://zhuanlan.zhihu.com/p/76275427)（很全面）
-- [三次简化一张图：一招理解LSTM/GRU门控机制](https://zhuanlan.zhihu.com/p/28297161)（很清晰）
+- [LightGBM](https://fuhailin.github.io/LightGBM/)
+- [LightGBM算法总结](https://blog.csdn.net/weixin_39807102/article/details/81912566)
+- [『我爱机器学习』集成学习（四）LightGBM](https://www.hrwhisper.me/machine-learning-lightgbm/)
+- [如何玩转LightGBM](https://v.qq.com/x/page/k0362z6lqix.html)（官方slides讲解）
+- [既然有 HTTP 请求，为什么还要用 RPC 调用？ - 易哥的回答](https://www.zhihu.com/question/41609070/answer/1030913797)
+- [keras-attention-mechanism](https://github.com/philipperemy/keras-attention-mechanism)
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -206,6 +205,8 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
   **CORS**支持所有类型的HTTP请求，是跨域HTTP请求的根本解决方案。**JSONP**只支持GET请求，优势在于支持老式浏览器，以及可以向不支持CORS的网站请求数据。不管是**Node中间件代理**还是**nginx反向代理**，主要是通过同源策略对服务器不加限制。日常工作中，用的比较多的跨域方案是CORS和nginx反向代理。
 - [如何在Jupyter Notebook中使用Python虚拟环境？](https://zhuanlan.zhihu.com/p/29564719)<br>
 **Anaconda**：安装插件，conda install nb_conda
+- [既然有 HTTP 请求，为什么还要用 RPC 调用？ - 易哥的回答](https://www.zhihu.com/question/41609070/answer/1030913797)<b>
+**RPC**：Restful VS RPC。RPC包括：反向代理、序列化与反序列化、通信（HTTP、TCP、UDP）、异常处理
 
 ## 底层研究
 - [python requests库流程简析](https://www.jianshu.com/p/a5e98489dcb8)<br>
@@ -388,6 +389,11 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **有监督学习-树系列算法**：单模型，gradient boosting machine和deep learning是首选。gbm不需要复杂的特征工程，不需要太多时间去调参数，dl则需要比较多的时间去调网络结构。**从overfit角度理解**，两者都有overfit甚至perfect fit的能力，overfit能力越强，可塑性越强，然后我们要解决的问题就是如果把模型训练的“恰好”，比如gbm里有early_stopping功能。线性回归模型就缺乏overfit能力，如果实际数据符合线性模型的关系，那可以得到很好的结果，如果不符合的话，就需要做特征工程，可特征工程又是一个比较主观的过程。树的优势，非参数模型，gbm的overfit能力强。而random forest的perfact fit能力很差，这是因为rf的树是独立训练的，没有相互协作，虽然是非参数型模型，但是浪费了这个先天优势。
 - [【总结】树类算法认知总结](https://www.jianshu.com/p/432764633f6f)<br>
 **有监督学习-树类算法**：分类树和回归树的区别；避免决策树过拟合的方法；随机森林怎么应用到分类和回归问题上；kaggle上为啥GBDT比RF更优；RF、GBDT、XGBoost的认知（原理、优缺点、区别、特性）。
+- [LightGBM](https://fuhailin.github.io/LightGBM/)
+- [LightGBM算法总结](https://blog.csdn.net/weixin_39807102/article/details/81912566)
+- [『我爱机器学习』集成学习（四）LightGBM](https://www.hrwhisper.me/machine-learning-lightgbm/)
+- [如何玩转LightGBM](https://v.qq.com/x/page/k0362z6lqix.html)（官方slides讲解）<br>
+**有监督学习-LightGBM-个人理解**：**LightGBM几大特性及原理：直方图分割及直方图差加速（直方图两大改进：直方图复杂度=O(#feature×#data)，GOSS降低样本数，EFB降低特征数）-》效率和内存提升。Leaf-wise with max depth limitation取代Level-wise-》准确率提升。支持原生类别特征。并行计算：数据并行（水平划分数据）、特征并行（垂直划分数据）、PV-Tree投票并行（本质上是数据并行）。**
 - [快速弄懂机器学习里的集成算法：原理、框架与实战](https://mp.weixin.qq.com/s/Q6OotQYIsSm7HW2T4ClLjg)
 - [时间序列数据的聚类有什么好方法？](https://www.zhihu.com/question/50656303/answer/584063648?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136)<br>
 **无监督学习-时间序列问题**：传统的机器学习数据分析领域：提取特征，使用聚类算法聚集；在自然语言处理领域：为了寻找相似的新闻或是把相似的文本信息聚集到一起，可以使用word2vec把自然语言处理成向量特征，然后使用KMeans等机器学习算法来作聚类；另一种做法是使用Jaccard相似度来计算两个文本内容之间的相似性，然后使用层次聚类的方法来作聚类。常见的聚类算法：基于距离的机器学习聚类算法（KMeans）、基于相似性的机器学习聚类算法（层次聚类）。对时间序列数据进行聚类的方法：时间序列的特征构造、时间序列的相似度方法。如果使用深度学习的话，要么就提供大量的标签数据；要么就只能使用一些无监督的编码器的方法。
@@ -430,6 +436,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [gcn](https://github.com/tkipf/gcn)
 - [GRAPH CONVOLUTIONAL NETWORKS](http://tkipf.github.io/graph-convolutional-networks/)<br>
 **图神经网络**：相较于CNN，区别是图卷积算子计算公式。
+- [keras-attention-mechanism](https://github.com/philipperemy/keras-attention-mechanism)
 
 #### 神经网络应用
 - [[AI识人]OpenPose：实时多人2D姿态估计 | 附视频测试及源码链接](https://zhuanlan.zhihu.com/p/37526892)
