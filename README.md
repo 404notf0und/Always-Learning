@@ -1,13 +1,9 @@
 # 404 Not Found的知识库
-最近更新日期：2020/02/26
+最近更新日期：2020/03/14
 
 最近一周新增：
-- [LightGBM](https://fuhailin.github.io/LightGBM/)
-- [LightGBM算法总结](https://blog.csdn.net/weixin_39807102/article/details/81912566)
-- [『我爱机器学习』集成学习（四）LightGBM](https://www.hrwhisper.me/machine-learning-lightgbm/)
-- [如何玩转LightGBM](https://v.qq.com/x/page/k0362z6lqix.html)（官方slides讲解）
-- [既然有 HTTP 请求，为什么还要用 RPC 调用？ - 易哥的回答](https://www.zhihu.com/question/41609070/answer/1030913797)
-- [keras-attention-mechanism](https://github.com/philipperemy/keras-attention-mechanism)
+- [图计算在基础安全的落点](https://www.cdxy.me/?p=817)
+- [科研论文如何想到不错的 idea？](https://www.zhihu.com/question/300967426)
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -345,6 +341,8 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 图承载者拓扑信息，而拓扑信息可以看作一种特征维度，有些攻防场景有明显的拓扑特征。Louvain算法的关键点是图的边的权重，在具体的攻防场景下需要专门研究，例如在DGA场景下，域名A与B的相关性(weight)=同时访问过A和B域名的IP数量。cdxy师傅用SQL实现了这种逻辑。
 - [社区发现算法 - Fast Unfolding（Louvian）算法初探](https://www.cnblogs.com/LittleHann/p/9078909.html)
 - [A DGA Odyssey PDNS Driven DGA Analysis](https://pc.nanog.org/static/published/meetings/NANOG71/1444/20171004_Gong_A_Dga_Odyssey__v1.pdf)
+- [图计算在基础安全的落点](https://www.cdxy.me/?p=817)<br>
+学到了：图在入侵检测、入侵响应、威胁情报、UEBA上的落地。入侵检测：企业入侵检测的发展方向、数据分析能力的发展历程。入侵响应：**过程中解决的问题**（日志的完整性和丰富性、海量数据和长时间窗口的关联分析、图的实时构建和查询、交互与可视化）。UEBA：云原生的可信任和零信任的发展-》默认安全-》获取可信服务的凭证，“供应链”式攻击-》构建在认证之上的入侵检测-》行为分析和画像。**总结：业务问题-》数据问题。**
 
 ### AI与安全
 - [安全场景、基于AI的安全算法和安全数据分析学习资料整理](https://github.com/404notf0und/AI-for-Security-Learning)
@@ -691,6 +689,9 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 ### 思考
 - [好的研究想法从哪里来](https://mp.weixin.qq.com/s/OSVpS3Q15kI0NshpzCjavA)<br>
 **研究的本质是对未知领域的探索，是对开放问题的答案的追寻。“好”的定义-》区分好与不好的能力-》全面了解所在研究方向的历史和现状-》实践法/类比法/组合法**。 **这就好比是机器学习的训练和测试阶段，****训练**：全面了解所在研究方向的历史和现状，判断不同时期的研究工作的好与不好。**测试**：实践法/类比法/组合法出的idea，判断自己的研究工作好与不好。
+- [科研论文如何想到不错的 idea？](https://www.zhihu.com/question/300967426)<br>
+**模块化学习、交叉、布局可预期的趋势**。
+
 ## 注意事项
 * **领域点-线-面体系**：点：自己focus的领域；线：上游和下游；面：大领域。不要过度focus在自己工作的领域，要有全局化的眼光，特别是自己的上游和下游。
 * **日常学习点-线-面体系**：点：自己focus的安全数据分析领域；线：安全/数据分析；面：全局安全内容/行业发展/职业规划。每日专研至少一小时小领域；每日精读至少半小时/至少一篇安全/数据分析/行业发展/职业规划精品文章；每日大量浏览增量文章/存量文章。**保持学习与思考的敏感性。**
