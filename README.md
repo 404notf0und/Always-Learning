@@ -1,9 +1,10 @@
 # 404 Not Found的知识库
-最近更新日期：2020/03/14
+最近更新日期：2020/03/16
 
 最近一周新增：
 - [图计算在基础安全的落点](https://www.cdxy.me/?p=817)
 - [科研论文如何想到不错的 idea？](https://www.zhihu.com/question/300967426)
+- [tensorflow issues#22512](https://github.com/tensorflow/tensorflow/issues/22512)
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -401,6 +402,11 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **无监督学习-层次聚类-相似性计算**：曼哈顿距离、欧式距离、切比雪夫距离、余弦相似度、皮尔逊相关系数、Jaccard系数。
 
 ### 深度学习
+
+#### CPU环境搭建
+- [tensorflow issues#22512](https://github.com/tensorflow/tensorflow/issues/22512)<br>
+**问题本质**：报错：ImportError: DLL load failed，原因：缺少依赖，解决方法：pip install --index-url https://pypi.douban.com/simple tensorflow==2.0.0，会自动安装依赖。
+
 #### GPU环境搭建
 - [Tensorflow和Keras 常见问题（持续更新~）](https://zhuanlan.zhihu.com/p/81721574)（坑点）
 - [Tested build configurations](https://tensorflow.google.cn/install/source)（版本对应速查表）
