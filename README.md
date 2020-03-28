@@ -222,7 +222,7 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 - [Lightgbm 直方图优化算法深入理解](https://blog.csdn.net/anshuai_aw1/article/details/83040541)<br>
 **Lightgbm**：相较于预排序而言，lgb采用了直方图来处理节点分裂，寻找最优分割点。算法思想：在训练前预先把特征值转化为bin value，也就是对每个特征的取值做分段函数，将所有样本在该特征上的取值划分到某一段（bin）中，最终把特征取值从连续值转化为离散值。直方图也可以用来做差加速，计算直方图的复杂度是基于桶的个数的。
 - [keras文本预处理源码分析](https://keras.io/preprocessing/text/)<br>
-**Keras-文本预处理**：![](D:\Documents\Downloads\keras-text (1).png)
+**Keras-文本预处理**：![](https://github.com/404notf0und/Always-Learning/blob/master/images/keras-text-review.png)
 
 ## 安全技术
 ### 漏洞
