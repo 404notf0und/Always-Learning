@@ -1,17 +1,10 @@
 # 404 Not Found的知识库
-最近更新日期：2020/04/03
+最近更新日期：2020/04/14
 
 最近一周新增：
 
-- [理解 Word2Vec 之 Skip-Gram 模型](https://zhuanlan.zhihu.com/p/27234078)
-- [基于TensorFlow实现Skip-Gram模型 - 天雨粟的文章](https://zhuanlan.zhihu.com/p/27296712)
-- [Word2Vec Tutorial - The Skip-Gram Model](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
-- [Word2Vec Tutorial Part 2 - Negative Sampling](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
-- [Word2Vec word embedding tutorial in Python and TensorFlow](https://adventuresinmachinelearning.com/word2vec-tutorial-tensorflow/)
-- [word2vec_basic tensorlflow源码分析](https://github.com/tensorflow/tensorflow/blob/r0.12/tensorflow/examples/tutorials/word2vec/word2vec_basic.py)
-- [A Word2Vec Keras tutorial](http://adventuresinmachinelearning.com/word2vec-keras-tutorial/)
-- [keras_word2vec@adventures-in-ml-code](https://github.com/adventuresinML/adventures-in-ml-code/blob/master/keras_word2vec.py)
-- [keras序列预处理源码分析](https://github.com/keras-team/keras/blob/master/keras/preprocessing/sequence.py)
+- [Chars2vec: character-based language model for handling real world texts with spelling errors and…](https://hackernoon.com/chars2vec-character-based-language-model-for-handling-real-world-texts-with-spelling-errors-and-a3e4053a147d)
+- [Character Level Embeddings](https://datascience.stackexchange.com/questions/37368/character-level-embeddings)
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -500,6 +493,8 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **NLP**：NLP统计语言模型：定义（计算一个句子的概率的模型，也就是判断一句话是否是人话的概率）、马尔科夫假设（随便一个词出现的概率只与它前面出现的有限的一个或几个词有关）、N元模型（一元语言模型unigram、二元语言模型bigram）。
 - [有谁可以解释下word embedding? - YJango的回答 - 知乎](https://www.zhihu.com/question/32275069/answer/197000927)<br>
 **NLP**：单词表达：one hot representation、distributed representation。Word embedding：以神经网络分析one hot representation和distributed representation作为例子，证明用distributed representation表达一个单词是比较好的。word embedding就是神经网络分析distributed representation所显示的效果，降低训练所需的数据量，就是要从数据中自动学习出输入空间到distributed representation空间的映射f（相当于加入了先验知识，相同的东西不需要分别用不同的数据进行学习）。训练方法：如何自动寻找到映射f，将one hot representation转变成distributed representation呢？思想：单词意思需要放在特定的上下文中去理解，例子：`这个可爱的 泰迪 舔了我的脸`和`这个可爱的 京巴 舔了我的脸`，用输入单词 x 作为中心单词去预测其他单词 z 出现在其周边的可能性（**至此我才明白为什么说词嵌入是神经网络训练语言模型的副产品这句话**）。用输入单词作为中心单词去预测周边单词的方式叫skip-gram，用输入单词作为周边单词去预测中心单词的方式叫CBOW。
+- [Chars2vec: character-based language model for handling real world texts with spelling errors and…](https://hackernoon.com/chars2vec-character-based-language-model-for-handling-real-world-texts-with-spelling-errors-and-a3e4053a147d)
+- [Character Level Embeddings](https://datascience.stackexchange.com/questions/37368/character-level-embeddings)
 - [使用TextCNN模型探究恶意软件检测问题](https://xz.aliyun.com/t/6785)<br>
 **恶意软件检测**：改进分为两个方面：调参和结构。调参：Embedding层的inputLen、output_dim，EarlyStopping，样本比例参数class_weight,卷积层和全连接层的正则化参数l2，适配硬件(GPU、TPU)的batch_size。结构：增加了全局池化层。<br>
 **学到了**：一个trick，通过训练集和评价指标logloss计算测试集的各标签数量，以此调整训练阶段的参数class_weight，还可以事先达到“对答案”的效果。和一个T大大佬在datacon域名安全检测比赛中使用的trick如出一辙。
