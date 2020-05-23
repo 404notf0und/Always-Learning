@@ -219,6 +219,15 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 ## 底层研究
 - [python requests库流程简析](https://www.jianshu.com/p/a5e98489dcb8)<br>
   **python requests库实现**：socket->httplib->urllib->urllib3->requests。requests.get的内部调用流程：requests.get->requests()->Session.request->Session.send->adapter.send->HTTPConnectionPool(urllib3)->HTTPConnection(httplib)。
+  
+  ```
+  1、socket：是TCP/IP最直接的实现，实现端到端的网络传输
+  2、httplib：基于socket库，是最基础最底层的http库，主要将数据按照http协议组织，然后创建socket连接，将封装的数据发往服务端
+  3、urllib：基于httplib库，主要对url的解析和编码做进一步处理
+  4、urllib3：基于httplib库，相较于urllib更高级的地方在于用PoolManager实现了socket连接复用和线程安全，提高了效率
+  5、requests：基于urllib3库，比urllib3更高级的是实现了Session对象，用Session对象保存一些数据状态，进一步提高了效率
+  ```
+  
 - [XGBoost原理和底层实现剖析](https://snaildove.github.io/2018/10/02/get-started-XGBoost/)（学到了）<br>
   **XGBoost**：从树的分数（目标函数：损失函数（二阶展开）+正则项），树的结构（分裂决策（预排序））方面理解。
 - [Lightgbm 直方图优化算法深入理解](https://blog.csdn.net/anshuai_aw1/article/details/83040541)<br>
@@ -607,7 +616,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **红蓝对抗Do过程中的挑战**：效率/收益；攻击成本量化；来自业务的挑战（红蓝对抗的核心目标是为业务保驾护航）。<br>
 **红蓝对抗的Future**：多层次多范围的蓝军；蓝军的自动化渗透平台/协同作战平台；蓝军能力对外输出。
 - [网络空间安全时代的红蓝对抗建设](https://mp.weixin.qq.com/s/dzU7mTbD-Hmw7ZxB6FRb5Q)（附录存在红蓝对抗相关文章）<br>
-**实战是检验安全防护能力的唯一标准。**渗透测试，适用于企业安全体系建设初期或者一穷二白阶段，而红蓝对抗是渗透测试的升级版，不仅关注安全漏洞，重点检验的是企业安全建设体系的缺陷，**红蓝对抗的边界**不只是信息安全视角下的网络渗透攻击，随着新技术新架构的出现，**还拓展到网络空间安全视角下的AIoT、工业互联网、业务风控、窃听/窃视等领域。**
+**实战是检验安全防护能力的唯一标准**。渗透测试，适用于企业安全体系建设初期或者一穷二白阶段，而红蓝对抗是渗透测试的升级版，不仅关注安全漏洞，重点检验的是企业安全建设体系的缺陷，**红蓝对抗的边界**不只是信息安全视角下的网络渗透攻击，随着新技术新架构的出现，**还拓展到网络空间安全视角下的AIoT、工业互联网、业务风控、窃听/窃视等领域**。
 
 ### 内网安全
 - [内网安全攻击模拟和异常检测规则实战](https://mp.weixin.qq.com/s/kELnd0dAGe8Qa-lkJtcoNQ)<br>
