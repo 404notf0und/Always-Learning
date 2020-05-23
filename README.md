@@ -1,10 +1,15 @@
 # 404 Not Found的知识库
-最近更新日期：2020/04/14
+最近更新日期：2020/05/20
 
 最近一周新增：
 
 - [Chars2vec: character-based language model for handling real world texts with spelling errors and…](https://hackernoon.com/chars2vec-character-based-language-model-for-handling-real-world-texts-with-spelling-errors-and-a3e4053a147d)
 - [Character Level Embeddings](https://datascience.stackexchange.com/questions/37368/character-level-embeddings)
+- [数字化转型中的应用现代化与安全左移](https://mp.weixin.qq.com/s/DDOAZ3K_HuZSCFdgUcUe8g)
+- [云原生网络代理 MOSN 透明劫持技术解读 | 开源](https://mp.weixin.qq.com/s/swrJT6HZy4r1XDXFzHNtxA)
+- [基于海量url数据识别视频类网页](https://mp.weixin.qq.com/s/hwdSd1YqzWyun2MCImcCcw)
+- [内网安全攻击模拟和异常检测规则实战](https://mp.weixin.qq.com/s/kELnd0dAGe8Qa-lkJtcoNQ)
+- [“安全需要每个工程师的参与”-DevSecOps理念及思考](https://mp.weixin.qq.com/s/_jBmFdtyXY5D_YrrTUP1iQ)
 
 ## 硬实力
 - [计算机理论基础](#计算机理论基础)
@@ -56,6 +61,12 @@
 	- [安全思考](#安全思考)
 	- [安全架构](#安全架构)
 	- [红蓝对抗](#红蓝对抗)
+	- [内网安全](#内网安全)
+- [新技术与新安全](#新技术与新安全)
+    - [综述](#综述)
+    - [云原生](#云原生)
+    - [可信计算](#可信计算)
+    - [DevSecOps](#DevSecOps)
 - [安全发展](#安全发展)
     - [个人发展](#个人发展)
 	- [行业发展](#行业发展)  
@@ -498,6 +509,8 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [使用TextCNN模型探究恶意软件检测问题](https://xz.aliyun.com/t/6785)<br>
 **恶意软件检测**：改进分为两个方面：调参和结构。调参：Embedding层的inputLen、output_dim，EarlyStopping，样本比例参数class_weight,卷积层和全连接层的正则化参数l2，适配硬件(GPU、TPU)的batch_size。结构：增加了全局池化层。<br>
 **学到了**：一个trick，通过训练集和评价指标logloss计算测试集的各标签数量，以此调整训练阶段的参数class_weight，还可以事先达到“对答案”的效果。和一个T大大佬在datacon域名安全检测比赛中使用的trick如出一辙。
+- [基于海量url数据识别视频类网页](https://mp.weixin.qq.com/s/hwdSd1YqzWyun2MCImcCcw)<br>
+**CV-行文思路**：问题：视频类网页识别。解决方式：url粗筛->视频网页规则粗筛->视频网页截屏及CNN识别。
 
 ### 综合素质
 - [算法工程师必须要知道的面试技能雷达图](https://zhuanlan.zhihu.com/p/54089811)（学到了）<br>
@@ -604,7 +617,27 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [网络空间安全时代的红蓝对抗建设](https://mp.weixin.qq.com/s/dzU7mTbD-Hmw7ZxB6FRb5Q)（附录存在红蓝对抗相关文章）<br>
 **实战是检验安全防护能力的唯一标准。**渗透测试，适用于企业安全体系建设初期或者一穷二白阶段，而红蓝对抗是渗透测试的升级版，不仅关注安全漏洞，重点检验的是企业安全建设体系的缺陷，**红蓝对抗的边界**不只是信息安全视角下的网络渗透攻击，随着新技术新架构的出现，**还拓展到网络空间安全视角下的AIoT、工业互联网、业务风控、窃听/窃视等领域。**
 
+### 内网安全
+- [内网安全攻击模拟和异常检测规则实战](https://mp.weixin.qq.com/s/kELnd0dAGe8Qa-lkJtcoNQ)<br>
+**行文思路**：外部信息收集->边界突破->信息收集、**权限提升**->**权限维持**->信息收集、**凭据提取**->**横向移动**->数据窃取->清理痕迹。
+
+## 新技术与新安全
+
+### 综述
+- [数字化转型中的应用现代化与安全左移](https://mp.weixin.qq.com/s/DDOAZ3K_HuZSCFdgUcUe8g)<br>
+**行文思路**：新基建->数字化转型->传统信息化面临挑战->业务驱动应用现代化->云原生、容器化、DevOps、应用微服务化、编排等新技术->应用现代化架构->内生安全（云网络全方位感知、可信、全流程安全介入、安全运营）。
+
+### 云原生
+- [云原生网络代理 MOSN 透明劫持技术解读 | 开源](https://mp.weixin.qq.com/s/swrJT6HZy4r1XDXFzHNtxA)<br>
+**行文思路**：service mesh->Istio->数据面->网络代理->MOSN->高效透明流量劫持。问题：流量接管。解决问题：环境适配、配置管理、数据面性能。
+
+### 可信计算
+
+### DevSecOps
+- [“安全需要每个工程师的参与”-DevSecOps理念及思考](https://mp.weixin.qq.com/s/_jBmFdtyXY5D_YrrTUP1iQ)（学到了）<br>
+
 ## 安全发展
+
 ### 个人发展
 #### 面试
 - [有关安全的面经, 实习, etc](https://github.com/SecYouth/sec-jobs/tree/master/interview-experience)<br>
