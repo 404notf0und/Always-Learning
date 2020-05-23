@@ -198,7 +198,8 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
   **应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
 - [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)<br>
   **Kerberos**：Kerberos的基本描述、协议内容和具体流程。
-- [什么是**微服务架构**？](https://www.zhihu.com/question/65502802)
+- [什么是
+- 微服务架构**？](https://www.zhihu.com/question/65502802)
 - [什么是Service Mesh（服务网格）](https://jimmysong.io/posts/what-is-a-service-mesh/)<br>
   **微服务架构**：Why：为什么使用服务网格？传统的MVC三层Web应用程序架构下，服务之间的通讯并不复杂，在应用程序内部自己管理即可，但在如今复杂的大型网站情况下，单体应用被分解成众多的微服务，服务之间的依赖和通讯十分复杂。What：服务网格，是服务间通信的基础设施层，可以把它比作是应用程序或是微服务间的TCP/IP，负责服务间网络调用、限流、熔断和监控。Service Mesh的特点：应用程序间通讯的中间层、轻量级网络代理、应用程序无感知、解耦应用程序的重试/超时、监控、追踪和服务发现。目前流行的开源软件是Istio和Linkerd，都可以在Cloud Native的kubernetes环境中集成。
 - [Updater fails if not run as admin, even on a user installation](https://github.com/MiKTeX/miktex/issues/56)<br>
@@ -213,7 +214,7 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
   **CORS**支持所有类型的HTTP请求，是跨域HTTP请求的根本解决方案。**JSONP**只支持GET请求，优势在于支持老式浏览器，以及可以向不支持CORS的网站请求数据。不管是**Node中间件代理**还是**nginx反向代理**，主要是通过同源策略对服务器不加限制。日常工作中，用的比较多的跨域方案是CORS和nginx反向代理。
 - [如何在Jupyter Notebook中使用Python虚拟环境？](https://zhuanlan.zhihu.com/p/29564719)<br>
 **Anaconda**：安装插件，conda install nb_conda
-- [既然有 HTTP 请求，为什么还要用 RPC 调用？ - 易哥的回答](https://www.zhihu.com/question/41609070/answer/1030913797)<b>
+- [既然有 HTTP 请求，为什么还要用 RPC 调用？ - 易哥的回答](https://www.zhihu.com/question/41609070/answer/1030913797)<br>
 **RPC**：Restful VS RPC。RPC包括：反向代理、序列化与反序列化、通信（HTTP、TCP、UDP）、异常处理
 
 ## 底层研究
@@ -635,7 +636,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 ### 可信计算
 
 ### DevSecOps
-- [“安全需要每个工程师的参与”-DevSecOps理念及思考](https://mp.weixin.qq.com/s/_jBmFdtyXY5D_YrrTUP1iQ)（学到了）<br>
+- [“安全需要每个工程师的参与”-DevSecOps理念及思考](https://mp.weixin.qq.com/s/_jBmFdtyXY5D_YrrTUP1iQ)（Mark）<br>
 
 ## 安全发展
 
