@@ -1,88 +1,93 @@
 # 404 Not Found的知识库
-最近更新日期：2020/05/28
+最近更新日期：2020/06/03
 
 最近一周新增：
 
-- [“安全需要每个工程师的参与”-DevSecOps理念及思考](https://mp.weixin.qq.com/s/_jBmFdtyXY5D_YrrTUP1iQ)
-- [认知智能再突破，阿里 18 篇论文入选 AI 顶会 KDD](https://mp.weixin.qq.com/s/3uB69n3zCVw8VefTDi4QCA)
-- [基于大数据企业网络威胁发现模型实践](https://mp.weixin.qq.com/s/kwsF7i4_f-URi2BNQSa-sg)
-- [腾讯安全首发企业级「数据安全能力图谱」](https://mp.weixin.qq.com/s/bLlkg7YQXM7nVQigIvBSiw)
-- [未来 3~5 年内，哪个方向的机器学习人才最紧缺？ - 王喆的回答](https://www.zhihu.com/question/63883507/answer/1251083379)
+- [数据分析师如何搭建数据运营指标体系？ - 张溪梦 Simon的回答](https://www.zhihu.com/question/315972357/answer/1238739118)
+- [请分享一下数据分析方面的思路，如何做好数据分析？](https://www.zhihu.com/question/30195311/answer/1235248266)
 
-## 硬实力
-- [计算机理论基础](#计算机理论基础)
-    - [计算机网络](#计算机网络)
-    - [操作系统](#操作系统)
-    - [数据结构与算法](#数据结构与算法)
-    - [数据库](#数据库)
-    - [密码学基础](#密码学基础)
-- [计算机技术基础](#计算机技术)
-    - [语言](#语言)
-    - [框架](#框架)
-    - [工具](#工具)
-    - [技术](#技术)
-- [底层研究](#底层研究)
-- [安全技术](#安全技术)
-    - [漏洞](#漏洞)
-	- [Web安全](#Web安全)
-	- [渗透测试](#渗透测试)
-	- [代码审计](#代码审计)
-	- [数据安全](#数据安全)
-	- [云安全](#云安全)
-- [安全工具](#安全工具)
-    - [漏洞扫描](#漏洞扫描)
-- [安全研究](#安全研究)
-    - [APT检测](#APT检测)
-	- [恶意样本](#恶意样本)
-	- [Red Team](#RedTeam)
-	- [WAF](#WAF)
-	- [恶意URL检测](#恶意URL检测)
-	- [对抗机器流量](#对抗机器流量)
-	- [异常检测](#异常检测)
-	- [图与安全](#图与安全)
-	- [AI与安全](#AI与安全)
-- [人工智能](#人工智能)
-    - [算法体系](#算法体系)
-    - [基础知识](#基础知识)
-    - [机器学习](#机器学习)
-    - [深度学习](#深度学习)
-    - [强化学习](#强化学习)
-    - [应用领域](#应用领域)
-    - [行业发展](#行业发展)
-    - [综合素质](#技术素质)
-- [企业安全建设](#企业安全建设)
-    - [安全开发](#安全开发)
-	- [安全数据分析](#安全数据分析)
-	- [安全检测](#安全检测)
-	- [安全产品](#安全产品)
-	- [安全运营](#安全运营)
-	- [安全管理](#安全管理)
-	- [安全思考](#安全思考)
-	- [安全架构](#安全架构)
-	- [红蓝对抗](#红蓝对抗)
-	- [内网安全](#内网安全)
-	- [数据安全](#数据安全)
-- [新技术与新安全](#新技术与新安全)
-    - [综述](#综述)
-    - [云原生](#云原生)
-    - [可信计算](#可信计算)
-    - [DevSecOps](#DevSecOps)
-- [安全发展](#安全发展)
-    - [个人发展](#个人发展)
-	- [行业发展](#行业发展)  
-## 软实力
-- [职业规划](#职业规划)
-- [综合素质](#综合素质)
-  - [逻辑思维与语言表达](#逻辑思维与语言表达)
-  - [管理](#管理)
-  - [思考](#思考)
-  - [注意事项](#注意事项)
+目录：
+
+- [计算机基础](#计算机基础)
+    - [计算机理论基础](#计算机理论基础)
+        - [计算机网络](#计算机网络)
+        - [操作系统](#操作系统)
+        - [数据结构与算法](#数据结构与算法)
+        - [数据库](#数据库)
+        - [密码学基础](#密码学基础)
+    - [计算机技术基础](#计算机技术)
+        - [语言](#语言)
+        - [框架](#框架)
+        - [工具](#工具)
+        - [技术](#技术)
+    - [底层研究](#底层研究) 
+        - [word2vec](#word2vec)
+- [安全](#安全)
+    - [安全技术](#安全技术)
+        - [漏洞](#漏洞)
+        - [Web安全](#Web安全)
+        - [渗透测试](#渗透测试)
+        - [代码审计](#代码审计)
+        - [数据安全](#数据安全)
+        - [云安全](#云安全)
+    - [安全工具](#安全工具)
+        - [漏洞扫描](#漏洞扫描)
+    - [安全研究](#安全研究)
+        - [APT检测](#APT检测)
+        - [恶意样本](#恶意样本)
+        - [Red Team](#RedTeam)
+        - [WAF](#WAF)
+        - [恶意URL检测](#恶意URL检测)
+        - [对抗机器流量](#对抗机器流量)
+        - [异常检测](#异常检测)
+        - [图与安全](#图与安全)
+        - [AI与安全](#AI与安全)
+    - [企业安全建设](#企业安全建设)
+        - [安全开发](#安全开发)
+        - [安全检测](#安全检测)
+        - [安全产品](#安全产品)
+        - [安全运营](#安全运营)
+        - [安全管理](#安全管理)
+        - [安全思考](#安全思考)
+        - [安全架构](#安全架构)
+        - [红蓝对抗](#红蓝对抗)
+        - [内网安全](#内网安全)
+        - [数据安全](#数据安全)
+    - [新技术与新安全](#新技术与新安全)
+        - [综述](#综述)
+        - [云原生](#云原生)
+        - [可信计算](#可信计算)
+        - [DevSecOps](#DevSecOps)
+    - [安全发展](#安全发展)
+        - [个人发展](#个人发展)
+        - [行业发展](#行业发展)  
+- [数据](#数据)
+    - [数据体系](#数据体系)
+    - [数据分析与运营](#数据分析与运营)
+    - [安全数据分析](#安全数据分析)
+- [算法](#算法)
+    - [人工智能](#人工智能)
+        - [算法体系](#算法体系)
+        - [基础知识](#基础知识)
+        - [机器学习](#机器学习)
+        - [深度学习](#深度学习)
+        - [强化学习](#强化学习)
+        - [应用领域](#应用领域)
+        - [行业发展](#行业发展)
+        - [综合素质](#技术素质)
+- [职业](#职业)
+	- [职业规划](#职业规划)
+	- [思维](#思维)
+	- [沟通](#沟通)
+	- [管理](#管理)
+	- [思考](#思考)
+	- [注意事项](#注意事项)
 - [附录](#附录)
   - [国内优秀技术人](#国内优秀技术人)
   - [国外优秀技术站点](#国外优秀技术站点)
-- [废弃](#废弃)
+  - [废弃](#废弃)
 
-## 正文：
+# 计算机基础
 ## 计算机理论基础
 ### 操作系统
 - [[计算机考研408全网最全!!!!!]王道计算机操作系统](https://www.bilibili.com/video/av33644426)
@@ -170,8 +175,6 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
   4、<a href=java%61script:alert(1)>click</a> 在url解码环节，不会认为javascript是伪协议，会出现错误。<br>
   5、<a href=# onclick="alert('&#x27;&#x29;;alert&#x28;&#x27;2');">click</a> htmlparser会优先于JavaScript parser执行，所以解析过程是htmlencode的字符先被解码，然后执行JavaScript事件。<br>
   **浏览器解码顺序是XSS中bypass的基础**。
-- [数据分析与可视化：谁是安全圈的吃鸡第一人](https://www.freebuf.com/articles/web/199925.html?from=timeline&isappinstalled=0)（学到了）<br>
-  **数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
 - [dockerfile 和 docker-compose 的关系](https://segmentfault.com/q/1010000009883848)<br>
   **docker技术**：文件和文件夹的关系。
 - [dockerfile 与 docker-compose的区别是什么?](https://segmentfault.com/q/1010000009883848)<br>
@@ -184,8 +187,6 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
   **应用服务器**：Nginx部署场景：负载均衡（tornado之类的框架只支持单核，所以多进程部署需要反向负载均衡。gunicorn本身就是多进程其实不需要）、静态文件支持、抗并发压力、额外的访问控制。
 - [维基百科：Kerberos](https://zh.wikipedia.org/wiki/Kerberos)<br>
   **Kerberos**：Kerberos的基本描述、协议内容和具体流程。
-- [数据分析与可视化：谁是安全圈的吃鸡第一人](https://www.freebuf.com/articles/web/199925.html?from=timeline&isappinstalled=0)（学到了）<br>
-  **数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
 - [dockerfile 和 docker-compose 的关系](https://segmentfault.com/q/1010000009883848)<br>
   **docker技术**：文件和文件夹的关系。
 - [dockerfile 与 docker-compose的区别是什么?](https://segmentfault.com/q/1010000009883848)<br>
@@ -246,6 +247,7 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 - [A Word2Vec Keras tutorial](http://adventuresinmachinelearning.com/word2vec-keras-tutorial/)
 - [keras_word2vec@adventures-in-ml-code](https://github.com/adventuresinML/adventures-in-ml-code/blob/master/keras_word2vec.py)
 
+# 安全
 ## 安全技术
 ### 漏洞
 - [对乌云漏洞库payload的整理以及Burp辅助插件](https://mp.weixin.qq.com/s/9RHVsw-HtAfo1UuPAqXZEw)
@@ -298,9 +300,7 @@ CRLF是“回车+换行”(\r\n)的简称。HTTP Header和HTTP Body是用两个C
 - [安全资料：企业实验室、安全社区、安全团队、安全工具等](http://blkstone.github.io/friend/)
 
 ## 安全工具
-
 ### 漏洞扫描
-
 - [使用 xray 代理模式进行漏洞扫描](https://xray.cool/xray/#/tutorial/webscan_proxy)
 
 ## 安全研究
@@ -377,201 +377,10 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **AI安全的攻击面**：训练阶段和测试阶段的数据和模型方面，攻击有数据中毒和对抗性样本，模型提取和模型反转等。
 - [智能威胁检测：基于Spark的SOC机器学习检测平台](https://mp.weixin.qq.com/s/0FNXGMQXu4LkTIC0ZbwwpQ) 
 
-## 人工智能
-
-### 算法体系
-- [机器学习算法集锦：从贝叶斯到深度学习及各自优缺点](https://mp.weixin.qq.com/s/idxuzwUKG_Q1yUtpipG4Xw)<br>
-**算法知识框架**：主要从算法的定义、过程、代表性算法、优缺点解释回归、正则化算法、人工神经网络、深度学习||决策树算法、集成算法||支持向量机||降维算法、聚类算法||基于实例的算法||贝叶斯算法||关联规则学习算法||图模型。<br>
-**个人理解**：回归系列主要基于线性回归和逻辑回归衍生，包括回归、正则化算法、人工神经网络、深度学习；树系列主要基于决策树衍生，包括决策树和基于树的集成学习算法；支持向量机属于老牌算法；降维算法和聚类算法主要基于数据的内在结构描述数据；基于实例的算法实际上并没有训练的过程，代表性算法是KNN，基于记忆的学习；贝叶斯算法利用贝叶斯定理计算输出概率；关联规则学习算法能够提取数据中变量之间的关系的最佳解释；图模型是一种概率模型，可以表示随机变量之间的条件依赖结构。
-- [Categories of algorithms non exhaustive ](https://static.coggle.it/diagram/WHeBqDIrJRk-kDDY)(学到了)<br>
-**算法知识框架**：学到了搭建自己的算法体系。
-
-### 基础知识
-- [HTTP DATASET CSIC 2010](http://www.isi.csic.es/dataset/)<br>
-**安全数据集-CSIC2010**：基于e-Commerce Web应用自动化生成的安全数据集，包含36000个正常请求和25000个异常请求，异常请求包括：SQL注入、缓冲区溢出、信息收集、文件泄露、CRLF注入、XSS等。
-- [分类模型的性能评估——以 SAS Logistic 回归为例 (3): Lift 和 Gain](https://cosx.org/2009/02/measure-classification-model-performance-lift-gain/)
-- [机器学习中非均衡数据集的处理方法？](https://www.zhihu.com/question/30492527/answer/222719942)<br>
-**非均衡数据集**：上采样和下采样、正负样本的惩罚权重（scikit-learn的SVM为例：class_weight:{dict,'balanced'}）、组合/集成方法（从大样本中抽取多个小样本训练模型再集成）、特征选择（小样本量具有一定规模的时候，选择显著型的特征）
-- [机器学习算法中 GBDT 和 XGBOOST 的区别有哪些？](https://www.zhihu.com/question/41354392/answer/157538270)<br>
-**算法比较**：GBDT基分类器为CART，XGB的分类器可以是多种基分类器，比如线性分类器，这时候就相当于L1、L2正则项的逻辑回归或线性回归；传统的GBDT在优化时用到的是一阶导数，XGB则对损失函数进行了二阶泰勒公式的展开，精度变高；XGB并行处理（特征粒度的并行，对特征值进行预排序存储为block结构，在进行节点分类的时候，需要计算每个特征的增益，最终选择增益最大的那个特征去做分类，那么各个特征的增益计算就可以开多线程进行），相对于GBM速度飞跃；剪枝时，当新增分类带来负增益时，GBM会停止分裂，而XGB一直分类到指定的最大深度，然后进行后全局剪枝；从最优化的角度来看，GBDT采用的是数值优化的思维，用的最速下降法去求解Loss function的最优解，其中用CART决策树去拟合负梯度，用牛顿法求步长，而XGB用的是解析的思维，对Loss function展开到二阶近似，求得解析解，用解析解作为Gain来建立决策树，使得Loss function最优。
-- [SVM和logistic回归分别在什么情况下使用？](https://www.zhihu.com/question/21704547)<br>
-  **算法使用场景-SVM和逻辑回归使用场景**：需要根据特征数量和训练样本数量来确定。如果特征数相对于训练样本数已经够大了，使用线性模型就能取得不错的效果，不需要过于复杂的模型，则使用LR或线性核函数的SVM。如果训练样本足够大而特征数较小的情况下，可以通过复杂核函数的SVM来获得更好的预测性能，如果样本没有达到百万级，使用复杂核函数的SVM也不会导致运算过慢。如果训练样本特别大，使用复杂核函数的SVM已经会导致运算过慢了，因此应该考虑引入更多特征，然后使用线性SVM或者LR来构造模型。
-- [gbdt的残差为什么用负梯度代替？](https://www.zhihu.com/question/63560633)
-- [欧氏距离与马氏距离](https://blog.csdn.net/u010167269/article/details/51627338)
-- [机器学习算法常用指标总结](https://mp.weixin.qq.com/s/jEB0CD9j1amGVbt4tAObLQ)<br>
-- [分类模型评估之ROC-AUC曲线和PRC曲线](https://blog.csdn.net/pipisorry/article/details/51788927)<br>
-
-### 机器学习
-- [平均数编码：针对高基数定性特征（类别特征）的数据预处理/特征工程](https://zhuanlan.zhihu.com/p/26308272)
-- [Mean Encoding](https://necromuralist.github.io/kaggle-competitions/posts/mean-encoding/)
-- [kaggle编码categorical feature总结](https://zhuanlan.zhihu.com/p/40231966)
-- [Python target encoding for categorical features](https://www.kaggle.com/ogrellier/python-target-encoding-for-categorical-features)
-- [Mean (likelihood) encodings: a comprehensive study](https://www.kaggle.com/vprokopev/mean-likelihood-encodings-a-comprehensive-study)
-- [如何在 Kaggle 首战中进入前 10%](http://dnc1994.com/2016/04/rank-10-percent-in-first-kaggle-competition/)
-- [kaggle竞赛总结](http://matafight.github.io/2017/08/05/kaggle%E7%AB%9E%E8%B5%9B%E6%80%BB%E7%BB%93/)
-- [分享一波关于做Kaggle比赛，Jdata，天池的经验，看完我这篇就够了](https://segmentfault.com/a/1190000012084849)
-- [为什么在实际的kaggle比赛中，GBDT和Random Forest效果非常好？](https://www.zhihu.com/question/51818176/answer/595480045?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136)<br>
-**有监督学习-树系列算法**：单模型，gradient boosting machine和deep learning是首选。gbm不需要复杂的特征工程，不需要太多时间去调参数，dl则需要比较多的时间去调网络结构。**从overfit角度理解**，两者都有overfit甚至perfect fit的能力，overfit能力越强，可塑性越强，然后我们要解决的问题就是如果把模型训练的“恰好”，比如gbm里有early_stopping功能。线性回归模型就缺乏overfit能力，如果实际数据符合线性模型的关系，那可以得到很好的结果，如果不符合的话，就需要做特征工程，可特征工程又是一个比较主观的过程。树的优势，非参数模型，gbm的overfit能力强。而random forest的perfact fit能力很差，这是因为rf的树是独立训练的，没有相互协作，虽然是非参数型模型，但是浪费了这个先天优势。
-- [【总结】树类算法认知总结](https://www.jianshu.com/p/432764633f6f)<br>
-**有监督学习-树类算法**：分类树和回归树的区别；避免决策树过拟合的方法；随机森林怎么应用到分类和回归问题上；kaggle上为啥GBDT比RF更优；RF、GBDT、XGBoost的认知（原理、优缺点、区别、特性）。
-- [LightGBM](https://fuhailin.github.io/LightGBM/)
-- [LightGBM算法总结](https://blog.csdn.net/weixin_39807102/article/details/81912566)
-- [『我爱机器学习』集成学习（四）LightGBM](https://www.hrwhisper.me/machine-learning-lightgbm/)
-- [如何玩转LightGBM](https://v.qq.com/x/page/k0362z6lqix.html)（官方slides讲解）<br>
-**有监督学习-LightGBM-个人理解**：**LightGBM几大特性及原理：直方图分割及直方图差加速（直方图两大改进：直方图复杂度=O(#feature×#data)，GOSS降低样本数，EFB降低特征数）-》效率和内存提升。Leaf-wise with max depth limitation取代Level-wise-》准确率提升。支持原生类别特征。并行计算：数据并行（水平划分数据）、特征并行（垂直划分数据）、PV-Tree投票并行（本质上是数据并行）。**
-- [快速弄懂机器学习里的集成算法：原理、框架与实战](https://mp.weixin.qq.com/s/Q6OotQYIsSm7HW2T4ClLjg)
-- [时间序列数据的聚类有什么好方法？](https://www.zhihu.com/question/50656303/answer/584063648?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136)<br>
-**无监督学习-时间序列问题**：传统的机器学习数据分析领域：提取特征，使用聚类算法聚集；在自然语言处理领域：为了寻找相似的新闻或是把相似的文本信息聚集到一起，可以使用word2vec把自然语言处理成向量特征，然后使用KMeans等机器学习算法来作聚类；另一种做法是使用Jaccard相似度来计算两个文本内容之间的相似性，然后使用层次聚类的方法来作聚类。常见的聚类算法：基于距离的机器学习聚类算法（KMeans）、基于相似性的机器学习聚类算法（层次聚类）。对时间序列数据进行聚类的方法：时间序列的特征构造、时间序列的相似度方法。如果使用深度学习的话，要么就提供大量的标签数据；要么就只能使用一些无监督的编码器的方法。
-- [凝聚式层次聚类算法的初步理解](https://zhuanlan.zhihu.com/p/27659767)<br>
-**无监督学习-层次聚类**：算法步骤：计算邻近度矩阵--->（合并最接近的两个簇--->更新邻近度矩阵）（repeat），直到达到仅剩一个簇或达到终止条件。
-- [推荐算法入门（1）相似度计算方法大全](https://zhuanlan.zhihu.com/p/33164335)<br>
-**无监督学习-层次聚类-相似性计算**：曼哈顿距离、欧式距离、切比雪夫距离、余弦相似度、皮尔逊相关系数、Jaccard系数。
-
-### 深度学习
-
-#### CPU环境搭建
-- [tensorflow issues#22512](https://github.com/tensorflow/tensorflow/issues/22512)<br>
-**问题本质**：报错：ImportError: DLL load failed，原因：缺少依赖，解决方法：pip install --index-url https://pypi.douban.com/simple tensorflow==2.0.0，会自动安装依赖。
-
-#### GPU环境搭建
-- [Tensorflow和Keras 常见问题（持续更新~）](https://zhuanlan.zhihu.com/p/81721574)（坑点）
-- [Tested build configurations](https://tensorflow.google.cn/install/source)（版本对应速查表）
-- [windows tensorflow-gpu的安装](https://zhuanlan.zhihu.com/p/35717544)（靠谱）
-- [windows下安装配置cudn和cudnn](https://www.jianshu.com/p/9bdeb033e765)<br>
-**问题本质**：总的来说，是英伟达显卡驱动版本、cuda、cudnn和tensorflow-gpu之间版本的对应问题。最好装tensorflow-gpu==1.14.0,tensorflow-gpu==2.0需要cuda==10.0，10.2会报错，tensorflow-gpu==2.0不支持。
-- [win10搭建tensorflow-gpu环境](https://www.cnblogs.com/wanyu416/p/9536853.html)<br>
-**问题本质**：CUDA的各种环境变量添加。
-
-#### 深度学习基础知识
-- [深度学习中的batch的大小对学习效果有何影响？](https://www.zhihu.com/question/32673260)
-- [Batch Normalization原理与实战](https://zhuanlan.zhihu.com/p/34879333)（**还没完全看懂**）
-
-#### 神经网络基本部件
-- [如何计算感受野(Receptive Field)——原理](https://zhuanlan.zhihu.com/p/31004121)<br>
-感受野：卷积层越深，感受野越大，计算公式为(N-1)_RF = f(N_RF, stride, kernel) = (N_RF - 1) * stride + kernel，思路为倒推法。
-- [如何理解空洞卷积（dilated convolution）谭旭的回答](https://www.zhihu.com/question/54149221/answer/192025860)<br>
-空洞卷积：池化层减小图像尺寸同时增大感受野，空洞卷积的优点是不做pooling损失信息的情况下，增大感受野。3层3*3的传统卷积叠加起来，stride为1的话，只能达到(kernel_size-1)layer+1=7的感受野，和层数layer成线性关系，而空洞卷积的感受野是指数级的增长，计算公式为(2^layer-1)(kernel_size-1)+kernel_size=15。
-- [空洞卷积（dilated convolution）感受野计算](https://zhuanlan.zhihu.com/p/61889386)
-- [空洞卷积(dilated Convolution)](https://zhuanlan.zhihu.com/p/43784441)
-- [直观理解神经网络最后一层全连接+Softmax](https://www.cnblogs.com/shine-lee/p/10077961.html)（便于理解）<br>
-**全连接层**：可以理解为对特征的加权求和。
-
-#### 神经网络基本结构
-- [一组图文，读懂深度学习中的卷积网络到底怎么回事？](https://mp.weixin.qq.com/s?__biz=MzIyMzk1MDE3Nw==&mid=2247497838&idx=1&sn=0155aec301bfd63af03fb17727421e1e&chksm=e814dc60df635576971ccd515c440721af1e4d3c256d421953bc4944d2e724c476c5a689f197&mpshare=1&scene=1&srcid=0211JyZWQrYdounFDM2LW3AE&pass_ticket=hAXdmKc6AZ3DdksFdOmip3HL8cWLkL5u880JMyZ2etpYu1WnmEdvgA09xYgh9Im%2B#rd)<br>
-**卷积神经网络**：卷积层参数：内核大小（卷积视野3乘3）、步幅（下采样2）、padding（填充）、输入和输出通道。卷积类型：引入扩张率参数的扩张卷积、转置卷积、可分离卷积。
-- [卷积神经网络(CNN)模型结构](https://www.cnblogs.com/pinard/p/6483207.html)
-- [总结卷积神经网络发展历程 - 没头脑的文章](https://zhuanlan.zhihu.com/p/76275427)（很全面）
-- [三次简化一张图：一招理解LSTM/GRU门控机制](https://zhuanlan.zhihu.com/p/28297161)（很清晰）<br>
-**循环神经网络**：**文中电路图的形式好理解**。RNN：输入状态、隐藏状态。LSTM：输入状态、隐藏状态、细胞状态、3个门。GRU：输入状态、隐藏状态、2个门。LSTM和GRU通过设计门控机制缓解RNN梯度传播问题。
-- [gcn](https://github.com/tkipf/gcn)
-- [GRAPH CONVOLUTIONAL NETWORKS](http://tkipf.github.io/graph-convolutional-networks/)<br>
-**图神经网络**：相较于CNN，区别是图卷积算子计算公式。
-- [keras-attention-mechanism](https://github.com/philipperemy/keras-attention-mechanism)
-
-#### 神经网络应用
-- [[AI识人]OpenPose：实时多人2D姿态估计 | 附视频测试及源码链接](https://zhuanlan.zhihu.com/p/37526892)
-- [使用生成对抗网络(GAN)生成DGA](http://webber.tech/posts/%E4%BD%BF%E7%94%A8%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%28GAN%29%E7%94%9F%E6%88%90DGA/)
-- [GAN_for_DGA](https://github.com/bts-webber/GAN_for_DGA/blob/master/G.py)
-- [详解如何使用Keras实现Wassertein GAN](https://mp.weixin.qq.com/s/F2gBP23LCEF72QDlugbBZQ)
-- [Wasserstein GAN in Keras](https://myurasov.github.io/2017/09/24/wasserstein-gan-keras.html?r)
-- [WassersteinGAN](https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/WassersteinGAN)
-- [keras-acgan](https://github.com/lukedeo/keras-acgan)
-- [用深度学习（CNN RNN Attention）解决大规模文本分类问题 - 综述和实践](https://zhuanlan.zhihu.com/p/25928551)<br>
-**NLP**：传统的高维稀疏->现在的低维稠密。**注意事项**：类目不均衡、理解数据（badcase）、fine-tuning（只用word2vec训练的词向量作为特征表示，可能会损失很大效果，**预训练+微调**）、一定要用dropout、避免训练震荡、超参调节、未必一定要softmax loss、模型不是最重要的、关注迭代质量（为什么？结论？下一步？）
-
-### 强化学习
-- [深度强化学习的弱点和局限](https://mp.weixin.qq.com/s?__biz=MzI3ODkxODU3Mg==&mid=2247485609&idx=1&sn=6b71f5f8ebd4e920384f07b97ce92a9c&chksm=eb4eec6adc39657c81169f1ae9ce477e4da692941238c35deb26a11ed7ec70073784cfd935a8&scene=21#wechat_redirect)
-- [关于强化学习的局限的一些思考](https://zhuanlan.zhihu.com/p/34916891)<br>
-**强化学习的局限性：采样效率很差、很难设计一个合适的奖励函数。**
-
-### 应用领域
-- [全球最全？的安全数据网站](http://www.secrepo.com/)（有时间得好好整理一下）
-- [初探机器学习检测 PHP Webshell](https://paper.seebug.org/526/)
-- [基于机器学习的 Webshell 发现技术探索](https://mp.weixin.qq.com/s/1V0xcjH-6V5qJoJILP0pJQ)
-- [网络安全即将迎来机器对抗时代？](https://zhuanlan.zhihu.com/p/26093848)<br>
-**智能安全-智能攻击**：国外已经在研究利用机器学习打造更智能的攻击工具，比如深度强化学习，就是深度学习和强化学习的结合，可以感知环境，做出最优决策，可能被应用到漏洞扫描器里，使扫描器能够自动化地入侵目标。<br>
-**个人理解**：国外已有案例Deep Exploit就是利用深度强化学习结合metasploit进行自动化地渗透测试，国内还没有看到过相关公开案例。由于学习门槛高、安全本身攻击场景需要精细化操作、弱智能化机器学习导致的机器学习和安全场景结合深度不够等一系列的问题，已有的机器学习+安全的大多数研究主要集中在安全防护方面，机器学习+攻击方面的研究较少且局限，但是我相信这个场景很有潜力，或许以后就成为蓝方的攻击利器。
-- [人工智能反欺诈三部曲之：设备指纹](https://zhuanlan.zhihu.com/p/31712434)<br>
-**智能安全-业务安全-设备指纹**：ip、cookie、**设备ID**；**主动式设备指纹**：使用JS或SDK从客户端抓取各种各样的设备属性值，然后组合，通过hash算法得到设备ID；**优点**：Web内或者App内准确率高。**缺点**：主动式设备指纹在Web与App之间、不同的浏览器之间，会生成不同的设备ID，无法实现跨Web和App，不同浏览器之间的设备关联；由于依赖客户端代码，指纹在反欺诈的场景中对抗性较弱。**被动式设备指纹**：从数据报文中提取设备OS、协议栈和网络状态的特征集，并结合机器学习算法识别终端设备。**优点**：弥补了主动式设备指纹的缺点。**缺点**：占用处理资源多；响应时延比主动式长。
-- [风险大脑支付风险识别初赛经验分享【谋杀电冰箱-凤凰还未涅槃】](https://openclub.alipay.com/club/history/read/8869)<br>
-**智能安全-业务安全-风控**：个人理解见：https://github.com/404notf0und/Risk-Operation-Detection/blob/master/atec.ipynb。
-- [机器学习在互联网巨头公司实践](https://mp.weixin.qq.com/s/NFqUF824Rpr4g6wYWFpSNQ)<br>
-**入侵检测**：机器学习和统计建模的主要区别：机器学习主要依赖数据和算法，统计建模依赖建模者对数据特征的了解。两者的优缺点：机器学习：打标数据难获取，如果采用非监督学习，则性能不足以运维；机器学习结果不可解释。所以现在机器学习在做入侵检测的时候，一般都要限定一个特定的场景。统计建模：数据预处理阶段移除正常数据的干扰（重点关注查全率，强调过正常数据的过滤能力，尽可能筛除正常数据），构建能够识别恶意可疑行为的攻击模型（重点关注precision，强调模型对异常攻击模式判断的准确性，攻击链模型），缺点是泛化能力不足、在入侵检测一些场景中，模型易被干扰。我们的最终目的：大数据场景下安全分析可运维。
-- [Web安全检测中机器学习的经验之谈](https://iami.xyz/ML-IN-Webshell-Detection-Advantages-And-Disadvantages/)<br>
-**Web安全：从文本分类的角度解决Web安全检测的问题**。数据样本的多样性，短文本分类，词向量，句向量，文本向量。文本分类+多维度特征。**与传统方法做对比得出更好的检测方式：传统方法+机器学习：传统waf/正则规则给数据打标；传统方法先进行过滤**。
-- [词嵌入来龙去脉](https://blog.csdn.net/scotfield_msn/article/details/69075227)（学到了）<br>
-**NLP**：DeepNLP的核心关键：语言表示--->NLP词的表示方法类型：词的独热表示和词的分布式表示（这类方法都基于分布假说：词的语义由上下文决定，方法核心是上下文的表示以及上下文与目标词之间的关系的建模）--->NLP语言模型：统计语言模型--->词的分布式表示：基于矩阵的分布表示、基于聚类的分布表示、基于神经网络的分布表示，词嵌入--->词嵌入（word embedding是神经网络训练语言模型的副产品）--->神经网络语言模型与word2vec。
-- [深入浅出讲解语言模型](https://zhuanlan.zhihu.com/p/28080127)<br>
-**NLP**：NLP统计语言模型：定义（计算一个句子的概率的模型，也就是判断一句话是否是人话的概率）、马尔科夫假设（随便一个词出现的概率只与它前面出现的有限的一个或几个词有关）、N元模型（一元语言模型unigram、二元语言模型bigram）。
-- [有谁可以解释下word embedding? - YJango的回答 - 知乎](https://www.zhihu.com/question/32275069/answer/197000927)<br>
-**NLP**：单词表达：one hot representation、distributed representation。Word embedding：以神经网络分析one hot representation和distributed representation作为例子，证明用distributed representation表达一个单词是比较好的。word embedding就是神经网络分析distributed representation所显示的效果，降低训练所需的数据量，就是要从数据中自动学习出输入空间到distributed representation空间的映射f（相当于加入了先验知识，相同的东西不需要分别用不同的数据进行学习）。训练方法：如何自动寻找到映射f，将one hot representation转变成distributed representation呢？思想：单词意思需要放在特定的上下文中去理解，例子：`这个可爱的 泰迪 舔了我的脸`和`这个可爱的 京巴 舔了我的脸`，用输入单词 x 作为中心单词去预测其他单词 z 出现在其周边的可能性（**至此我才明白为什么说词嵌入是神经网络训练语言模型的副产品这句话**）。用输入单词作为中心单词去预测周边单词的方式叫skip-gram，用输入单词作为周边单词去预测中心单词的方式叫CBOW。
-- [Chars2vec: character-based language model for handling real world texts with spelling errors and…](https://hackernoon.com/chars2vec-character-based-language-model-for-handling-real-world-texts-with-spelling-errors-and-a3e4053a147d)
-- [Character Level Embeddings](https://datascience.stackexchange.com/questions/37368/character-level-embeddings)
-- [使用TextCNN模型探究恶意软件检测问题](https://xz.aliyun.com/t/6785)<br>
-**恶意软件检测**：改进分为两个方面：调参和结构。调参：Embedding层的inputLen、output_dim，EarlyStopping，样本比例参数class_weight,卷积层和全连接层的正则化参数l2，适配硬件(GPU、TPU)的batch_size。结构：增加了全局池化层。<br>
-**学到了**：一个trick，通过训练集和评价指标logloss计算测试集的各标签数量，以此调整训练阶段的参数class_weight，还可以事先达到“对答案”的效果。和一个T大大佬在datacon域名安全检测比赛中使用的trick如出一辙。
-- [基于海量url数据识别视频类网页](https://mp.weixin.qq.com/s/hwdSd1YqzWyun2MCImcCcw)<br>
-**CV-行文思路**：问题：视频类网页识别。解决方式：url粗筛->视频网页规则粗筛->视频网页截屏及CNN识别。
-
-### 行业发展
-- [认知智能再突破，阿里 18 篇论文入选 AI 顶会 KDD](https://mp.weixin.qq.com/s/3uB69n3zCVw8VefTDi4QCA)<br>
-**认知智能**：**计算智能->感知智能->认知智能**。快速计算、记忆、存储->识别处理语言、图像、视频->实现思考、理解、推理和解释。认知智能的三大关键技术：**知识图谱**是底料、**图神经网络**是推理工具、**用户交互**是目的。
-- [未来 3~5 年内，哪个方向的机器学习人才最紧缺？ - 王喆的回答](https://www.zhihu.com/question/63883507/answer/1251083379)<br>
-**要点简记**：站在机器学习“工程体系”之上，综合考虑“模型结构”，“工程限制”，“问题目标”的算法“工程师”。我的理解：**红利的迁移**，模型结构单点创新带来的收益->体系结构协同带来的收益。
-[阿里技术副总裁贾扬清：我对人工智能的一点浅见](https://mp.weixin.qq.com/s/DuwEb1jBhly9RPZqGj4wrQ)<br>
-**AI发展**：神经网络和深度学习的成功与局限，成功原因是大数据和高性能计算，局限原因是结构化的理解和小数据上的有效学习算法。**AI这个方向会怎么走**？传统的深度学习应用，比如图像、语音等，应该如何输出产品和价值？而不仅仅是停留在安防这个层面，要深入到更广阔的领域。除了语音和图像之外，如何解决更多问题？而不仅仅是停留在解决语音图像等几个领域内的问题。
-
-### 综合素质
-
-- [算法工程师必须要知道的面试技能雷达图](https://zhuanlan.zhihu.com/p/54089811)（学到了）<br>
-**个人发展-必备技术素质**：算法工程师必备技术素质拆分：知识、工具、逻辑、业务。在满足最小要求的基础上，算法工程师在这四个方面的能力是相对全面的，既包括”算法“，也包括”工程“，而大数据工程师则着重”工具“，研究员则着重”知识“和”逻辑“。<br>
-针对安全业务的算法工程师就是安全算法工程师。为了便于理解，举个例子，如果用XGBoost解决某个安全问题，那么可以由浅入深理解，把知识、工具、逻辑、业务四个方面串起来：<br>
-    1.GBDT的原理（知识）<br>
-    2.决策树节点分裂时是如何选择特征的？（知识）<br>
-    3.写出Gini Index和Information Gain的公式并举例说明（知识）<br>
-    4.分类树和回归树的区别是什么（知识）<br>
-    5.与Random Forest对比，理解什么是模型的偏差和方差（知识）<br>
-    6.XGBoost的参数调优有哪些经验（工具）<br>
-    7.XGBoost的正则化和并行化分别是如何实现的（工具）<br>
-    8.为什么解决这个安全问题会出现严重的过拟合问题（业务）<br>
-    9.如果选用一种其他模型替代XGBoost或改进XGBoost你会怎么做？为什么？（业务、逻辑、知识）。<br>
-    以上，就是以“知识”为切入点，不仅深度理解了“知识”，也深度理解了“工具”、“逻辑”、“业务”。<br>
-- [[校招经验] BAT机器学习算法实习面试记录](http://rs.xidian.edu.cn/forum.php?mod=viewthread&tid=929712&extra=page%3D1)(学到了)<br>
-**个人发展-面试经验**：根据面试常遇到的问题再深入理解机器学习，储备自己的算法知识库。
-- [机器学习如何才能避免「只是调参数」？](https://www.zhihu.com/question/264528062/answer/570134579)(学到了)<br>
-**个人发展-职业发展**：**机器学习工程师分为三种：应用型（能力：保持算法全栈，即数据、建模、业务、运维、后端，重点在建模能力，流程是遇到一个指定的业务场景应该迅速知道用什么数据做特征，用什么模型，这个模型在工程上的时效性和鲁棒性，最终会不会产生业务风险等一整套链路。预期目标：锻炼得到很强的业务敏感性，快速验证提出的需求）、造轮子型（多读顶会跟上时代节奏，且拥有超强的功能能力，打造ML框架，提供给应用型机器学习工程师使用）、研究型（AI Lab，读论文+试验性复现）。个人发展：锻炼业务能力和工程能力，未来几年成长规划还是算法全栈路线，技术上独挡一面，业务上带来kpi，以后快速晋升+带队。同时保持阅读习惯，多学习新知识。**
-- [做机器学习算法工程师是什么样的工作体验？](https://www.zhihu.com/question/31284094/answer/618616259)<br>
-**个人发展-工作体验**：业务理解、数据清洗和特征工程、持续学习（增强解决方案的判断力）、编程能力、常用工具（XGB、TensorFlow、ScikitLearn、Pandas（表格类数据或时间序列数据）、Spark、SQL、FbProphet（时间序列））
-- [大三实习面经](https://www.zuozuovera.com/archives/1121/comment-page-1)（学到了）
-- [如果你是面试官，你怎么去判断一个面试者的深度学习水平？](https://www.zhihu.com/question/41233373)<br>
-**个人发展-心得体会**：深度学习擅长处理具有局部相关性的问题和数据，在图像、语音、自然语言处理方面效果显著，因为图像是由像素构成，语音是由音位构成，语言是由单词构成，都有局部相关性，可以构造高级特征。
-- [面试官如何判断面试者的机器学习水平？ - 微调的回答 - 知乎](https://www.zhihu.com/question/62482926/answer/210531386)<br>
-**个人发展-心得体会**：考虑方法优点和局限性，培养独立思考的能力；正确判断机器学习对业务的影响力；学会分情况讨论（比如深度学习相对于机器学习而言）；学习机器学习不能停留在“知道”的层次，要从原理级学习，甚至可以从源码级学习，知其然知其所以然，要做安全圈机器学习最6的。
-- [两年美团算法大佬的个人总结与学习建议](https://mp.weixin.qq.com/s/OKxjACQgf5ahIGDDA1_Xow)<br>
-**个人发展-心得体会**：算法的基本认识（知识）、过硬的代码能力（工具）、数据处理和分析能力（业务和逻辑）、模型的积累和迁移能力（业务和逻辑）、产品能力、软实力。
-
 ## 企业安全建设
 ### 安全开发
 - [安全扫描自动化检测平台建设(Web黑盒 中)](https://www.secpulse.com/archives/52464.html)
 - [带你读神器之KunPeng源代码分析](https://mp.weixin.qq.com/s/JLMaygM_MioszehGYpY2rw)
-
-### 安全数据分析
-- [Data-Knowledge-Action: 企业安全数据分析入门](https://www.cdxy.me/?p=803)（优秀，学到了）<br>
-**综述**：**1、让模型理解业务，基于业务历史行为建立异常基线，在异常的基础上检测威胁；将运营结果反馈到模型，将误报视作正常行为回流。2、安全运营可运营，降低事件调查成本，自动化信息收集与聚合。3、随着数据的积累，安全数据分析将向基于图结构的高级知识表达方式发展。（这点深表赞同）4、对场景、攻击模式、数据的认识深度，远比选择工具重要。**
-- [Security Data Science Learning Resources](http://www.covert.io/security-data-science-learning-resources/)<br>
-**综述**：作者的研究点也是安全数据科学，整理了一些学习方法和学习资源。学习方法主要分为三个方面：**谷歌学术、Twitter、安全会议**。谷歌学术关注知名研究者以及他们新出的文章，关注引用了你关注的文章的文章，Twitter关注细分安全领域的人群，关注安全会议以及会议议程。学习资源：书籍和课程。
-- [快速搭建一个轻量级OpenSOC架构的数据分析框架（一）](https://xz.aliyun.com/t/2201)(学到了)<br>
-**框架**：**行文思路：由粗变细（由框架到举例子（由框架到场景到实际架构））。OpenSOC介绍（框架组成和工作流程）---》构建轻量级OpenSOC（聚焦具体场景和工具及具体架构）---》搭建步骤（每一步的环境搭建及配置）---》效果展示。**
-- [先知talk：从数据视角探索安全威胁](https://www.cdxy.me/?p=791)
-- [大数据威胁建模方法论](https://www.cdxy.me/?p=797)（学到了很多）
-- [安全日志维度随想](https://www.cdxy.me/?p=793)
-- [数据安全分析思想探索](https://www.freebuf.com/articles/database/176913.html)
-- [DataCon 2019: 1st place solution of malicious DNS traffic & DGA analysis](https://www.cdxy.me/?p=806)（学到了）<br>
-**我的理解**：涉及的知识点有：安全场景：DNS安全；数据处理：tshark工具的使用，MaxCompute和SQL的使用，PAI预分析和可视化；特征工程：DNS_type、src_ip维度的特征；异常检测算法：单特征3sigma检测；人工提取特征规则。<br>
-第一小题DNS恶意流量的异常检测：个人吸收80%，整理流程无障碍，每步流程中的**细节和工具**还未完全掌握，比如DNS安全场景了解不全面、tshark的大量数据解析、统计特征的全面提取、SQL语句做特征化；<br>
-第二小题DGA的多分类：个人吸收50%，流程搞懂了，但是对一些问题的理解还不到位，比如社区算法
-- [基于大数据企业网络威胁发现模型实践](https://mp.weixin.qq.com/s/kwsF7i4_f-URi2BNQSa-sg)<br>
-**我的理解**：问题：多源安全分析设备和服务（威胁数据）的横向和纵向联动。
 
 ### 安全检测
 - [关于风控预警体系的搭建方案](https://mp.weixin.qq.com/s/2r61XB_Po4s3ihkLy46xbA)<br>
@@ -636,7 +445,6 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **行文思路**：数据安全能力图谱包括6大方面：数据资产管控能力、数据安全运营能力、数据业务安全管控能力、数据支撑环境安全管控能力、数据运维安全管控能力、数据安全感知能力。
 
 ## 新技术与新安全
-
 ### 综述
 - [数字化转型中的应用现代化与安全左移](https://mp.weixin.qq.com/s/DDOAZ3K_HuZSCFdgUcUe8g)<br>
 **行文思路**：新基建->数字化转型->传统信息化面临挑战->业务驱动应用现代化->云原生、容器化、DevOps、应用微服务化、编排等新技术->应用现代化架构->内生安全（云网络全方位感知、可信、全流程安全介入、安全运营）。
@@ -651,7 +459,6 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [“安全需要每个工程师的参与”-DevSecOps理念及思考](https://mp.weixin.qq.com/s/_jBmFdtyXY5D_YrrTUP1iQ)（Mark）<br>
 
 ## 安全发展
-
 ### 个人发展
 #### 面试
 - [有关安全的面经, 实习, etc](https://github.com/SecYouth/sec-jobs/tree/master/interview-experience)<br>
@@ -704,8 +511,215 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [下一座圣杯 - 2019](https://mp.weixin.qq.com/s/6Kli-u6LEInoliTVQgdrFQ)<br>
 **API安全**：**应用安全的发展**：2015年预测，数据是新中心，身份是新边界，行为是新控制，情报是新服务。基础设施演进->交付方式的改变。2015年，应用安全领域的WAF产品是良机，由市场决定。**新形势与新机遇**：微服务、Serverless、边缘计算。市场中的交付方式发生变化。**跨细分领域且跨基础设施**：API安全横跨应用安全、数据安全和身份安全三大领域。API使用场景广泛，需要产品有全面覆盖多种不同基础设施的能力。
 
+# 数据
+## 数据体系
+- [数据分析师如何搭建数据运营指标体系？ - 张溪梦 Simon的回答](https://www.zhihu.com/question/315972357/answer/1238739118)<br>
+**核心点**：**协作流程赋能**：实现数据驱动XX的指标体系搭建流程，需要跨团队协作，流程有：需求收集、方案规划、数据采集、采集方案评估、数据采集与数据验证上线、效果评估。**规划数据指标体系的两个模型**：OSM和UJM。OSM强调业务目标，UJM强调用户旅程。**指标分级体系**：一二三级指标联动。
+- [如何在企业中从0-1建立一个数据/商业分析部门？](https://mp.weixin.qq.com/s/ADblJqYIaiDRTwE2IZWulg?-utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136&from=singlemessage&isappinstalled=0)(**学到了**)<br>
+  **部门的定位和价值——>里程碑设计——->团队搭建——->构建IT数据——->前期管理。**<br>
+  **定位和价值是一个部门立足公司的根本**：**做报表的部门VS做战略的部门**；业务其他公司的定位和公司内其他部门的认可；一定要会放大部门的价值和一定要走高层路线。<br>
+  **设立长期目标并拆解里程碑**：**公司业务目标--->公司战略--->部门目标--->部门里程碑--->工作计划**；设立里程碑的技巧？**借势、共赢、取巧、筑基**；借老板势，寻找1-2个老板的痛点问题解决；寻找利益相同的部门共建共赢；取巧摘已有的“桃子”；筑基数据链路梳理、数据清洗、系统互联、数据仓库设计、数据集市设计。<br>
+  **基于里程碑进行团队搭建**：切忌一步到位；审慎拉帮结派；遇到人才不可错过；学会“画饼”；注意团队文化建设。<br>
+  **构建公司的数据IT能力**：搭建基础且通用的数据流框架：应用层、归集层、加工层、分析层、展示层；
+  同时根据各种数据库选型指标选择对应的数据库存储产品，数据库选型指标比如容量、水平扩展性、查询实时性、查询灵活性、写入速度、事务、数据存储、处理数据规模、列扩展性。**在搭建数据框架中需要注意的点是：需要实现公司级别的业务数据架构**。基于业务对整个公司的数据进行体系化的梳理，任何的业务变化都会体现在数据之上，实现数据充分体现业务现状的目的。**要完成这一步的关键是完成公司级别的主数据管理**：明确各项数据的业务含义和口径、明确每个数据的职责单位、打通数据链路，推动数据共享。<br>
+  **引领团队走向胜利**：做“排长”而不要做“军长”；让合适的人做合适的事；明确规则，及时兑现。
 
-# 软实力
+## 数据分析与运营
+- [数据分析与可视化：谁是安全圈的吃鸡第一人](https://www.freebuf.com/articles/web/199925.html?from=timeline&isappinstalled=0)（学到了）<br>
+  **数据分析与可视化**：收集数据集--->观察数据集--->社群发现与社区关系--->玩家画像。
+- [请分享一下数据分析方面的思路，如何做好数据分析？](https://www.zhihu.com/question/30195311/answer/1235248266)<br>
+**核心点**：数据分析的问题：业务的数据分析指标体系（点线面体）。**数据分析的方法：分类和对比**。
+
+## 安全数据分析
+- [Data-Knowledge-Action: 企业安全数据分析入门](https://www.cdxy.me/?p=803)（优秀，学到了）<br>
+  **综述**：**1、让模型理解业务，基于业务历史行为建立异常基线，在异常的基础上检测威胁；将运营结果反馈到模型，将误报视作正常行为回流。2、安全运营可运营，降低事件调查成本，自动化信息收集与聚合。3、随着数据的积累，安全数据分析将向基于图结构的高级知识表达方式发展。（这点深表赞同）4、对场景、攻击模式、数据的认识深度，远比选择工具重要。**
+- [Security Data Science Learning Resources](http://www.covert.io/security-data-science-learning-resources/)<br>
+  **综述**：作者的研究点也是安全数据科学，整理了一些学习方法和学习资源。学习方法主要分为三个方面：**谷歌学术、Twitter、安全会议**。谷歌学术关注知名研究者以及他们新出的文章，关注引用了你关注的文章的文章，Twitter关注细分安全领域的人群，关注安全会议以及会议议程。学习资源：书籍和课程。
+- [快速搭建一个轻量级OpenSOC架构的数据分析框架（一）](https://xz.aliyun.com/t/2201)(学到了)<br>
+  **框架**：**行文思路：由粗变细（由框架到举例子（由框架到场景到实际架构））。OpenSOC介绍（框架组成和工作流程）---》构建轻量级OpenSOC（聚焦具体场景和工具及具体架构）---》搭建步骤（每一步的环境搭建及配置）---》效果展示。**
+- [先知talk：从数据视角探索安全威胁](https://www.cdxy.me/?p=791)
+- [大数据威胁建模方法论](https://www.cdxy.me/?p=797)（学到了很多）
+- [安全日志维度随想](https://www.cdxy.me/?p=793)
+- [数据安全分析思想探索](https://www.freebuf.com/articles/database/176913.html)
+- [DataCon 2019: 1st place solution of malicious DNS traffic & DGA analysis](https://www.cdxy.me/?p=806)（学到了）<br>
+  **我的理解**：涉及的知识点有：安全场景：DNS安全；数据处理：tshark工具的使用，MaxCompute和SQL的使用，PAI预分析和可视化；特征工程：DNS_type、src_ip维度的特征；异常检测算法：单特征3sigma检测；人工提取特征规则。<br>
+  第一小题DNS恶意流量的异常检测：个人吸收80%，整理流程无障碍，每步流程中的**细节和工具**还未完全掌握，比如DNS安全场景了解不全面、tshark的大量数据解析、统计特征的全面提取、SQL语句做特征化；<br>
+  第二小题DGA的多分类：个人吸收50%，流程搞懂了，但是对一些问题的理解还不到位，比如社区算法
+- [基于大数据企业网络威胁发现模型实践](https://mp.weixin.qq.com/s/kwsF7i4_f-URi2BNQSa-sg)<br>
+  **我的理解**：问题：多源安全分析设备和服务（威胁数据）的横向和纵向联动。
+
+# 算法
+## 人工智能
+### 算法体系
+- [机器学习算法集锦：从贝叶斯到深度学习及各自优缺点](https://mp.weixin.qq.com/s/idxuzwUKG_Q1yUtpipG4Xw)<br>
+  **算法知识框架**：主要从算法的定义、过程、代表性算法、优缺点解释回归、正则化算法、人工神经网络、深度学习||决策树算法、集成算法||支持向量机||降维算法、聚类算法||基于实例的算法||贝叶斯算法||关联规则学习算法||图模型。<br>
+  **个人理解**：回归系列主要基于线性回归和逻辑回归衍生，包括回归、正则化算法、人工神经网络、深度学习；树系列主要基于决策树衍生，包括决策树和基于树的集成学习算法；支持向量机属于老牌算法；降维算法和聚类算法主要基于数据的内在结构描述数据；基于实例的算法实际上并没有训练的过程，代表性算法是KNN，基于记忆的学习；贝叶斯算法利用贝叶斯定理计算输出概率；关联规则学习算法能够提取数据中变量之间的关系的最佳解释；图模型是一种概率模型，可以表示随机变量之间的条件依赖结构。
+- [Categories of algorithms non exhaustive ](https://static.coggle.it/diagram/WHeBqDIrJRk-kDDY)(学到了)<br>
+  **算法知识框架**：学到了搭建自己的算法体系。
+
+### 基础知识
+- [HTTP DATASET CSIC 2010](http://www.isi.csic.es/dataset/)<br>
+  **安全数据集-CSIC2010**：基于e-Commerce Web应用自动化生成的安全数据集，包含36000个正常请求和25000个异常请求，异常请求包括：SQL注入、缓冲区溢出、信息收集、文件泄露、CRLF注入、XSS等。
+- [分类模型的性能评估——以 SAS Logistic 回归为例 (3): Lift 和 Gain](https://cosx.org/2009/02/measure-classification-model-performance-lift-gain/)
+- [机器学习中非均衡数据集的处理方法？](https://www.zhihu.com/question/30492527/answer/222719942)<br>
+  **非均衡数据集**：上采样和下采样、正负样本的惩罚权重（scikit-learn的SVM为例：class_weight:{dict,'balanced'}）、组合/集成方法（从大样本中抽取多个小样本训练模型再集成）、特征选择（小样本量具有一定规模的时候，选择显著型的特征）
+- [机器学习算法中 GBDT 和 XGBOOST 的区别有哪些？](https://www.zhihu.com/question/41354392/answer/157538270)<br>
+  **算法比较**：GBDT基分类器为CART，XGB的分类器可以是多种基分类器，比如线性分类器，这时候就相当于L1、L2正则项的逻辑回归或线性回归；传统的GBDT在优化时用到的是一阶导数，XGB则对损失函数进行了二阶泰勒公式的展开，精度变高；XGB并行处理（特征粒度的并行，对特征值进行预排序存储为block结构，在进行节点分类的时候，需要计算每个特征的增益，最终选择增益最大的那个特征去做分类，那么各个特征的增益计算就可以开多线程进行），相对于GBM速度飞跃；剪枝时，当新增分类带来负增益时，GBM会停止分裂，而XGB一直分类到指定的最大深度，然后进行后全局剪枝；从最优化的角度来看，GBDT采用的是数值优化的思维，用的最速下降法去求解Loss function的最优解，其中用CART决策树去拟合负梯度，用牛顿法求步长，而XGB用的是解析的思维，对Loss function展开到二阶近似，求得解析解，用解析解作为Gain来建立决策树，使得Loss function最优。
+- [SVM和logistic回归分别在什么情况下使用？](https://www.zhihu.com/question/21704547)<br>
+  **算法使用场景-SVM和逻辑回归使用场景**：需要根据特征数量和训练样本数量来确定。如果特征数相对于训练样本数已经够大了，使用线性模型就能取得不错的效果，不需要过于复杂的模型，则使用LR或线性核函数的SVM。如果训练样本足够大而特征数较小的情况下，可以通过复杂核函数的SVM来获得更好的预测性能，如果样本没有达到百万级，使用复杂核函数的SVM也不会导致运算过慢。如果训练样本特别大，使用复杂核函数的SVM已经会导致运算过慢了，因此应该考虑引入更多特征，然后使用线性SVM或者LR来构造模型。
+- [gbdt的残差为什么用负梯度代替？](https://www.zhihu.com/question/63560633)
+- [欧氏距离与马氏距离](https://blog.csdn.net/u010167269/article/details/51627338)
+- [机器学习算法常用指标总结](https://mp.weixin.qq.com/s/jEB0CD9j1amGVbt4tAObLQ)<br>
+- [分类模型评估之ROC-AUC曲线和PRC曲线](https://blog.csdn.net/pipisorry/article/details/51788927)<br>
+
+### 机器学习
+- [平均数编码：针对高基数定性特征（类别特征）的数据预处理/特征工程](https://zhuanlan.zhihu.com/p/26308272)
+- [Mean Encoding](https://necromuralist.github.io/kaggle-competitions/posts/mean-encoding/)
+- [kaggle编码categorical feature总结](https://zhuanlan.zhihu.com/p/40231966)
+- [Python target encoding for categorical features](https://www.kaggle.com/ogrellier/python-target-encoding-for-categorical-features)
+- [Mean (likelihood) encodings: a comprehensive study](https://www.kaggle.com/vprokopev/mean-likelihood-encodings-a-comprehensive-study)
+- [如何在 Kaggle 首战中进入前 10%](http://dnc1994.com/2016/04/rank-10-percent-in-first-kaggle-competition/)
+- [kaggle竞赛总结](http://matafight.github.io/2017/08/05/kaggle%E7%AB%9E%E8%B5%9B%E6%80%BB%E7%BB%93/)
+- [分享一波关于做Kaggle比赛，Jdata，天池的经验，看完我这篇就够了](https://segmentfault.com/a/1190000012084849)
+- [为什么在实际的kaggle比赛中，GBDT和Random Forest效果非常好？](https://www.zhihu.com/question/51818176/answer/595480045?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136)<br>
+  **有监督学习-树系列算法**：单模型，gradient boosting machine和deep learning是首选。gbm不需要复杂的特征工程，不需要太多时间去调参数，dl则需要比较多的时间去调网络结构。**从overfit角度理解**，两者都有overfit甚至perfect fit的能力，overfit能力越强，可塑性越强，然后我们要解决的问题就是如果把模型训练的“恰好”，比如gbm里有early_stopping功能。线性回归模型就缺乏overfit能力，如果实际数据符合线性模型的关系，那可以得到很好的结果，如果不符合的话，就需要做特征工程，可特征工程又是一个比较主观的过程。树的优势，非参数模型，gbm的overfit能力强。而random forest的perfact fit能力很差，这是因为rf的树是独立训练的，没有相互协作，虽然是非参数型模型，但是浪费了这个先天优势。
+- [【总结】树类算法认知总结](https://www.jianshu.com/p/432764633f6f)<br>
+  **有监督学习-树类算法**：分类树和回归树的区别；避免决策树过拟合的方法；随机森林怎么应用到分类和回归问题上；kaggle上为啥GBDT比RF更优；RF、GBDT、XGBoost的认知（原理、优缺点、区别、特性）。
+- [LightGBM](https://fuhailin.github.io/LightGBM/)
+- [LightGBM算法总结](https://blog.csdn.net/weixin_39807102/article/details/81912566)
+- [『我爱机器学习』集成学习（四）LightGBM](https://www.hrwhisper.me/machine-learning-lightgbm/)
+- [如何玩转LightGBM](https://v.qq.com/x/page/k0362z6lqix.html)（官方slides讲解）<br>
+  **有监督学习-LightGBM-个人理解**：**LightGBM几大特性及原理：直方图分割及直方图差加速（直方图两大改进：直方图复杂度=O(#feature×#data)，GOSS降低样本数，EFB降低特征数）-》效率和内存提升。Leaf-wise with max depth limitation取代Level-wise-》准确率提升。支持原生类别特征。并行计算：数据并行（水平划分数据）、特征并行（垂直划分数据）、PV-Tree投票并行（本质上是数据并行）。**
+- [快速弄懂机器学习里的集成算法：原理、框架与实战](https://mp.weixin.qq.com/s/Q6OotQYIsSm7HW2T4ClLjg)
+- [时间序列数据的聚类有什么好方法？](https://www.zhihu.com/question/50656303/answer/584063648?utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136)<br>
+  **无监督学习-时间序列问题**：传统的机器学习数据分析领域：提取特征，使用聚类算法聚集；在自然语言处理领域：为了寻找相似的新闻或是把相似的文本信息聚集到一起，可以使用word2vec把自然语言处理成向量特征，然后使用KMeans等机器学习算法来作聚类；另一种做法是使用Jaccard相似度来计算两个文本内容之间的相似性，然后使用层次聚类的方法来作聚类。常见的聚类算法：基于距离的机器学习聚类算法（KMeans）、基于相似性的机器学习聚类算法（层次聚类）。对时间序列数据进行聚类的方法：时间序列的特征构造、时间序列的相似度方法。如果使用深度学习的话，要么就提供大量的标签数据；要么就只能使用一些无监督的编码器的方法。
+- [凝聚式层次聚类算法的初步理解](https://zhuanlan.zhihu.com/p/27659767)<br>
+  **无监督学习-层次聚类**：算法步骤：计算邻近度矩阵--->（合并最接近的两个簇--->更新邻近度矩阵）（repeat），直到达到仅剩一个簇或达到终止条件。
+- [推荐算法入门（1）相似度计算方法大全](https://zhuanlan.zhihu.com/p/33164335)<br>
+  **无监督学习-层次聚类-相似性计算**：曼哈顿距离、欧式距离、切比雪夫距离、余弦相似度、皮尔逊相关系数、Jaccard系数。
+
+### 深度学习
+#### CPU环境搭建
+- [tensorflow issues#22512](https://github.com/tensorflow/tensorflow/issues/22512)<br>
+  **问题本质**：报错：ImportError: DLL load failed，原因：缺少依赖，解决方法：pip install --index-url https://pypi.douban.com/simple tensorflow==2.0.0，会自动安装依赖。
+
+#### GPU环境搭建
+- [Tensorflow和Keras 常见问题（持续更新~）](https://zhuanlan.zhihu.com/p/81721574)（坑点）
+- [Tested build configurations](https://tensorflow.google.cn/install/source)（版本对应速查表）
+- [windows tensorflow-gpu的安装](https://zhuanlan.zhihu.com/p/35717544)（靠谱）
+- [windows下安装配置cudn和cudnn](https://www.jianshu.com/p/9bdeb033e765)<br>
+  **问题本质**：总的来说，是英伟达显卡驱动版本、cuda、cudnn和tensorflow-gpu之间版本的对应问题。最好装tensorflow-gpu==1.14.0,tensorflow-gpu==2.0需要cuda==10.0，10.2会报错，tensorflow-gpu==2.0不支持。
+- [win10搭建tensorflow-gpu环境](https://www.cnblogs.com/wanyu416/p/9536853.html)<br>
+  **问题本质**：CUDA的各种环境变量添加。
+
+#### 深度学习基础知识
+- [深度学习中的batch的大小对学习效果有何影响？](https://www.zhihu.com/question/32673260)
+- [Batch Normalization原理与实战](https://zhuanlan.zhihu.com/p/34879333)（**还没完全看懂**）
+
+#### 神经网络基本部件
+- [如何计算感受野(Receptive Field)——原理](https://zhuanlan.zhihu.com/p/31004121)<br>
+  感受野：卷积层越深，感受野越大，计算公式为(N-1)_RF = f(N_RF, stride, kernel) = (N_RF - 1) * stride + kernel，思路为倒推法。
+- [如何理解空洞卷积（dilated convolution）谭旭的回答](https://www.zhihu.com/question/54149221/answer/192025860)<br>
+  空洞卷积：池化层减小图像尺寸同时增大感受野，空洞卷积的优点是不做pooling损失信息的情况下，增大感受野。3层3*3的传统卷积叠加起来，stride为1的话，只能达到(kernel_size-1)layer+1=7的感受野，和层数layer成线性关系，而空洞卷积的感受野是指数级的增长，计算公式为(2^layer-1)(kernel_size-1)+kernel_size=15。
+- [空洞卷积（dilated convolution）感受野计算](https://zhuanlan.zhihu.com/p/61889386)
+- [空洞卷积(dilated Convolution)](https://zhuanlan.zhihu.com/p/43784441)
+- [直观理解神经网络最后一层全连接+Softmax](https://www.cnblogs.com/shine-lee/p/10077961.html)（便于理解）<br>
+  **全连接层**：可以理解为对特征的加权求和。
+
+#### 神经网络基本结构
+- [一组图文，读懂深度学习中的卷积网络到底怎么回事？](https://mp.weixin.qq.com/s?__biz=MzIyMzk1MDE3Nw==&mid=2247497838&idx=1&sn=0155aec301bfd63af03fb17727421e1e&chksm=e814dc60df635576971ccd515c440721af1e4d3c256d421953bc4944d2e724c476c5a689f197&mpshare=1&scene=1&srcid=0211JyZWQrYdounFDM2LW3AE&pass_ticket=hAXdmKc6AZ3DdksFdOmip3HL8cWLkL5u880JMyZ2etpYu1WnmEdvgA09xYgh9Im%2B#rd)<br>
+  **卷积神经网络**：卷积层参数：内核大小（卷积视野3乘3）、步幅（下采样2）、padding（填充）、输入和输出通道。卷积类型：引入扩张率参数的扩张卷积、转置卷积、可分离卷积。
+- [卷积神经网络(CNN)模型结构](https://www.cnblogs.com/pinard/p/6483207.html)
+- [总结卷积神经网络发展历程 - 没头脑的文章](https://zhuanlan.zhihu.com/p/76275427)（很全面）
+- [三次简化一张图：一招理解LSTM/GRU门控机制](https://zhuanlan.zhihu.com/p/28297161)（很清晰）<br>
+  **循环神经网络**：**文中电路图的形式好理解**。RNN：输入状态、隐藏状态。LSTM：输入状态、隐藏状态、细胞状态、3个门。GRU：输入状态、隐藏状态、2个门。LSTM和GRU通过设计门控机制缓解RNN梯度传播问题。
+- [gcn](https://github.com/tkipf/gcn)
+- [GRAPH CONVOLUTIONAL NETWORKS](http://tkipf.github.io/graph-convolutional-networks/)<br>
+  **图神经网络**：相较于CNN，区别是图卷积算子计算公式。
+- [keras-attention-mechanism](https://github.com/philipperemy/keras-attention-mechanism)
+
+#### 神经网络应用
+- [[AI识人]OpenPose：实时多人2D姿态估计 | 附视频测试及源码链接](https://zhuanlan.zhihu.com/p/37526892)
+- [使用生成对抗网络(GAN)生成DGA](http://webber.tech/posts/%E4%BD%BF%E7%94%A8%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%28GAN%29%E7%94%9F%E6%88%90DGA/)
+- [GAN_for_DGA](https://github.com/bts-webber/GAN_for_DGA/blob/master/G.py)
+- [详解如何使用Keras实现Wassertein GAN](https://mp.weixin.qq.com/s/F2gBP23LCEF72QDlugbBZQ)
+- [Wasserstein GAN in Keras](https://myurasov.github.io/2017/09/24/wasserstein-gan-keras.html?r)
+- [WassersteinGAN](https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/WassersteinGAN)
+- [keras-acgan](https://github.com/lukedeo/keras-acgan)
+- [用深度学习（CNN RNN Attention）解决大规模文本分类问题 - 综述和实践](https://zhuanlan.zhihu.com/p/25928551)<br>
+  **NLP**：传统的高维稀疏->现在的低维稠密。**注意事项**：类目不均衡、理解数据（badcase）、fine-tuning（只用word2vec训练的词向量作为特征表示，可能会损失很大效果，**预训练+微调**）、一定要用dropout、避免训练震荡、超参调节、未必一定要softmax loss、模型不是最重要的、关注迭代质量（为什么？结论？下一步？）
+
+### 强化学习
+- [深度强化学习的弱点和局限](https://mp.weixin.qq.com/s?__biz=MzI3ODkxODU3Mg==&mid=2247485609&idx=1&sn=6b71f5f8ebd4e920384f07b97ce92a9c&chksm=eb4eec6adc39657c81169f1ae9ce477e4da692941238c35deb26a11ed7ec70073784cfd935a8&scene=21#wechat_redirect)
+- [关于强化学习的局限的一些思考](https://zhuanlan.zhihu.com/p/34916891)<br>
+  **强化学习的局限性：采样效率很差、很难设计一个合适的奖励函数。**
+
+### 应用领域
+- [全球最全？的安全数据网站](http://www.secrepo.com/)（有时间得好好整理一下）
+- [初探机器学习检测 PHP Webshell](https://paper.seebug.org/526/)
+- [基于机器学习的 Webshell 发现技术探索](https://mp.weixin.qq.com/s/1V0xcjH-6V5qJoJILP0pJQ)
+- [网络安全即将迎来机器对抗时代？](https://zhuanlan.zhihu.com/p/26093848)<br>
+  **智能安全-智能攻击**：国外已经在研究利用机器学习打造更智能的攻击工具，比如深度强化学习，就是深度学习和强化学习的结合，可以感知环境，做出最优决策，可能被应用到漏洞扫描器里，使扫描器能够自动化地入侵目标。<br>
+  **个人理解**：国外已有案例Deep Exploit就是利用深度强化学习结合metasploit进行自动化地渗透测试，国内还没有看到过相关公开案例。由于学习门槛高、安全本身攻击场景需要精细化操作、弱智能化机器学习导致的机器学习和安全场景结合深度不够等一系列的问题，已有的机器学习+安全的大多数研究主要集中在安全防护方面，机器学习+攻击方面的研究较少且局限，但是我相信这个场景很有潜力，或许以后就成为蓝方的攻击利器。
+- [人工智能反欺诈三部曲之：设备指纹](https://zhuanlan.zhihu.com/p/31712434)<br>
+  **智能安全-业务安全-设备指纹**：ip、cookie、**设备ID**；**主动式设备指纹**：使用JS或SDK从客户端抓取各种各样的设备属性值，然后组合，通过hash算法得到设备ID；**优点**：Web内或者App内准确率高。**缺点**：主动式设备指纹在Web与App之间、不同的浏览器之间，会生成不同的设备ID，无法实现跨Web和App，不同浏览器之间的设备关联；由于依赖客户端代码，指纹在反欺诈的场景中对抗性较弱。**被动式设备指纹**：从数据报文中提取设备OS、协议栈和网络状态的特征集，并结合机器学习算法识别终端设备。**优点**：弥补了主动式设备指纹的缺点。**缺点**：占用处理资源多；响应时延比主动式长。
+- [风险大脑支付风险识别初赛经验分享【谋杀电冰箱-凤凰还未涅槃】](https://openclub.alipay.com/club/history/read/8869)<br>
+  **智能安全-业务安全-风控**：个人理解见：https://github.com/404notf0und/Risk-Operation-Detection/blob/master/atec.ipynb。
+- [机器学习在互联网巨头公司实践](https://mp.weixin.qq.com/s/NFqUF824Rpr4g6wYWFpSNQ)<br>
+  **入侵检测**：机器学习和统计建模的主要区别：机器学习主要依赖数据和算法，统计建模依赖建模者对数据特征的了解。两者的优缺点：机器学习：打标数据难获取，如果采用非监督学习，则性能不足以运维；机器学习结果不可解释。所以现在机器学习在做入侵检测的时候，一般都要限定一个特定的场景。统计建模：数据预处理阶段移除正常数据的干扰（重点关注查全率，强调过正常数据的过滤能力，尽可能筛除正常数据），构建能够识别恶意可疑行为的攻击模型（重点关注precision，强调模型对异常攻击模式判断的准确性，攻击链模型），缺点是泛化能力不足、在入侵检测一些场景中，模型易被干扰。我们的最终目的：大数据场景下安全分析可运维。
+- [Web安全检测中机器学习的经验之谈](https://iami.xyz/ML-IN-Webshell-Detection-Advantages-And-Disadvantages/)<br>
+  **Web安全：从文本分类的角度解决Web安全检测的问题**。数据样本的多样性，短文本分类，词向量，句向量，文本向量。文本分类+多维度特征。**与传统方法做对比得出更好的检测方式：传统方法+机器学习：传统waf/正则规则给数据打标；传统方法先进行过滤**。
+- [词嵌入来龙去脉](https://blog.csdn.net/scotfield_msn/article/details/69075227)（学到了）<br>
+  **NLP**：DeepNLP的核心关键：语言表示--->NLP词的表示方法类型：词的独热表示和词的分布式表示（这类方法都基于分布假说：词的语义由上下文决定，方法核心是上下文的表示以及上下文与目标词之间的关系的建模）--->NLP语言模型：统计语言模型--->词的分布式表示：基于矩阵的分布表示、基于聚类的分布表示、基于神经网络的分布表示，词嵌入--->词嵌入（word embedding是神经网络训练语言模型的副产品）--->神经网络语言模型与word2vec。
+- [深入浅出讲解语言模型](https://zhuanlan.zhihu.com/p/28080127)<br>
+  **NLP**：NLP统计语言模型：定义（计算一个句子的概率的模型，也就是判断一句话是否是人话的概率）、马尔科夫假设（随便一个词出现的概率只与它前面出现的有限的一个或几个词有关）、N元模型（一元语言模型unigram、二元语言模型bigram）。
+- [有谁可以解释下word embedding? - YJango的回答 - 知乎](https://www.zhihu.com/question/32275069/answer/197000927)<br>
+  **NLP**：单词表达：one hot representation、distributed representation。Word embedding：以神经网络分析one hot representation和distributed representation作为例子，证明用distributed representation表达一个单词是比较好的。word embedding就是神经网络分析distributed representation所显示的效果，降低训练所需的数据量，就是要从数据中自动学习出输入空间到distributed representation空间的映射f（相当于加入了先验知识，相同的东西不需要分别用不同的数据进行学习）。训练方法：如何自动寻找到映射f，将one hot representation转变成distributed representation呢？思想：单词意思需要放在特定的上下文中去理解，例子：`这个可爱的 泰迪 舔了我的脸`和`这个可爱的 京巴 舔了我的脸`，用输入单词 x 作为中心单词去预测其他单词 z 出现在其周边的可能性（**至此我才明白为什么说词嵌入是神经网络训练语言模型的副产品这句话**）。用输入单词作为中心单词去预测周边单词的方式叫skip-gram，用输入单词作为周边单词去预测中心单词的方式叫CBOW。
+- [Chars2vec: character-based language model for handling real world texts with spelling errors and…](https://hackernoon.com/chars2vec-character-based-language-model-for-handling-real-world-texts-with-spelling-errors-and-a3e4053a147d)
+- [Character Level Embeddings](https://datascience.stackexchange.com/questions/37368/character-level-embeddings)
+- [使用TextCNN模型探究恶意软件检测问题](https://xz.aliyun.com/t/6785)<br>
+  **恶意软件检测**：改进分为两个方面：调参和结构。调参：Embedding层的inputLen、output_dim，EarlyStopping，样本比例参数class_weight,卷积层和全连接层的正则化参数l2，适配硬件(GPU、TPU)的batch_size。结构：增加了全局池化层。<br>
+  **学到了**：一个trick，通过训练集和评价指标logloss计算测试集的各标签数量，以此调整训练阶段的参数class_weight，还可以事先达到“对答案”的效果。和一个T大大佬在datacon域名安全检测比赛中使用的trick如出一辙。
+- [基于海量url数据识别视频类网页](https://mp.weixin.qq.com/s/hwdSd1YqzWyun2MCImcCcw)<br>
+  **CV-行文思路**：问题：视频类网页识别。解决方式：url粗筛->视频网页规则粗筛->视频网页截屏及CNN识别。
+
+### 行业发展
+- [认知智能再突破，阿里 18 篇论文入选 AI 顶会 KDD](https://mp.weixin.qq.com/s/3uB69n3zCVw8VefTDi4QCA)<br>
+  **认知智能**：**计算智能->感知智能->认知智能**。快速计算、记忆、存储->识别处理语言、图像、视频->实现思考、理解、推理和解释。认知智能的三大关键技术：**知识图谱**是底料、**图神经网络**是推理工具、**用户交互**是目的。
+- [未来 3~5 年内，哪个方向的机器学习人才最紧缺？ - 王喆的回答](https://www.zhihu.com/question/63883507/answer/1251083379)<br>
+  **要点简记**：站在机器学习“工程体系”之上，综合考虑“模型结构”，“工程限制”，“问题目标”的算法“工程师”。我的理解：**红利的迁移**，模型结构单点创新带来的收益->体系结构协同带来的收益。
+  [阿里技术副总裁贾扬清：我对人工智能的一点浅见](https://mp.weixin.qq.com/s/DuwEb1jBhly9RPZqGj4wrQ)<br>
+  **AI发展**：神经网络和深度学习的成功与局限，成功原因是大数据和高性能计算，局限原因是结构化的理解和小数据上的有效学习算法。**AI这个方向会怎么走**？传统的深度学习应用，比如图像、语音等，应该如何输出产品和价值？而不仅仅是停留在安防这个层面，要深入到更广阔的领域。除了语音和图像之外，如何解决更多问题？而不仅仅是停留在解决语音图像等几个领域内的问题。
+
+### 综合素质
+- [算法工程师必须要知道的面试技能雷达图](https://zhuanlan.zhihu.com/p/54089811)（学到了）<br>
+  **个人发展-必备技术素质**：算法工程师必备技术素质拆分：知识、工具、逻辑、业务。在满足最小要求的基础上，算法工程师在这四个方面的能力是相对全面的，既包括”算法“，也包括”工程“，而大数据工程师则着重”工具“，研究员则着重”知识“和”逻辑“。<br>
+  针对安全业务的算法工程师就是安全算法工程师。为了便于理解，举个例子，如果用XGBoost解决某个安全问题，那么可以由浅入深理解，把知识、工具、逻辑、业务四个方面串起来：<br>
+    1.GBDT的原理（知识）<br>
+    2.决策树节点分裂时是如何选择特征的？（知识）<br>
+    3.写出Gini Index和Information Gain的公式并举例说明（知识）<br>
+    4.分类树和回归树的区别是什么（知识）<br>
+    5.与Random Forest对比，理解什么是模型的偏差和方差（知识）<br>
+    6.XGBoost的参数调优有哪些经验（工具）<br>
+    7.XGBoost的正则化和并行化分别是如何实现的（工具）<br>
+    8.为什么解决这个安全问题会出现严重的过拟合问题（业务）<br>
+    9.如果选用一种其他模型替代XGBoost或改进XGBoost你会怎么做？为什么？（业务、逻辑、知识）。<br>
+    以上，就是以“知识”为切入点，不仅深度理解了“知识”，也深度理解了“工具”、“逻辑”、“业务”。<br>
+- [[校招经验] BAT机器学习算法实习面试记录](http://rs.xidian.edu.cn/forum.php?mod=viewthread&tid=929712&extra=page%3D1)(学到了)<br>
+  **个人发展-面试经验**：根据面试常遇到的问题再深入理解机器学习，储备自己的算法知识库。
+- [机器学习如何才能避免「只是调参数」？](https://www.zhihu.com/question/264528062/answer/570134579)(学到了)<br>
+  **个人发展-职业发展**：**机器学习工程师分为三种：应用型（能力：保持算法全栈，即数据、建模、业务、运维、后端，重点在建模能力，流程是遇到一个指定的业务场景应该迅速知道用什么数据做特征，用什么模型，这个模型在工程上的时效性和鲁棒性，最终会不会产生业务风险等一整套链路。预期目标：锻炼得到很强的业务敏感性，快速验证提出的需求）、造轮子型（多读顶会跟上时代节奏，且拥有超强的功能能力，打造ML框架，提供给应用型机器学习工程师使用）、研究型（AI Lab，读论文+试验性复现）。个人发展：锻炼业务能力和工程能力，未来几年成长规划还是算法全栈路线，技术上独挡一面，业务上带来kpi，以后快速晋升+带队。同时保持阅读习惯，多学习新知识。**
+- [做机器学习算法工程师是什么样的工作体验？](https://www.zhihu.com/question/31284094/answer/618616259)<br>
+  **个人发展-工作体验**：业务理解、数据清洗和特征工程、持续学习（增强解决方案的判断力）、编程能力、常用工具（XGB、TensorFlow、ScikitLearn、Pandas（表格类数据或时间序列数据）、Spark、SQL、FbProphet（时间序列））
+- [大三实习面经](https://www.zuozuovera.com/archives/1121/comment-page-1)（学到了）
+- [如果你是面试官，你怎么去判断一个面试者的深度学习水平？](https://www.zhihu.com/question/41233373)<br>
+  **个人发展-心得体会**：深度学习擅长处理具有局部相关性的问题和数据，在图像、语音、自然语言处理方面效果显著，因为图像是由像素构成，语音是由音位构成，语言是由单词构成，都有局部相关性，可以构造高级特征。
+- [面试官如何判断面试者的机器学习水平？ - 微调的回答 - 知乎](https://www.zhihu.com/question/62482926/answer/210531386)<br>
+  **个人发展-心得体会**：考虑方法优点和局限性，培养独立思考的能力；正确判断机器学习对业务的影响力；学会分情况讨论（比如深度学习相对于机器学习而言）；学习机器学习不能停留在“知道”的层次，要从原理级学习，甚至可以从源码级学习，知其然知其所以然，要做安全圈机器学习最6的。
+- [两年美团算法大佬的个人总结与学习建议](https://mp.weixin.qq.com/s/OKxjACQgf5ahIGDDA1_Xow)<br>
+  **个人发展-心得体会**：算法的基本认识（知识）、过硬的代码能力（工具）、数据处理和分析能力（业务和逻辑）、模型的积累和迁移能力（业务和逻辑）、产品能力、软实力。
+
+# 职业
 ## 职业规划
 - [至关重要：如何做好我们的职业规划](https://zhuanlan.zhihu.com/p/83620510)**（学到了）**<br>
 ![](https://i.imgur.com/y45VJrI.png)
@@ -717,8 +731,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 	5. 学会展望，调整方向。唯一不可阻挡的是时间
 - [数据科学家 (Data Scientist) 的核心技能是什么？](https://www.zhihu.com/question/27604790)
 
-## 综合素质
-### 逻辑思维与语言表达
+## 思维
 - [如何解决思维混乱、讲话没条理的情况？](https://www.zhihu.com/question/30173526?utm_source=wechat_session&utm_medium=social&utm_oi=832366521421537280)（学到了）<br>
 结构化思维->讲话有条理。
 - [哪些思维方式是你刻意训练过的？](https://www.zhihu.com/question/23913984/answer/807859986)**（学到了）**<br>
@@ -730,17 +743,11 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **定义问题/描述问题：问题的本质是现实和期望的落差部分**；明确期望值B'，精准定位现状B，，用B--->B'这个落差，精准描述问题。<br>
 **分析问题/解决问题**：不能从现状B出发，找寻一条B--->B'的路径，要透过现象看本质。方法A，现实B，期望B'，变量C。**校准期望B'，重构方法A，消除变量C。**
 
-### 管理
+## 沟通
+
+## 管理
 - [“我是技术总监，你干嘛总问我技术细节？”](https://mp.weixin.qq.com/s/_tV71Ly2uU-op__sf1DlPQ)<br>
 （快速发展期、平稳期、衰退期等业务发展时期作为时间轴）（中高层管理者）（需要掌握）（应用场景、技术基础、技术栈中的技术细节）。技术基础要扎实，技术栈了解程度深（对技术原理和细节清楚），应用场景不能浮于表面。总的来说就是一句话：**技术细节与技术深度**。
-- [如何在企业中从0-1建立一个数据/商业分析部门？](https://mp.weixin.qq.com/s/ADblJqYIaiDRTwE2IZWulg?-utm_source=wechat_session&utm_medium=social&utm_oi=663312716719067136&from=singlemessage&isappinstalled=0)(**学到了**)<br>
-**部门的定位和价值——>里程碑设计——->团队搭建——->构建IT数据——->前期管理。**<br>
-**定位和价值是一个部门立足公司的根本**：**做报表的部门VS做战略的部门**；业务其他公司的定位和公司内其他部门的认可；一定要会放大部门的价值和一定要走高层路线。<br>
-**设立长期目标并拆解里程碑**：**公司业务目标--->公司战略--->部门目标--->部门里程碑--->工作计划**；设立里程碑的技巧？**借势、共赢、取巧、筑基**；借老板势，寻找1-2个老板的痛点问题解决；寻找利益相同的部门共建共赢；取巧摘已有的“桃子”；筑基数据链路梳理、数据清洗、系统互联、数据仓库设计、数据集市设计。<br>
-**基于里程碑进行团队搭建**：切忌一步到位；审慎拉帮结派；遇到人才不可错过；学会“画饼”；注意团队文化建设。<br>
-**构建公司的数据IT能力**：搭建基础且通用的数据流框架：应用层、归集层、加工层、分析层、展示层；
-同时根据各种数据库选型指标选择对应的数据库存储产品，数据库选型指标比如容量、水平扩展性、查询实时性、查询灵活性、写入速度、事务、数据存储、处理数据规模、列扩展性。**在搭建数据框架中需要注意的点是：需要实现公司级别的业务数据架构**。基于业务对整个公司的数据进行体系化的梳理，任何的业务变化都会体现在数据之上，实现数据充分体现业务现状的目的。**要完成这一步的关键是完成公司级别的主数据管理**：明确各项数据的业务含义和口径、明确每个数据的职责单位、打通数据链路，推动数据共享。<br>
-**引领团队走向胜利**：做“排长”而不要做“军长”；让合适的人做合适的事；明确规则，及时兑现。
 - [阿里巴巴高级算法专家威视：组建技术团队的一些思考](https://zhuanlan.zhihu.com/p/99701435)（**学到了**）<br>
 **行文思路：团队的定位**（定位（能力、业务、服务）、壁垒（以不变应万变沉淀风险管控知识作为壁垒）和价值（提供不同层次的服务形式））-》**团队的能力**（连接、生产、传播、服务）-》**组织与个人的关系**-》**招人**-》**用人**-》**对内管理模式**（找对前进的方向、绩效的考核（3个维度：业务结果、能力进步、技术影响力））<br>
 **学到了：建设技术体系解决某一类问题，而不是某个技术点去解决某一个问题。**
@@ -755,7 +762,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 **公司内部晋升管理者：天时：企业/行业所处的阶段；地利：部门/业务所处的阶段；人和：人际关系+自身能力。**<br>
 **跳槽成为管理者：大公司跳槽到小公司，寻找职业突破，弊端是跳出去容易跳回来难；成为行业内有影响力的人物，被大公司挖角。大部分人都是第一种情况，在大公司的同学要多一点耐心，通过努力在公司内晋升，因为曲线救国式的跳槽已经没有市场了。**
 
-### 思考
+## 思考
 - [好的研究想法从哪里来](https://mp.weixin.qq.com/s/OSVpS3Q15kI0NshpzCjavA)<br>
 **研究的本质是对未知领域的探索，是对开放问题的答案的追寻。“好”的定义-》区分好与不好的能力-》全面了解所在研究方向的历史和现状-》实践法/类比法/组合法**。 **这就好比是机器学习的训练和测试阶段**，**训练**：全面了解所在研究方向的历史和现状，判断不同时期的研究工作的好与不好。**测试**：实践法/类比法/组合法出的idea，判断自己的研究工作好与不好。
 - [科研论文如何想到不错的 idea？](https://www.zhihu.com/question/300967426)<br>
@@ -765,8 +772,8 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 * **领域点-线-面体系**：点：自己focus的领域；线：上游和下游；面：大领域。不要过度focus在自己工作的领域，要有全局化的眼光，特别是自己的上游和下游。
 * **日常学习点-线-面体系**：点：自己focus的安全数据分析领域；线：安全/数据分析；面：全局安全内容/行业发展/职业规划。每日专研至少一小时小领域；每日精读至少半小时/至少一篇安全/数据分析/行业发展/职业规划精品文章；每日大量浏览增量文章/存量文章。**保持学习与思考的敏感性。**
 
-## 附录
-### 国外优质技术站点
+# 附录
+## 国外优质技术站点
 - [https://resources.distilnetworks.com](https://resources.distilnetworks.com)<br>
 **站点概况**：专注于机器流量对抗与缓解。
 - [http://www.covert.io](http://www.covert.io)<br>
@@ -776,7 +783,7 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [https://towardsdatascience.com](https://towardsdatascience.com)<br>
 **站点概括**：专注于数据科学。
 
-### 国内优秀技术人
+## 国内优秀技术人
 - [michael282694](http://michael282694.com)<br>
 **技术栈**：数据分析挖掘产品开发、爬虫、Java、Python。
 - [LittleHann](https://www.cnblogs.com/LittleHann)<br>
