@@ -1,10 +1,14 @@
 # 404 Not Found的知识库
-最近更新日期：2020/06/03
+最近更新日期：2020/06/07
 
 最近一周新增：
 
 - [数据分析师如何搭建数据运营指标体系？ - 张溪梦 Simon的回答](https://www.zhihu.com/question/315972357/answer/1238739118)
 - [请分享一下数据分析方面的思路，如何做好数据分析？](https://www.zhihu.com/question/30195311/answer/1235248266)
+- [云原生入侵检测趋势观察](https://xz.aliyun.com/t/7841?from=timeline&isappinstalled=0)
+- [张欧：数字银行可信网络实践 ](https://mp.weixin.qq.com/s?__biz=MzI2MjQ1NTA4MA==&mid=2247485040&idx=1&sn=188ea6610b0936e2bd1f7b5ce4def639&chksm=ea4bac37dd3c2521c69c8fb8bf29186249f86048a5755f9be0fc03a31ee73c98b71826905d42&scene=126&sessionid=1591339348&key=658cffbcef315553858cc3f70ad71638a38789ab43c93d6519abdd323585ab6fa57d54d750dba59b4f9e818990cf1e803b0c9a0b758c3efa62067da959fde59849c217bb591deb84db147ab56ce643fb&ascene=1&uin=MTA5NjU5ODIxNg%3D%3D&devicetype=Windows+7+x64&version=62090070&lang=zh_CN&exportkey=A5vYhyVVqrtmc6GE6%2BQiHsg%3D&pass_ticket=Q8sO44o1Ga7w0USNghjRWDURXD9%2BJZ8cS7F6Nyoxbfg7a38rXcHiaLEaqh%2FxSLWC)
+- [何艺：零信任安全架构实践之路 ](https://mp.weixin.qq.com/s?__biz=MzI2MjQ1NTA4MA==&mid=2247485148&idx=1&sn=66c7b7309dad7711832105a7fd9e2e10&chksm=ea4bac9bdd3c258d16840c28cf746f25453f081fe6ba3b2e02797697e2dbde9e5978dd406b46&scene=126&sessionid=1591339328&key=38c47e635d6e8eea767f50429477f107c7624c4b7a7ef4c7854e323f21300ef393ea3c50fb0cd708da80414c04cb3601523d58c582bca2fe5781869970f67a1da8cacd297c33ed8a021b45c9789e2bdd&ascene=1&uin=MTA5NjU5ODIxNg%3D%3D&devicetype=Windows+7+x64&version=62090070&lang=zh_CN&exportkey=A3nwc8fUFx%2B%2Fnl%2ByqjVonuY%3D&pass_ticket=Q8sO44o1Ga7w0USNghjRWDURXD9%2BJZ8cS7F6Nyoxbfg7a38rXcHiaLEaqh%2FxSLWC)
+- [王任飞（avfisher）：Red Teaming for Cloud（云上攻防） ](https://mp.weixin.qq.com/s?__biz=MzI2MjQ1NTA4MA==&mid=2247485109&idx=1&sn=da24b31ee4d1629f2df88470cc8418f5&chksm=ea4bacf2dd3c25e49f25184b60bc663eb4876f1a84d88c4d888ff4ff542cc90870f635b25af7&scene=126&sessionid=1591339348&key=904c21afc119becb4b8cdd8554f5a9f6e88bdef4d965af82e507c2b5a68a5015cfd2943cfa11dd3d85ca9a3eb9946fed9437c8b169375ebf421fd68c24acf0eaa3f47b3d8198c3d004e45d579a3a1b3f&ascene=1&uin=MTA5NjU5ODIxNg%3D%3D&devicetype=Windows+7+x64&version=62090070&lang=zh_CN&exportkey=Azre3fsXQ11HKpGCp1fqHJo%3D&pass_ticket=Q8sO44o1Ga7w0USNghjRWDURXD9%2BJZ8cS7F6Nyoxbfg7a38rXcHiaLEaqh%2FxSLWC)
 
 目录：
 
@@ -452,8 +456,15 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 ### 云原生
 - [云原生网络代理 MOSN 透明劫持技术解读 | 开源](https://mp.weixin.qq.com/s/swrJT6HZy4r1XDXFzHNtxA)<br>
 **行文思路**：service mesh->Istio->数据面->网络代理->MOSN->高效透明流量劫持。问题：流量接管。解决问题：环境适配、配置管理、数据面性能。
+- [云原生入侵检测趋势观察](https://xz.aliyun.com/t/7841?from=timeline&isappinstalled=0)<br>
+**行文思路**：资产多样化、服务碎片化、中间件井喷、基础设施默认安全->入侵检测“业务化”，行为分析将成为核心能力。
+- [王任飞（avfisher）：Red Teaming for Cloud（云上攻防） ](https://mp.weixin.qq.com/s?__biz=MzI2MjQ1NTA4MA==&mid=2247485109&idx=1&sn=da24b31ee4d1629f2df88470cc8418f5&chksm=ea4bacf2dd3c25e49f25184b60bc663eb4876f1a84d88c4d888ff4ff542cc90870f635b25af7&scene=126&sessionid=1591339348&key=904c21afc119becb4b8cdd8554f5a9f6e88bdef4d965af82e507c2b5a68a5015cfd2943cfa11dd3d85ca9a3eb9946fed9437c8b169375ebf421fd68c24acf0eaa3f47b3d8198c3d004e45d579a3a1b3f&ascene=1&uin=MTA5NjU5ODIxNg%3D%3D&devicetype=Windows+7+x64&version=62090070&lang=zh_CN&exportkey=Azre3fsXQ11HKpGCp1fqHJo%3D&pass_ticket=Q8sO44o1Ga7w0USNghjRWDURXD9%2BJZ8cS7F6Nyoxbfg7a38rXcHiaLEaqh%2FxSLWC)（Mark）
 
 ### 可信计算
+- [张欧：数字银行可信网络实践 ](https://mp.weixin.qq.com/s?__biz=MzI2MjQ1NTA4MA==&mid=2247485040&idx=1&sn=188ea6610b0936e2bd1f7b5ce4def639&chksm=ea4bac37dd3c2521c69c8fb8bf29186249f86048a5755f9be0fc03a31ee73c98b71826905d42&scene=126&sessionid=1591339348&key=658cffbcef315553858cc3f70ad71638a38789ab43c93d6519abdd323585ab6fa57d54d750dba59b4f9e818990cf1e803b0c9a0b758c3efa62067da959fde59849c217bb591deb84db147ab56ce643fb&ascene=1&uin=MTA5NjU5ODIxNg%3D%3D&devicetype=Windows+7+x64&version=62090070&lang=zh_CN&exportkey=A5vYhyVVqrtmc6GE6%2BQiHsg%3D&pass_ticket=Q8sO44o1Ga7w0USNghjRWDURXD9%2BJZ8cS7F6Nyoxbfg7a38rXcHiaLEaqh%2FxSLWC)<br>
+**行文思路**：**本质问题是：网络层面的纵深防御。为什么要做（挑战）->落地的思路和方案->过程中的挑战和思考**。
+- [何艺：零信任安全架构实践之路 ](https://mp.weixin.qq.com/s?__biz=MzI2MjQ1NTA4MA==&mid=2247485148&idx=1&sn=66c7b7309dad7711832105a7fd9e2e10&chksm=ea4bac9bdd3c258d16840c28cf746f25453f081fe6ba3b2e02797697e2dbde9e5978dd406b46&scene=126&sessionid=1591339328&key=38c47e635d6e8eea767f50429477f107c7624c4b7a7ef4c7854e323f21300ef393ea3c50fb0cd708da80414c04cb3601523d58c582bca2fe5781869970f67a1da8cacd297c33ed8a021b45c9789e2bdd&ascene=1&uin=MTA5NjU5ODIxNg%3D%3D&devicetype=Windows+7+x64&version=62090070&lang=zh_CN&exportkey=A3nwc8fUFx%2B%2Fnl%2ByqjVonuY%3D&pass_ticket=Q8sO44o1Ga7w0USNghjRWDURXD9%2BJZ8cS7F6Nyoxbfg7a38rXcHiaLEaqh%2FxSLWC)<br>
+**核心点**：**零信任的核心是用户+设备+应用等信任链条的建立，安全的持续动态校验，缩小攻击面。做的工作：网络网关、主机网关、应用网关、SOC**。
 
 ### DevSecOps
 - [“安全需要每个工程师的参与”-DevSecOps理念及思考](https://mp.weixin.qq.com/s/_jBmFdtyXY5D_YrrTUP1iQ)（Mark）<br>
