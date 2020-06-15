@@ -1,14 +1,10 @@
 # 404 Not Found的知识库
-最近更新日期：2020/06/07
+最近更新日期：2020/06/11
 
 最近一周新增：
 
-- [数据分析师如何搭建数据运营指标体系？ - 张溪梦 Simon的回答](https://www.zhihu.com/question/315972357/answer/1238739118)
-- [请分享一下数据分析方面的思路，如何做好数据分析？](https://www.zhihu.com/question/30195311/answer/1235248266)
-- [云原生入侵检测趋势观察](https://xz.aliyun.com/t/7841?from=timeline&isappinstalled=0)
-- [张欧：数字银行可信网络实践 ](https://mp.weixin.qq.com/s?__biz=MzI2MjQ1NTA4MA==&mid=2247485040&idx=1&sn=188ea6610b0936e2bd1f7b5ce4def639&chksm=ea4bac37dd3c2521c69c8fb8bf29186249f86048a5755f9be0fc03a31ee73c98b71826905d42&scene=126&sessionid=1591339348&key=658cffbcef315553858cc3f70ad71638a38789ab43c93d6519abdd323585ab6fa57d54d750dba59b4f9e818990cf1e803b0c9a0b758c3efa62067da959fde59849c217bb591deb84db147ab56ce643fb&ascene=1&uin=MTA5NjU5ODIxNg%3D%3D&devicetype=Windows+7+x64&version=62090070&lang=zh_CN&exportkey=A5vYhyVVqrtmc6GE6%2BQiHsg%3D&pass_ticket=Q8sO44o1Ga7w0USNghjRWDURXD9%2BJZ8cS7F6Nyoxbfg7a38rXcHiaLEaqh%2FxSLWC)
-- [何艺：零信任安全架构实践之路 ](https://mp.weixin.qq.com/s?__biz=MzI2MjQ1NTA4MA==&mid=2247485148&idx=1&sn=66c7b7309dad7711832105a7fd9e2e10&chksm=ea4bac9bdd3c258d16840c28cf746f25453f081fe6ba3b2e02797697e2dbde9e5978dd406b46&scene=126&sessionid=1591339328&key=38c47e635d6e8eea767f50429477f107c7624c4b7a7ef4c7854e323f21300ef393ea3c50fb0cd708da80414c04cb3601523d58c582bca2fe5781869970f67a1da8cacd297c33ed8a021b45c9789e2bdd&ascene=1&uin=MTA5NjU5ODIxNg%3D%3D&devicetype=Windows+7+x64&version=62090070&lang=zh_CN&exportkey=A3nwc8fUFx%2B%2Fnl%2ByqjVonuY%3D&pass_ticket=Q8sO44o1Ga7w0USNghjRWDURXD9%2BJZ8cS7F6Nyoxbfg7a38rXcHiaLEaqh%2FxSLWC)
-- [王任飞（avfisher）：Red Teaming for Cloud（云上攻防） ](https://mp.weixin.qq.com/s?__biz=MzI2MjQ1NTA4MA==&mid=2247485109&idx=1&sn=da24b31ee4d1629f2df88470cc8418f5&chksm=ea4bacf2dd3c25e49f25184b60bc663eb4876f1a84d88c4d888ff4ff542cc90870f635b25af7&scene=126&sessionid=1591339348&key=904c21afc119becb4b8cdd8554f5a9f6e88bdef4d965af82e507c2b5a68a5015cfd2943cfa11dd3d85ca9a3eb9946fed9437c8b169375ebf421fd68c24acf0eaa3f47b3d8198c3d004e45d579a3a1b3f&ascene=1&uin=MTA5NjU5ODIxNg%3D%3D&devicetype=Windows+7+x64&version=62090070&lang=zh_CN&exportkey=Azre3fsXQ11HKpGCp1fqHJo%3D&pass_ticket=Q8sO44o1Ga7w0USNghjRWDURXD9%2BJZ8cS7F6Nyoxbfg7a38rXcHiaLEaqh%2FxSLWC)
+- [技术部门Leader是不是一定要技术大牛担任？](https://www.zhihu.com/question/377457299)
+- [人在年轻的时候，最核心的能力是什么？](https://www.zhihu.com/question/303482683)
 
 目录：
 
@@ -772,12 +768,16 @@ Red Team的定义--->Red Team的目标（学习和利用已知真实攻击者的
 - [什么特质的员工容易成为管理者](https://mp.weixin.qq.com/s/eLqQF-B7y_roz6a4aYZoCQ)<br>
 **公司内部晋升管理者：天时：企业/行业所处的阶段；地利：部门/业务所处的阶段；人和：人际关系+自身能力。**<br>
 **跳槽成为管理者：大公司跳槽到小公司，寻找职业突破，弊端是跳出去容易跳回来难；成为行业内有影响力的人物，被大公司挖角。大部分人都是第一种情况，在大公司的同学要多一点耐心，通过努力在公司内晋升，因为曲线救国式的跳槽已经没有市场了。**
+- [技术部门Leader是不是一定要技术大牛担任？](https://www.zhihu.com/question/377457299)<br>
+**核心点**：Manager vs Tech Leader、方法论、软技能、赋能成员、综合。
 
 ## 思考
 - [好的研究想法从哪里来](https://mp.weixin.qq.com/s/OSVpS3Q15kI0NshpzCjavA)<br>
 **研究的本质是对未知领域的探索，是对开放问题的答案的追寻。“好”的定义-》区分好与不好的能力-》全面了解所在研究方向的历史和现状-》实践法/类比法/组合法**。 **这就好比是机器学习的训练和测试阶段**，**训练**：全面了解所在研究方向的历史和现状，判断不同时期的研究工作的好与不好。**测试**：实践法/类比法/组合法出的idea，判断自己的研究工作好与不好。
 - [科研论文如何想到不错的 idea？](https://www.zhihu.com/question/300967426)<br>
 **模块化学习、交叉、布局可预期的趋势**。
+- [人在年轻的时候，最核心的能力是什么？](https://www.zhihu.com/question/303482683)<br>
+**核心点**：达到以前从未达到的高度：基本的事情做到极致、专注、坚持长久做一件事、延迟满足、认清自己+了解环境->准确定位、
 
 ## 注意事项
 * **领域点-线-面体系**：点：自己focus的领域；线：上游和下游；面：大领域。不要过度focus在自己工作的领域，要有全局化的眼光，特别是自己的上游和下游。
