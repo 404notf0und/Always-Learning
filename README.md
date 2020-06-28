@@ -1,10 +1,9 @@
 # 404 Not Found的知识库
-最近更新日期：2020/06/11
+最近更新日期：2020/06/28
 
 最近一周新增：
 
-- [技术部门Leader是不是一定要技术大牛担任？](https://www.zhihu.com/question/377457299)
-- [人在年轻的时候，最核心的能力是什么？](https://www.zhihu.com/question/303482683)
+- [Python项目打包和发布](# 工具)
 
 目录：
 
@@ -165,6 +164,8 @@ LeetCode上的题大致分为三种类型：考察数据结构：比如链表、
 - [git-lfs](https://coding.net/help/doc/git/git-lfs.html)<br>
 **Git-lfs**：git大文件上传扩展工具。
 - [tshark统计分析pcap包](https://www.wireshark.org/docs/man-pages/tshark.html)
+- [Python项目打包和发布](# 工具)<br>
+**备忘录**：1、setup.py: long_description和long_description_content_type(注意md和rst格式渲染问题)。2、manifest.in vs .gitignore。3、readme.rst vs readme.md。4、.pypirc vs .gitconfig。5、python setup.py bdist_wheel upload。
 
 ### 技术
 - [解码与xss](https://blog.csdn.net/he_and/article/details/80588409)(**原文中有一处错误“html实体编码后“应该是`&#x5c;&#x75;&#x37;&#x32;` 产生的原因就是浏览器的html自解码**)<br>
